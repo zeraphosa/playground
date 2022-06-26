@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/start.css";
 
 export default function Start() {
+  let today = new Date();
+  let yyyy = today.getFullYear();
+  let mm = today.getMonth() + 1;
+  let dd = today.getDate();
+  if (dd < 10) dd = "0" + dd;
+  if (mm < 10) mm = "0" + mm;
+  today = dd + "." + mm + "." + yyyy;
+
+  const [clock, setClock] = useState();
+  useEffect(() => {
+    setInterval(() => {
+      let dateObj = new Date();
+      let hour = dateObj.getHours();
+      let minute = dateObj.getMinutes();
+      if(hour < 10) hour = "0" + hour;
+      if(minute < 10) minute = "0" + minute;
+      console.log('minute', minute, typeof(minute));
+      let currentTime = hour + ":" + minute;
+      setClock(currentTime);
+    }, 10000);
+  }, []);
+
   return (
     <div className="start_container">
       <div className="start_apps">
@@ -15,7 +37,7 @@ export default function Start() {
           <img src="/icons/notepad_32.png" alt="notepad" />
         </button>
         <button>
-          <img src="/icons/vscode_32.png" alt="vscpde" />
+          <img src="/icons/vscode_32.png" alt="vscode" />
         </button>
         <button>
           <img src="/icons/terminal_32.png" alt="terminal" />
@@ -41,10 +63,10 @@ export default function Start() {
           />
         </button>
         <button className="date_btn">
-            <ul>
-                <li>16:25</li>
-                <li>24.06.2022</li>
-            </ul>
+          <ul>
+            <li>{clock}</li>
+            <li>{today}</li>
+          </ul>
         </button>
       </div>
     </div>
