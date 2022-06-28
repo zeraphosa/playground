@@ -1,8 +1,8 @@
 // Redux olmadan
 
-export default function Counter({ count }) {
-  return <div>{count}</div>;
-}
+// export default function Counter({ count }) {
+//   return <div>{count}</div>;
+// }
 
 
 // APP js ici --
