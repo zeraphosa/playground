@@ -1,4 +1,4 @@
-import { decrement, increment, incrementByAmount } from "../store/counter";
+import { decrement, increment, incrementByAmount } from "../stores/counter";
 import { useDispatch } from "react-redux";
 
 export default function CounterAction() {
