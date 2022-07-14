@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../css/start.css";
 
-export default function Start() {
+export default function Start({ starttab, setStarttab }) {
   let today = new Date();
   let yyyy = today.getFullYear();
   let mm = today.getMonth() + 1;
@@ -16,18 +16,21 @@ export default function Start() {
       let dateObj = new Date();
       let hour = dateObj.getHours();
       let minute = dateObj.getMinutes();
-      if(hour < 10) hour = "0" + hour;
-      if(minute < 10) minute = "0" + minute;
-      console.log('minute', minute, typeof(minute));
+      if (hour < 10) hour = "0" + hour;
+      if (minute < 10) minute = "0" + minute;
       let currentTime = hour + ":" + minute;
       setClock(currentTime);
-    }, 10000);
+    }, 1000);
   }, []);
 
   return (
     <div className="start_container">
       <div className="start_apps">
-        <button>
+        <button
+          onClick={() => {
+            setStarttab(!starttab);
+          }}
+        >
           <img className="start" src="/icons/start_48.png" alt="start" />
         </button>
         <button>
@@ -68,6 +71,7 @@ export default function Start() {
             <li>{today}</li>
           </ul>
         </button>
+        <button className="desktop_btn"><span></span></button>
       </div>
     </div>
   );
