@@ -1,8 +1,16 @@
+import styles from "./App.module.css";
+import { Title } from "./Components";
+import "./tailwind.css";
+import Tailwind from "./Tailwind";
+
 function App() {
   return (
-    <div className="App">
-      <div>{process.env.NODE_ENV}</div>
-      <div>{process.env.REACT_APP_API_URL}</div>
+    <div className={styles.App}>
+      <Title>{process.env.NODE_ENV}</Title>
+      <Title theme={"dark"}>{process.env.NODE_ENV}</Title>
+      <p>{process.env.REACT_APP_API_URL}</p>
+
+      <Tailwind />
     </div>
   );
 }
