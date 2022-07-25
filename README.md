@@ -5,3 +5,5 @@ Building react project with Prototurk youtube channel
 2. .env.development, .env.production, process.env.NODE_ENV
 3. module.css kullanmak o componente ozel yapiyor, styled-component kullanimi, tailwind ornegi
 4. basics. createElement, map, tabIndex
+5. basics. components, classnames library, props, useState
+6. 

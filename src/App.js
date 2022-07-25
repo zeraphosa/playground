@@ -1,11 +1,12 @@
-import Style from "./no1_no2_no3/Style";
+// import Style from "./no1_no2_no3/Style";
+import No5 from "./no_5/No5";
 
 export default function App() {
   return (
     <div>
-      <h1>App</h1>
-      <h2>*************************************************************</h2>
-      <Style />
+      {/* <h2>*************************************************************</h2> */}
+      {/* <Style /> */}
+      <No5 />
     </div>
   );
 }
