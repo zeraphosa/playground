@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/zeraphosa.jpg" type="image/icon type" />
+    <title>Html Css Javascript</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgb(62, 62, 62);
+      }
+      .container {
+        max-width: 1366px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .card {
+        width: 140px;
+        height: 60px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+      }
+      @media only screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+        .card {
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="/todo-app/index.html" class="card">To Do List</a>
+      <a href="/citytab/index.html" class="card">City Tab</a>
+      <a href="/calculator/index.html" class="card">Calculator</a>
+      <a href="/tracker/index.html" class="card">Tracker</a>
+      <a href="/quiz-app/index.html" class="card">Quiz App with JSON</a>
+    </div>
+  </body>
+</html>
