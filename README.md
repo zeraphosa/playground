@@ -1,7 +1,7 @@
-# html_css_javascript
+# Html Css Javascript
 I did this basic projects with youtube tutorials, udemy courses.
 
-[Link for all projects](https://zeraphosa-htmlcssjavascript.netlify.app)
+☛ [Link for all projects](https://zeraphosa-htmlcssjavascript.netlify.app)
 
 |  #  | Project                                                                                                  | Live Demo                                                                                    |
 | :-: | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
