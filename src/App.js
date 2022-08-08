@@ -1,19 +1,17 @@
-// import Style from "./no1_no2_no3/Style";
-// import No5 from "./no_5/No5";
-import { useState } from "react";
-import Test from "./no_6/Test";
+import React from "react";
 
 export default function App() {
-  const [show, set_show] = useState(false);
   return (
     <div>
-      {/* <h2>*************************************************************</h2> */}
-      {/* <Style /> */}
-      {/* <No5 /> */}
-      <button onClick={() => set_show(!show)}>
+      {/* no6 --> <Ref /> */}
+      {/* no1_no2_no3 --> <Style /> */}
+      {/* no5 --> <No5 /> */}
+      {/* no6 -->
+      const [show, set_show] = useState(false);
+       <button onClick={() => set_show(!show)}>
         {show ? "gizle" : "goster"}
       </button>
-      {show && <Test />}
+      {show && <Test />} */}
     </div>
   );
 }
