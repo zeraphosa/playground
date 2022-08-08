@@ -8,3 +8,4 @@ Building react project with Prototurk youtube channel
 5. basics. components, classnames library, props, useState ---
 6. lifecycle, useEffect types, fetch
 7. useRef, forwardRef example
+8. cok fazla useState kullanilan yerlerde duzenli kod icin useReducer kullanimi
