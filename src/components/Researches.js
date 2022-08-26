@@ -1,5 +1,7 @@
-export default function Researches(){
-    return (
-        <div>researches</div>
-    )
+export default function Researches() {
+  return (
+    <>
+      <div>Researches</div>
+    </>
+  );
 }
