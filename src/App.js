@@ -26,6 +26,7 @@ import Researches from "./components/Researches";
 import Projects from "./components/Projects";
 import Accounts from "./components/Accounts";
 import Series from "./components/Series";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const drawerWidth = 180;
 
@@ -73,6 +74,19 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 
+const themebody = createTheme({
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          backgroundColor: "#0c0c0c",
+          color: "#ffffff"
+        },
+      },
+    },
+  },
+});
+
 export default function App() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -111,7 +125,7 @@ export default function App() {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar position="fixed" open={open}>
-        <Toolbar>
+        <Toolbar sx={{ backgroundColor: "#191919", color: "#ffffff" }}>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -133,6 +147,8 @@ export default function App() {
           "& .MuiDrawer-paper": {
             width: drawerWidth,
             boxSizing: "border-box",
+            backgroundColor: "#191919",
+            color: "#ffffff",
           },
         }}
         variant="persistent"
@@ -142,7 +158,7 @@ export default function App() {
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
+              <ChevronLeftIcon sx={{ color: "#ffffff" }} />
             ) : (
               <ChevronRightIcon />
             )}
@@ -152,8 +168,13 @@ export default function App() {
         <List>
           {sidebar.map((item, index) => (
             <ListItem key={index} disablePadding>
-              <ListItemButton onClick={() => set_component(item.text)}>
-                <ListItemIcon>{item.icon}</ListItemIcon>
+              <ListItemButton
+                onClick={() => set_component(item.text)}
+                className="sb_btns"
+              >
+                <ListItemIcon sx={{ color: "#ffffff" }}>
+                  {item.icon}
+                </ListItemIcon>
                 <ListItemText primary={item.text} />
               </ListItemButton>
             </ListItem>
@@ -161,12 +182,15 @@ export default function App() {
         </List>
       </Drawer>
       <Main open={open}>
-        <DrawerHeader />
-        {component === "Notes" ? <Notes /> : null}
-        {component === "Researches" ? <Researches /> : null}
-        {component === "Projects" ? <Projects /> : null}
-        {component === "Accounts" ? <Accounts /> : null}
-        {component === "Series" ? <Series /> : null}
+        <ThemeProvider theme={themebody}>
+          <DrawerHeader />
+          <CssBaseline />
+          {component === "Notes" ? <Notes /> : null}
+          {component === "Researches" ? <Researches /> : null}
+          {component === "Projects" ? <Projects /> : null}
+          {component === "Accounts" ? <Accounts /> : null}
+          {component === "Series" ? <Series /> : null}
+        </ThemeProvider>
       </Main>
     </Box>
   );
