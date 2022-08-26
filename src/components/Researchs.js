@@ -1,7 +1,7 @@
 import "../styles/first.css";
 
-export default function RESEARCHS(){
+export default function Researches(){
     return (
-        <div>RESEARCHS</div>
+        <div>researches</div>
     )
 }
