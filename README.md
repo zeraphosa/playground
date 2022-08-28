@@ -1,11 +1,21 @@
-# zera_spotify
+# Zera Spotify
 
 Spotify clone project.
--jsconfig.json
--tailwindcss init -> tailwind.config.js -> mode: "jit",
-purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
--package.json -> script -> "watch": "npx tailwindcss -i tailwind.css -o src/style.css --watch"
--tailwind.css
+
+## Technologies
+
+- React js
+- React Router
+- Tailwind css
+- Headless UI (dropdown menu with keyboard accessibility)
+
+### Notes
+
+- jsconfig.json
+- tailwindcss init -> tailwind.config.js -> mode: "jit", purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+- package.json -> script -> "watch": "npx tailwindcss -i tailwind.css -o src/style.css --watch"
+- tailwind.css
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

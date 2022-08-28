@@ -8,11 +8,13 @@ export default function Content() {
   return (
     <div className="flex-auto">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/collection" element={<Collection />} />
-      </Routes>
+      <div className="px-8 pt-2">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/collection" element={<Collection />} />
+        </Routes>
+      </div>
     </div>
   );
 }
