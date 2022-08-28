@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "components/Navbar";
 import Home from "views/Home";
 import Search from "views/Search";
@@ -8,17 +8,11 @@ export default function Content() {
   return (
     <div className="flex-auto">
       <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/search">
-          <Search />
-        </Route>
-        <Route path="/collection">
-          <Collection />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/collection" element={<Collection />} />
+      </Routes>
     </div>
   );
 }
