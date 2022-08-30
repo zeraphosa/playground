@@ -23,4 +23,4 @@ I did this basic projects with youtube tutorials, udemy courses.
 | 15  | [Random Photos](https://github.com/zeraphosa1/html_css_javascript/tree/main/random-photos)               | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/random-photos/index.html)        |
 | 16  | [Countdown](https://github.com/zeraphosa1/html_css_javascript/tree/main/countdown)                       | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/countdown/index.html)            |
 | 17  | [Random Password](https://github.com/zeraphosa1/html_css_javascript/tree/main/random-password)           | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/random-password/index.html)      |
-| 18  | [Random Password](https://github.com/zeraphosa1/html_css_javascript/tree/main/video-popup)               | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/video-popup/index.html)          |
+| 18  | [Video Popup](https://github.com/zeraphosa1/html_css_javascript/tree/main/video-popup)                   | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/video-popup/index.html)          |
