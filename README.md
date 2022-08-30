@@ -1,4 +1,5 @@
 # Html Css Javascript
+
 I did this basic projects with youtube tutorials, udemy courses.
 
 ☛ [Link for all projects](https://zeraphosa-htmlcssjavascript.netlify.app)
@@ -19,3 +20,4 @@ I did this basic projects with youtube tutorials, udemy courses.
 | 12  | [Split Landing Page](https://github.com/zeraphosa1/html_css_javascript/tree/main/split-landing-page)     | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/split-landing-page/index.html)   |
 | 13  | [Form Wave Animation](https://github.com/zeraphosa1/html_css_javascript/tree/main/form-wave-animation)   | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/form-wave-animation/index.html)  |
 | 14  | [Sound Board](https://github.com/zeraphosa1/html_css_javascript/tree/main/sound-board)                   | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/sound-board/index.html)          |
+| 14  | [Statistic Counter](https://github.com/zeraphosa1/html_css_javascript/tree/main/statistic-counter)       | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/statistic-counter/index.html)    |
