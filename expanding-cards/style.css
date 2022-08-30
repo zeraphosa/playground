@@ -10,6 +10,7 @@ body{
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    background-color: #0c0c0c;
 }
 .container{
     display: flex;
@@ -19,7 +20,7 @@ body{
     background-size: cover 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 60vh;
     border-radius: 50px;
     color: #fff;
     cursor: pointer;

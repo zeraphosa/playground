@@ -4,14 +4,15 @@
 }
 body{
     font-family: 'Lato', sans-serif;
-    background-color: #333;
-    color: #222;
+    background-color: #fff;
+    color: #fff;
     overflow-x: hidden;
     margin: 0;
 }
 
 .container{
-    background-color: #fafafa;
+    background-color: #0c0c0c;
+    color: #fff;
     transform-origin: top left;
     transition: transform 0.5s linear;
     width: 100vw;
@@ -27,7 +28,7 @@ body{
     left: -100px;
 }
 .circle{
-    background-color: #ff7979;
+    background-color: #fff;
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -45,7 +46,7 @@ body{
     background-color: transparent;
     border: 0;
     font-size: 26px;
-    color: #fff;
+    color: #0c0c0c;
     cursor: pointer;
 }
 .circle button:focus{
@@ -75,7 +76,7 @@ nav ul{
 }
 nav ul li{
     text-transform: uppercase;
-    color: #fff;
+    color: #0c0c0c;
     margin: 40px 0;
     transform: translateX(-100%);
     transition: transform 0.4s ease-in;
@@ -103,10 +104,10 @@ nav ul li + li + li{
     margin: 0;
 }
 .content small{
-    color: #555;
+    color: #fff;
     font-style: italic;
 }
 .content p{
-    color: #333;
+    color: #fff;
     line-height: 1.5;
 }

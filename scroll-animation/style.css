@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #efedd6;
+    background-color: #0c0c0c;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -11,13 +11,15 @@ body{
     justify-content: center;
     margin: 0;
     overflow-x: hidden;
+    color: #fff;
 }
 
 h1{
     margin: 10px;
 }
 .box{
-    background-color: steelblue;
+    background-color: transparent;
+    border: 1px solid #fff;
     color: #fff;
     display: flex;
     align-items: center;

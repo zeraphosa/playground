@@ -11,7 +11,8 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color: rgb(62, 62, 62);
+        background-color: #0c0c0c;
+        color: #fff;
       }
 
       .container {
@@ -23,21 +24,23 @@
         flex-direction: row;
         flex-wrap: wrap;
       }
-      .card {
+      a {
         width: 160px;
         height: 60px;
         margin: 30px;
         border-radius: 10px;
-        background-color: #000;
-
+        background-color: transparent;
+        border: 1px solid #fff;
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
         color: #fff;
       }
-      .card:hover{
-        box-shadow: 0px 0px 15px 0px rgb(133, 133, 133);
+      a:hover {
+        background-color: #fff;
+        color: #0c0c0c;
+        transition: all 300ms;
       }
       @media only screen and (max-width: 600px) {
         .container {
@@ -50,23 +53,20 @@
 
   <body>
     <div class="container">
-      <a href="/todo-app/index.html" class="card">Todo list</a>
-      <a href="/citytab/index.html" class="card">City tab</a>
-      <a href="/calculator/index.html" class="card">Calculator</a>
-      <a href="/tracker/index.html" class="card">Tracker</a>
-      <a href="/quiz-app/index.html" class="card">Quiz app with json</a>
-            
-      <a class="card" href="/expanding-cards/index.html">Expanding cards</a>
-      <a class="card" href="/progress-steps/index.html">Progress steps</a>
-      <a class="card" href="/rotating-navigation/index.html">Rotating navigation</a>
-      <a class="card" href="/hidden-search-widget/index.html">Hidden search widget</a>
-      <a class="card" href="/blurry-loading/index.html">Blurry loading</a>
-      <a class="card" href="/scroll-animation/index.html">Scroll animation</a>
-      <a class="card" href="/split-landing-page/index.html">Split landing page</a>
-      <a class="card" href="/form-wave-animation/index.html">Form wave animation</a>
-      <a class="card" href="/sound-board/index.html">Sound board</a>
-      <a class="card" href="/statistic-counter/index.html">Statistic counter</a>
-  
+      <a href="/todo-app/index.html">Todo app</a>
+      <a href="/citytab/index.html">City tab</a>
+      <a href="/calculator/index.html">Calculator</a>
+      <a href="/quiz-app/index.html">Quiz app with json</a>
+      <a href="/expanding-cards/index.html">Expanding cards</a>
+      <a href="/progress-steps/index.html">Progress steps</a>
+      <a href="/rotating-navigation/index.html">Rotating navigation</a>
+      <a href="/hidden-search-widget/index.html">Hidden search widget</a>
+      <a href="/blurry-loading/index.html">Blurry loading</a>
+      <a href="/scroll-animation/index.html">Scroll animation</a>
+      <a href="/split-landing-page/index.html">Split landing page</a>
+      <a href="/form-wave-animation/index.html">Form wave animation</a>
+      <a href="/sound-board/index.html">Sound board</a>
+      <a href="/statistic-counter/index.html">Statistic counter</a>
     </div>
   </body>
 </html>
