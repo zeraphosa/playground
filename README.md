@@ -20,3 +20,4 @@ I did this basic projects with youtube tutorials, udemy courses.
 | 12  | [Form Wave Animation](https://github.com/zeraphosa1/html_css_javascript/tree/main/form-wave-animation)   | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/form-wave-animation/index.html)  |
 | 13  | [Sound Board](https://github.com/zeraphosa1/html_css_javascript/tree/main/sound-board)                   | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/sound-board/index.html)          |
 | 14  | [Statistic Counter](https://github.com/zeraphosa1/html_css_javascript/tree/main/statistic-counter)       | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/statistic-counter/index.html)    |
+| 14  | [Radom Photos](https://github.com/zeraphosa1/html_css_javascript/tree/main/random-photos)                | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/random-photos/index.html)        |
