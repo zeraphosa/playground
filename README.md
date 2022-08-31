@@ -5,6 +5,7 @@ Spotify clone project.
 ## Technologies
 
 - React js
+- Redux
 - React Router
 - Tailwind css
 - Headless UI (dropdown menu with keyboard accessibility)
