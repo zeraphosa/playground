@@ -6,6 +6,7 @@ I did this basic projects with youtube tutorials, udemy courses.
 
 |  #  | Project                                                                                                  | Live Demo                                                                                    |
 | :-: | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 01  | [Portfolio Template 0](https://github.com/zeraphosa1/html_css_javascript/tree/main/portfolio-template-1) | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/portfolio-template-1/index.html) |
 | 01  | [Portfolio Template 0](https://github.com/zeraphosa1/html_css_javascript/tree/main/portfolio-template-0) | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/portfolio-template-0/index.html) |
 | 01  | [Express Template](https://github.com/zeraphosa1/html_css_javascript/tree/main/express-template)         | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/express-template/index.html)     |
 | 01  | [Blog Template](https://github.com/zeraphosa1/html_css_javascript/tree/main/blog-template)               | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/blog-template/index.html)        |
