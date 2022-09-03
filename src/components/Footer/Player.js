@@ -4,7 +4,7 @@ import { secondsToTime } from "utils";
 import CustomRange from "components/Footer/CustomRange";
 import { useEffect, useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setControls, setSidebar } from "stores/player";
+import { setControls, setPlaying, setSidebar } from "stores/player";
 
 export default function Player() {
   const dispatch = useDispatch();
@@ -16,6 +16,10 @@ export default function Player() {
   useEffect(() => {
     controls.play();
   }, [current]);
+
+  useEffect(() => {
+    dispatch(setPlaying(state.playing));
+  }, [state.playing]);
 
   useEffect(() => {
     dispatch(setControls(controls));
@@ -42,7 +46,7 @@ export default function Player() {
             <div className="flex items-center mr-3">
               {!sidebar && (
                 <div className="w-14 h-14 mr-3 flex-shrink-0 relative group">
-                  <img src={current.image} alt="" />
+                  <img src={current.image} alt="" className="w-full h-full object-cover" />
                   <button onClick={() => dispatch(setSidebar(true))} className="w-6 h-6 rotate-90 rounded-full absolute top-1 right-1 bg-black opacity-0 group-hover:opacity-60 hover:!opacity-100 hover:scale-[1.06] flex items-center justify-center">
                     <Icon size={16} name="arrowLeft" />
                   </button>
@@ -63,7 +67,7 @@ export default function Player() {
         )}
       </div>
 
-      <div className="max-w-[45.125rem] w-[40%] flex flex-col px-4 items-center">
+      <div className="max-w-[45.125rem] w-[40%] pt-2 flex flex-col px-4 items-center">
         <div className="flex items-center gap-x-2">
           <button className="w-8 h-8 flex items-center justify-center text-white text-opacity-70 hover:text-opacity-100">
             <Icon size={16} name="shuffle" />
@@ -81,7 +85,7 @@ export default function Player() {
             <Icon size={16} name="repeat" />
           </button>
         </div>
-        <div className="w-full flex items-center gap-x-2">
+        <div className="w-full flex items-center gap-x-2 mt-1.5">
           {audio}
           <div className="text-[0.688rem] text-white text-opacity-70">{secondsToTime(state?.time)}</div>
           <CustomRange step={0.1} min={0} max={state?.duration || 1} value={state?.time} onChange={(value) => controls.seek(value)} />
