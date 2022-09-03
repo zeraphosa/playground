@@ -1,12 +1,12 @@
 # Html Css Javascript
 
-I did this basic projects with youtube tutorials, udemy courses.
+Projects that i made with html css and javascript. Some of them made with tutorials from udemy, youtube platforms. And you can find my old portfolio templates here.
 
 ☛ [Link for all projects](https://zeraphosa-htmlcssjavascript.netlify.app)
 
 |  #  | Project                                                                                                  | Live Demo                                                                                    |
 | :-: | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| 01  | [Portfolio Template 0](https://github.com/zeraphosa1/html_css_javascript/tree/main/portfolio-template-1) | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/portfolio-template-1/index.html) |
+| 01  | [Portfolio Template 1](https://github.com/zeraphosa1/html_css_javascript/tree/main/portfolio-template-1) | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/portfolio-template-1/index.html) |
 | 02  | [Portfolio Template 0](https://github.com/zeraphosa1/html_css_javascript/tree/main/portfolio-template-0) | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/portfolio-template-0/index.html) |
 | 03  | [Express Template](https://github.com/zeraphosa1/html_css_javascript/tree/main/express-template)         | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/express-template/index.html)     |
 | 04  | [Blog Template](https://github.com/zeraphosa1/html_css_javascript/tree/main/blog-template)               | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/blog-template/index.html)        |
