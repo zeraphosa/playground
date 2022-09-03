@@ -11,6 +11,7 @@ Projects that i made with html css and javascript. Some of them made with tutori
 | 03  | [Express Template](https://github.com/zeraphosa1/html_css_javascript/tree/main/express-template)         | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/express-template/index.html)     |
 | 03  | [Buta Assignment 1](https://github.com/zeraphosa1/html_css_javascript/tree/main/buta-assignment-1)       | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/buta-assignment-1/index.html)    |
 | 03  | [Buta Assignment 2](https://github.com/zeraphosa1/html_css_javascript/tree/main/buta-assignment-2)       | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/buta-assignment-2/index.html)    |
+| 03  | [Buta Assignment 3](https://github.com/zeraphosa1/html_css_javascript/tree/main/buta-assignment-3)       | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/buta-assignment-3/index.html)    |
 | 04  | [Blog Template](https://github.com/zeraphosa1/html_css_javascript/tree/main/blog-template)               | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/blog-template/index.html)        |
 | 05  | [Todo list](https://github.com/zeraphosa1/html_css_javascript/tree/main/todo-app)                        | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/todo-app/index.html)             |
 | 06  | [City tab](https://github.com/zeraphosa1/html_css_javascript/tree/main/citytab)                          | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/citytab/index.html)              |
