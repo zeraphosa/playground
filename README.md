@@ -6,6 +6,7 @@ I did this basic projects with youtube tutorials, udemy courses.
 
 |  #  | Project                                                                                                  | Live Demo                                                                                    |
 | :-: | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 01  | [Blog Template](https://github.com/zeraphosa1/html_css_javascript/tree/main/blog-template)               | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/blog-template/index.html)        |
 | 01  | [Todo list](https://github.com/zeraphosa1/html_css_javascript/tree/main/todo-app)                        | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/todo-app/index.html)             |
 | 02  | [City tab](https://github.com/zeraphosa1/html_css_javascript/tree/main/citytab)                          | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/citytab/index.html)              |
 | 03  | [Calculator](https://github.com/zeraphosa1/html_css_javascript/tree/main/calculator)                     | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/calculator/index.html)           |
