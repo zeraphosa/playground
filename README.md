@@ -8,7 +8,7 @@ Projects that i made with html css and javascript. Some of them made with tutori
 | :-: | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | 01  | [Portfolio Template 1](https://github.com/zeraphosa1/html_css_javascript/tree/main/portfolio-template-1) | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/portfolio-template-1/index.html) |
 | 02  | [Portfolio Template 0](https://github.com/zeraphosa1/html_css_javascript/tree/main/portfolio-template-0) | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/portfolio-template-0/index.html) |
-| 03  | [SpaceX Template](https://github.com/zeraphosa1/html_css_javascript/tree/main)                           | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app)                                 |
+| 03  | [SpaceX Template](https://github.com/zeraphosa1/html_css_javascript/tree/main/spacex-template)           | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/spacex-template/index.html)      |
 | 04  | [Express Template](https://github.com/zeraphosa1/html_css_javascript/tree/main/express-template)         | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/express-template/index.html)     |
 | 05  | [Buta Assignment 1](https://github.com/zeraphosa1/html_css_javascript/tree/main/buta-assignment-1)       | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/buta-assignment-1/index.html)    |
 | 06  | [Buta Assignment 2](https://github.com/zeraphosa1/html_css_javascript/tree/main/buta-assignment-2)       | [Live Demo](https://zeraphosa-htmlcssjavascript.netlify.app/buta-assignment-2/index.html)    |
