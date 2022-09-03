@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Our Team</title>
+    <style>
+            .home-container {
+              height: auto;
+              width: 100%;
+              overflow: auto;
+            }
+            .it-content {
+              width: 80%;
+              margin-left: 20%;
+            }
+            .it-content table{
+              border-spacing: 1;
+              border-collapse: collapse;
+              background: #39A6A3;
+              border-radius: 6px;
+              overflow: hidden;
+              max-width: 1000px;
+              width: 100%;
+              margin: 50px auto;;
+            }
+            table td,th{
+              padding-left: 8px;
+            }
+            thead tr {
+                height: 60px;
+                background-color: #7952B3;
+                font-size: 16px;
+              }
+            tbody tr{
+                height: 48px;
+                border-bottom: 1px solid #e3f1d5;
+            }
+            tbody tr:last-child{
+                border: 0;
+            }
+            #yas,#cinsiyet,#kurs{
+              text-align: center;
+            }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidenav">
+        <div class="sn-header">
+          <div class="img-container"><a href="../home.html"><img src="../img/buta-logo.png" /></a></div>
+          <div class="hamburger-menu">
+            <a><i class="fas fa-bars"></i></a>
+          </div>
+        </div>
+        <div class="sn-body">
+          <a href="../home.html"><i class="fas fa-home"></i>Anasayfa</a>
+          <a class="dropdown-btn"
+            ><i class="fas fa-briefcase"></i>VTP Bolumleri<i
+              class="arrow fas fa-caret-right"
+            ></i
+          ></a>
+          <div class="dropdown-container">
+            <a href="../vtp-section/vtp-it.html">IT</a>
+            <a href="../vtp-section/vtp-lp.html">LP</a>
+            <a href="../vtp-section/vtp-hr.html">HR</a>
+            <a href="../vtp-section/vtp-mh.html">Muhasibat</a>
+          </div>
+          <a href="../calendar.html"><i class="far fa-calendar-alt"></i>Etkinlik Takvimi</a>
+          <a href="#"><i class="fas fa-exclamation-circle"></i>Bakimda</a>  
+          <a href="#"><i class="fas fa-exclamation-circle"></i>Bakimda</a>
+        </div>
+        <div class="sn-footer">
+          <h5>Made with love by <a href="http://zaursharifov.com" target="_blank"><span>Zaur Sharifov </span></a></h5>
+        </div>
+      </div>
+
+      <div class="home-container">
+        <div class="home-header">
+          <div class="hh-search">
+            <input type="text" placeholder="Ara" />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="hh-author">
+            <div class="author-name"><h4><a href="../index.html">Zaur Sharifov</a></h4></div>
+            <div class="author-img"><img src="../img/author.jpg" /></div>
+          </div>
+        </div>
+        <div class="it-content">
+          <table>
+            <thead>
+              <tr>
+                <th>Ad Soyad</th>
+                <th>Yas</th>
+                <th>Cinsiyet</th>
+                <th>Universitet</th>
+                <th>Ixtisas adi</th>
+                <th>Kurs</th>
+                <th>Derece</th>
+              </tr>
+            </thead>
+            <tbody>
+             
+              <tr>
+                <td>Hafizexanim Valehzade</td>
+                <td id="yas">19</td>
+                <td id="cinsiyet">Qadin</td>
+                <td>Baki Muhendislik Universiteti</td>
+                <td>Komputer Muhendisliyi</td>
+                <td id="kurs">3</td>
+                <td>Bakalavr</td>
+              </tr>
+              <tr>
+                <td>Refiqe Nezerova</td>
+                <td id="yas">22</td>
+                <td id="cinsiyet">Qadin</td>
+                <td>Azerbaycan Texniki Universiteti</td>
+                <td>Informasiya muhafizesi</td>
+                <td id="kurs">1</td>
+                <td>Bakalavr</td>
+              </tr>
+              <tr>
+                <td>Huseynova Zerqelem</td>
+                <td id="yas">20</td>
+                <td id="cinsiyet">Qadin</td>
+                <td>Baki Dovlet Universiteti</td>
+                <td>Komputer Elmleri</td>
+                <td id="kurs">4</td>
+                <td>Bakalavr</td>
+              </tr>
+              <tr>
+                <td>Qurbanli Nihad</td>
+                <td id="yas">19</td>
+                <td id="cinsiyet">Kisi</td>
+                <td>Xezer Universiteti</td>
+                <td>Komputer Muhendisliyi</td>
+                <td id="kurs">3</td>
+                <td>Bakalavr</td>
+              </tr>
+              <tr>
+                <td>Nezer Nezereliyev</td>
+                <td id="yas">20</td>
+                <td id="cinsiyet">Kisi</td>
+                <td>Azerbaycan Texniki Universiteti</td>
+                <td>Komputer Muhendisliyi</td>
+                <td id="kurs">3</td>
+                <td>Bakalavr</td>
+              </tr>
+              <tr>
+                <td>Arzu Teymurova</td>
+                <td id="yas">19</td>
+                <td id="cinsiyet">Qadin</td>
+                <td>Dovlet Idarecilik Akademiyasi</td>
+                <td>Komputer Elmleri</td>
+                <td id="kurs">2</td>
+                <td>Bakalavr</td>
+              </tr>
+              <tr>
+                <td>Nergiz Huseynova</td>
+                <td id="yas">21</td>
+                <td id="cinsiyet">Qadin</td>
+                <td>Baki Muhendislik Universiteti</td>
+                <td>Informasiya Texnologiyalari</td>
+                <td id="kurs">4</td>
+                <td>Bakalavr</td>
+              </tr>
+              <tr>
+                <td>Zaur Sharifov</td>
+                <td id="yas">21</td>
+                <td id="cinsiyet">Kisi</td>
+                <td>Mugla Sitki Kocman Universiteti</td>
+                <td>Bilisim Sistemleri Muhendisliyi</td>
+                <td id="kurs">3</td>
+                <td>Bakalavr</td>
+              </tr>
+              <tr>
+                <td>Nuray Demirciyeva</td>
+                <td id="yas">21</td>
+                <td id="cinsiyet">Qadin</td>
+                <td>Azerbaycan-Fransiz Universiteti</td>
+                <td>Geofizika</td>
+                <td id="kurs">4</td>
+                <td>Bakalavr</td>
+              </tr>
+              <tr>
+                <td>Gulhuseynova Cinare</td>
+                <td id="yas">21</td>
+                <td id="cinsiyet">Qadin</td>
+                <td>Azerbaycan Texniki Universiteti</td>
+                <td>Informasiya Texnologiyalari</td>
+                <td id="kurs">4</td>
+                <td>Bakalavr</td>
+              </tr>
+              <tr>
+                <td>Gunel Cabbarli</td>
+                <td id="yas">21</td>
+                <td id="cinsiyet">Qadin</td>
+                <td>Ege Universiteti</td>
+                <td>Informasiya Texnologiyalari</td>
+                <td id="kurs">1</td>
+                <td>Magistr</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
