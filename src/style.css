@@ -430,6 +430,10 @@ html,
   display: flex;
 }
 
+.scrollable {
+  scroll-behavior: smooth;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -627,10 +631,6 @@ html,
   margin-right: 1.5rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-7 {
   margin-bottom: 1.75rem;
 }
@@ -641,6 +641,10 @@ html,
 
 .mr-4 {
   margin-right: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mr-3 {
@@ -703,6 +707,14 @@ html,
   height: 6.25rem;
 }
 
+.h-\[13\.75rem\] {
+  height: 13.75rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
 .h-7 {
   height: 1.75rem;
 }
@@ -737,6 +749,14 @@ html,
 
 .w-\[6\.25rem\] {
   width: 6.25rem;
+}
+
+.w-\[27\.375rem\] {
+  width: 27.375rem;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .w-full {
@@ -920,6 +940,10 @@ html,
   border-radius: 0.375rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1074,6 +1098,11 @@ html,
   padding-top: 100%;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1084,9 +1113,8 @@ html,
   line-height: 1rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
 }
 
 .text-\[0\.688rem\] {
@@ -1122,11 +1150,6 @@ html,
   letter-spacing: -0.05em;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-link {
   --tw-text-opacity: 1;
   color: rgb(179 179 179 / var(--tw-text-opacity));
@@ -1135,6 +1158,11 @@ html,
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-opacity-70 {
@@ -1166,6 +1194,40 @@ html,
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
 
 .before\:block::before {
