@@ -15,8 +15,8 @@ export default function Search() {
   useEffect(() => {
     if (favoritesRef.current) {
       function scrollHandle() {
-        const isEnd = favoritesRef.current.scrollLeft + favoritesRef.current.offsetWidth === favoritesRef.current.scrollWidth;
-        const isBegin = favoritesRef.current.scrollLeft === 0;
+        const isEnd = favoritesRef.current.scrollLeft + favoritesRef.current.offsetWidth == favoritesRef.current.scrollWidth;
+        const isBegin = favoritesRef.current.scrollLeft == 0;
         set_prev(!isBegin);
         set_next(!isEnd);
       }
@@ -44,12 +44,14 @@ export default function Search() {
               <Icon name="prev" size={24} />
             </button>
           )}
+
           {next && (
             <button className="w-12 h-12 absolute -right-6 hover:scale-[1.06] z-10 top-1/2 -translate-y-1/2 rounded-full bg-white text-black flex items-center justify-center" onClick={slideFavoriteNext}>
               <Icon name="next" size={24} />
             </button>
           )}
-          <ScrollContainer className="flex overflow-x gap-x-6 scrollable" innerRef={favorites}>
+
+          <ScrollContainer className="flex overflow-x gap-x-6 scrollable" innerRef={favoritesRef}>
             {favorites.map((favorite, index) => (
               <WideCategoryItem key={index} favorite={favorite} />
             ))}
