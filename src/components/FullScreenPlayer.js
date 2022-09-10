@@ -21,7 +21,7 @@ export default function FullScreenPlayer({ toggle, state, controls }) {
   }, [state.volume, state.muted]);
 
   return (
-    <div className="h-full relative">
+    <div className="h-full relative" onClick={controls[state?.playing ? "pause" : "play"]}>
       <div className="absolute inset-0 object-cover bg-center bg-cover blur-sm opacity-50" style={{ backgroundImage: `url(${current.image})` }} />
       <div className="absolute bottom-36 left-8 flex items-center gap-x-5">
         <img src={current.image} alt="" className="w-24 h-24 object-cover" />
@@ -30,7 +30,7 @@ export default function FullScreenPlayer({ toggle, state, controls }) {
           <p className="text-base font-semibold opacity-50">{current.description}</p>
         </div>
       </div>
-      <div className="w-full absolute bottom-4 flex flex-col px-8 items-center">
+      <div onClick={(e) => e.stopPropagation()} className="w-full absolute bottom-4 flex flex-col px-8 items-center">
         <div className="w-full flex items-center gap-x-2 mb-1.5">
           <div className="text-[0.688rem] text-white text-opacity-70">{secondsToTime(state?.time)}</div>
           <CustomRange step={0.1} min={0} max={state?.duration || 1} value={state?.time} onChange={(value) => controls.seek(value)} />
