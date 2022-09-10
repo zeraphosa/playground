@@ -23,11 +23,18 @@ export default function FullScreenPlayer({ toggle, state, controls }) {
   return (
     <div className="h-full relative" onClick={controls[state?.playing ? "pause" : "play"]}>
       <div className="absolute inset-0 object-cover bg-center bg-cover blur-sm opacity-50" style={{ backgroundImage: `url(${current.image})` }} />
+      <div className="absolute opacity-70 top-8 left-8 gap-x-4 text-white flex items-center">
+        <Icon size={34} name="logo" />
+        <div className="text-xs">
+          <p style={{ fontSize: 11 }}>PLAYING FROM PLAYLIST</p>
+          <h6 className="font-semibold mt-0.5">{current.title}</h6>
+        </div>
+      </div>
       <div className="absolute bottom-36 left-8 flex items-center gap-x-5">
         <img src={current.image} alt="" className="w-24 h-24 object-cover" />
-        <div>
-          <h3 className="text-3xl font-semibold">{current.title}</h3>
-          <p className="text-base font-semibold opacity-50">{current.description}</p>
+        <div className="self-end">
+          <h3 className="text-3xl font-bold">{current.title}</h3>
+          <p className="text-sm font-medium opacity-50">{current.description}</p>
         </div>
       </div>
       <div onClick={(e) => e.stopPropagation()} className="w-full absolute bottom-4 flex flex-col px-8 items-center">
