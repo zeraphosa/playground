@@ -740,6 +740,10 @@ html,
   margin-top: 0.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -956,6 +960,10 @@ html,
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.grid-cols-10 {
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1007,6 +1015,11 @@ html,
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.gap-x-10 {
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
 }
 
 .self-end {

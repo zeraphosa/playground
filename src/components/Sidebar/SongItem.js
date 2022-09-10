@@ -29,7 +29,7 @@ export default function SongItem({ item }) {
     }
   }
   return (
-    <NavLink to="/" key={item.id} className="bg-footer p-4 rounded hover:bg-active group">
+    <NavLink to="/" key={item.id} className="bg-footer p-4 rounded hover:bg-active group mb-5">
       <div className="pt-[100%] relative mb-4">
         <img src={item.image} alt="img" className={`absolute inset-0 object-cover w-full h-full ${imageStyle(item)}`} />
         <button onClick={updateCurrent} className={`w-10 h-10 rounded-full bg-primary absolute group-hover:flex group-focus:flex bottom-2 right-2 items-center justify-center ${!isCurrentItem ? "hidden" : "flex"}`}>
