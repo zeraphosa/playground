@@ -408,6 +408,11 @@ video {
   height: auto;
 }
 
+* {
+  scrollbar-color: initial;
+  scrollbar-width: initial;
+}
+
 html, 
   body, 
   #root {
@@ -598,8 +603,28 @@ html,
   right: 0px;
 }
 
+.top-8 {
+  top: 2rem;
+}
+
+.left-8 {
+  left: 2rem;
+}
+
+.bottom-36 {
+  bottom: 9rem;
+}
+
 .bottom-4 {
   bottom: 1rem;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.right-6 {
+  right: 1.5rem;
 }
 
 .-left-6 {
@@ -642,34 +667,6 @@ html,
   right: 0.5rem;
 }
 
-.bottom-3 {
-  bottom: 0.75rem;
-}
-
-.right-6 {
-  right: 1.5rem;
-}
-
-.bottom-20 {
-  bottom: 5rem;
-}
-
-.bottom-36 {
-  bottom: 9rem;
-}
-
-.left-8 {
-  left: 2rem;
-}
-
-.top-14 {
-  top: 3.5rem;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -679,9 +676,12 @@ html,
   margin-right: 1.5rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.mt-0\.5 {
+  margin-top: 0.125rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .mb-1\.5 {
@@ -738,18 +738,6 @@ html,
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.mt-0\.5 {
-  margin-top: 0.125rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .flex {
@@ -828,6 +816,10 @@ html,
   width: 6.25rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -838,6 +830,10 @@ html,
 
 .w-16 {
   width: 4rem;
+}
+
+.w-\[5\.813rem\] {
+  width: 5.813rem;
 }
 
 .w-60 {
@@ -876,10 +872,6 @@ html,
   width: 40%;
 }
 
-.w-\[5\.813rem\] {
-  width: 5.813rem;
-}
-
 .w-48 {
   width: 12rem;
 }
@@ -892,20 +884,16 @@ html,
   width: 2.5rem;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
 .min-w-\[11\.25rem\] {
   min-width: 11.25rem;
 }
 
-.max-w-\[45\.125rem\] {
-  max-width: 45.125rem;
-}
-
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[45\.125rem\] {
+  max-width: 45.125rem;
 }
 
 .flex-auto {
@@ -992,14 +980,24 @@ html,
   gap: 1.5rem;
 }
 
-.gap-x-2 {
-  -webkit-column-gap: 0.5rem;
-          column-gap: 0.5rem;
+.gap-x-4 {
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
 }
 
 .gap-x-5 {
   -webkit-column-gap: 1.25rem;
           column-gap: 1.25rem;
+}
+
+.gap-x-2 {
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.gap-x-3 {
+  -webkit-column-gap: 0.75rem;
+          column-gap: 0.75rem;
 }
 
 .gap-x-6 {
@@ -1009,16 +1007,6 @@ html,
 
 .gap-y-8 {
   row-gap: 2rem;
-}
-
-.gap-x-4 {
-  -webkit-column-gap: 1rem;
-          column-gap: 1rem;
-}
-
-.gap-x-3 {
-  -webkit-column-gap: 0.75rem;
-          column-gap: 0.75rem;
 }
 
 .self-end {
@@ -1224,8 +1212,14 @@ html,
   line-height: 2rem;
 }
 
-.text-\[0\.688rem\] {
-  font-size: 0.688rem;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-sm {
@@ -1233,9 +1227,8 @@ html,
   line-height: 1.25rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-\[0\.688rem\] {
+  font-size: 0.688rem;
 }
 
 .text-\[2\.5rem\] {
@@ -1251,21 +1244,16 @@ html,
   line-height: 1.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-semibold {
   font-weight: 600;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -1340,6 +1328,81 @@ html,
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.scrollbar {
+  --scrollbar-track: initial;
+  --scrollbar-thumb: initial;
+  --scrollbar-corner: initial;
+  --scrollbar-track-hover: var(--scrollbar-track);
+  --scrollbar-thumb-hover: var(--scrollbar-thumb);
+  --scrollbar-corner-hover: var(--scrollbar-corner);
+  --scrollbar-track-active: var(--scrollbar-track-hover);
+  --scrollbar-thumb-active: var(--scrollbar-thumb-hover);
+  --scrollbar-corner-active: var(--scrollbar-corner-hover);
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  overflow: overlay;
+}
+
+.scrollbar.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.scrollbar.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+}
+
+.scrollbar::-webkit-scrollbar-corner {
+  background-color: var(--scrollbar-corner);
+}
+
+.scrollbar::-webkit-scrollbar-track:hover {
+  background-color: var(--scrollbar-track-hover);
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+.scrollbar::-webkit-scrollbar-corner:hover {
+  background-color: var(--scrollbar-corner-hover);
+}
+
+.scrollbar::-webkit-scrollbar-track:active {
+  background-color: var(--scrollbar-track-active);
+}
+
+.scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-thumb-active);
+}
+
+.scrollbar::-webkit-scrollbar-corner:active {
+  background-color: var(--scrollbar-corner-active);
+}
+
+.scrollbar {
+  scrollbar-width: auto;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+.scrollbar-track-transparent {
+  --scrollbar-track: transparent !important;
+}
+
+.scrollbar-thumb-\[\#4D4D4D\] {
+  --scrollbar-thumb: #4D4D4D !important;
+}
+
 .before\:block::before {
   content: var(--tw-content);
   display: block;
@@ -1348,6 +1411,26 @@ html,
 .before\:pt-\[100\%\]::before {
   content: var(--tw-content);
   padding-top: 100%;
+}
+
+.group:hover .group-hover\:flex {
+  display: flex;
+}
+
+.group:hover .group-hover\:bg-opacity-100 {
+  --tw-bg-opacity: 1;
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.group:hover .group-hover\:opacity-60 {
+  opacity: 0.6;
+}
+
+.group:focus .group-focus\:flex {
+  display: flex;
 }
 
 .hover\:scale-\[1\.06\]:hover {
@@ -1378,24 +1461,4 @@ html,
 
 .hover\:\!opacity-100:hover {
   opacity: 1 !important;
-}
-
-.group:hover .group-hover\:flex {
-  display: flex;
-}
-
-.group:hover .group-hover\:bg-opacity-100 {
-  --tw-bg-opacity: 1;
-}
-
-.group:hover .group-hover\:opacity-100 {
-  opacity: 1;
-}
-
-.group:hover .group-hover\:opacity-60 {
-  opacity: 0.6;
-}
-
-.group:focus .group-focus\:flex {
-  display: flex;
 }

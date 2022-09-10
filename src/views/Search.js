@@ -18,7 +18,7 @@ export default function Search() {
   function slideFavoritePrev() {
     favoritesRef.current.scrollLeft -= favoritesRef.current.offsetWidth - 300;
   }
-  
+
   useEffect(() => {
     if (favoritesRef.current) {
       function scrollHandle() {
