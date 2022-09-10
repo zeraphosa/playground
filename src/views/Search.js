@@ -12,6 +12,13 @@ export default function Search() {
   const [prev, set_prev] = useState(false);
   const [next, set_next] = useState(false);
 
+  function slideFavoriteNext() {
+    favoritesRef.current.scrollLeft += favoritesRef.current.offsetWidth - 300;
+  }
+  function slideFavoritePrev() {
+    favoritesRef.current.scrollLeft -= favoritesRef.current.offsetWidth - 300;
+  }
+  
   useEffect(() => {
     if (favoritesRef.current) {
       function scrollHandle() {
@@ -28,12 +35,6 @@ export default function Search() {
     }
   }, [favoritesRef]);
 
-  function slideFavoriteNext() {
-    favoritesRef.current.scrollLeft += favoritesRef.current.offsetWidth - 300;
-  }
-  function slideFavoritePrev() {
-    favoritesRef.current.scrollLeft -= favoritesRef.current.offsetWidth - 300;
-  }
   return (
     <>
       <section className="mb-8">
