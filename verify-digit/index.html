@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digit Verify</title>
+    <script src="./script.js" defer></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #0c0c0c;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+      }
+      .input {
+        border-radius: 10px;
+        font-size: 70px;
+        font-weight: 300;
+        height: 100px;
+        width: 100px;
+        border: 1px solid #fff;
+        margin: 0 5px;
+        text-align: center;
+        caret-color: transparent;
+      }
+
+      .input::-webkit-outer-spin-button,
+      .input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      .input:valid {
+        border-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" class="input" placeholder="0" required />
+      <input type="number" class="input" placeholder="0" required />
+      <input type="number" class="input" placeholder="0" required />
+      <input type="number" class="input" placeholder="0" required />
+    </div>
+  </body>
+</html>
