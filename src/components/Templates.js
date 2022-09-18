@@ -1,7 +1,10 @@
-export default function Templates(){
-    return(
-        <div className="w-[250px] h-[300px] border-solid border-2 border-text">
-            Template
-        </div>
-    )
+import templates from "data/templates";
+export default function Templates() {
+  return (
+    <div className="flex flex-row justify-between">
+      {templates.map((item) => (
+        <img key={item.id} src={item.src} alt={item.title} className="w-[350px] h-[450px] border-solid border-2 border-transparent object-cover" />
+      ))}
+    </div>
+  );
 }
