@@ -8,9 +8,7 @@ module.exports = {
       colors: {
         back: "#2C3333",
         text: "#ffffff",
-        secondary: "#395B64",
-        secondary2: "#A5C9CA",
-        secondary3: "#E7F6F2",
+        bl: "#2694EC",
       },
     },
   },
