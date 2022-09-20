@@ -30,7 +30,7 @@ export default function Add() {
       <input onChange={handleChange} type="text" placeholder="desc" name="desc" />
       <input onChange={handleChange} type="number" placeholder="price" name="price" />
       <input onChange={handleChange} type="text" placeholder="cover" name="cover" />
-      <button onClick={handleClick}>Add</button>
+      <button onClick={handleClick} className="formButton">Add</button>
     </div>
   );
 }
