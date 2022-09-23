@@ -2,5 +2,7 @@
 
 ### Titles
 2. Node modules
-    - path module
-    - 
+    - path
+    - fs
+    - os
+    - zlib
