@@ -6,3 +6,4 @@
     - fs
     - os
     - zlib
+    - url
