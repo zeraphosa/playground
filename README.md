@@ -7,3 +7,4 @@
     - os
     - zlib
     - url
+    - timers
