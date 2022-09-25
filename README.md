@@ -1,22 +1,29 @@
 # admin.zaursharifov.com
 
-- daily notes
-- research notes, account details
-- projects
-- film, series
+## Technologies
+- React js
+- Redux
+- Tailwind css
+- Node js
+- Express js
 
-for sidebar use divs with different colors and on update change random colors
+## Color palette
+Background - 
+Texts -
+Icons -
+Lines - 
+Tags -
 
+## Features
+- Todo List (todo, in progress, done)
+- Research notes (notes from searches)
+- Accounts (emails, crypted passwords, application name)
+- Projects list (projects that working on, about, plans)
+- Watch list (list for films, series (watch, watched, not finished))
 
-series 
-- watched it: green, half of it: gray, not watched it: red
-- minisearch on top
-- 2 table - films, series + 2 input to add
-
----
-accounts
-notes
-projects
-researches
-series
---------
+### Things for pages
+- Sidebar has cubes (on update change random colors)
+- Accounts has crypt and encrypt for passwords with nodejs
+- Watch list and Todo list have different tags
+- Projects MUST THINK 
+- Watch lists has minisearch for films and series
