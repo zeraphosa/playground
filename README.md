@@ -13,7 +13,6 @@ series
 - minisearch on top
 - 2 table - films, series + 2 input to add
 
-
 ---
 accounts
 notes
