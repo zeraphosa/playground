@@ -12,3 +12,12 @@ series
 - watched it: green, half of it: gray, not watched it: red
 - minisearch on top
 - 2 table - films, series + 2 input to add
+
+
+---
+accounts
+notes
+projects
+researches
+series
+--------
