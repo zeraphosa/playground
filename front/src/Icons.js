@@ -148,7 +148,7 @@ const Icon = ({ name, size = 24 }) => {
   };
 
   const Component = icons[name];
-  return <Component size={size} />;
+  return <Component size={size} name={name} />;
 };
 
 export { Icon };
