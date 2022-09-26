@@ -12,7 +12,7 @@ export default function Sidebar() {
       <div className="flex flex-col gap-y-6">
         {pages.map((page, idx) => (
           <div key={idx} className="flex gap-x-4 items-center">
-            <Icon size={25} name={page.name} />
+            <Icon size={28} name={page.name} />
             <h1 className="cursor-pointer duration-500">{page.title}</h1>
           </div>
         ))}
