@@ -11,3 +11,4 @@
    - timers => setTimeout, setInterval
    - crypto => encrypting data
    - dns
+   - events
