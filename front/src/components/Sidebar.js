@@ -1,5 +1,6 @@
 import { Icon } from "Icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   const [open, set_open] = useState(true);
@@ -11,10 +12,10 @@ export default function Sidebar() {
       </div>
       <div className="flex flex-col gap-y-6">
         {pages.map((page, idx) => (
-          <div key={idx} className="flex gap-x-4 items-center">
+          <Link to={page.route} key={idx} className="flex gap-x-4 items-center">
             <Icon size={28} name={page.name} />
             <h1 className="cursor-pointer duration-500">{page.title}</h1>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
@@ -22,9 +23,9 @@ export default function Sidebar() {
 }
 
 const pages = [
-  { title: "Tasks", name: "tasks" },
-  { title: "Notes", name: "notes" },
-  { title: "Accounts", name: "accounts" },
-  { title: "Projects", name: "projects" },
-  { title: "WatchList", name: "watchlist" },
+  { title: "Tasks", name: "tasks", route: "/" },
+  { title: "Notes", name: "notes", route: "/notes" },
+  { title: "Accounts", name: "accounts", route: "/accounts" },
+  { title: "Projects", name: "projects", route: "/projects" },
+  { title: "WatchList", name: "watchlist", route: "/watchlist" },
 ];
