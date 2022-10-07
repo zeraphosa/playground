@@ -35,7 +35,7 @@ function countUp() {
       const increment = target / 100;
       if (c < target) {
         counter.innerText = `${Math.ceil(c + increment)}`;
-        setTimeout(updateCounter, 125);
+        setTimeout(updateCounter, 100);
       } else {
         counter.innerText = target;
       }

@@ -303,6 +303,13 @@ footer ul li a:hover {
 .bg-falcon-9 {
   background-image: url("../img/falcon-9.webp");
 }
+.bg-falcon-heavy {
+  background-image: url("../img/falcon-heavy.webp");
+}
+.bg-dragon {
+  background-image: url("../img/dragon.webp");
+}
+
 .section-animate {
   animation: fadeIn 2s ease-in-out;
 }
@@ -313,18 +320,19 @@ footer ul li a:hover {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   text-align: center;
+  width: 80%;
 }
-.section-inner-center h3{
+.section-inner-center h3 {
   font-size: 100px;
   margin-bottom: 15px;
   animation: fadeInUp 0.5s ease-in-out;
 }
-.section-inner-center p{
+.section-inner-center p {
   font-size: 20px;
   animation: fadeInUp 0.5s ease-in-out 0.2s;
   animation-fill-mode: both;
 }
-.stats{
+.stats {
   max-width: 960px;
   margin: 0 auto;
   display: flex;
@@ -333,10 +341,10 @@ footer ul li a:hover {
   text-align: center;
   text-transform: uppercase;
 }
-.stats div{
+.stats div {
   font-size: 160px;
 }
-.stats div h4{
+.stats div h4 {
   font-size: 24px;
   font-weight: 300;
 }
@@ -388,7 +396,7 @@ footer ul li a:hover {
     display: block;
   }
 
-  .section-inner-center h3{
+  .section-inner-center h3 {
     font-size: 75px;
   }
 }
@@ -417,16 +425,14 @@ footer ul li a:hover {
   footer ul li {
     margin-right: 15px;
   }
-  .section-inner-center{
-    width: 80%;
-  }
-  .section-inner-center h3{
+
+  .section-inner-center h3 {
     font-size: 50px;
   }
-  .stats{
+  .stats {
     flex-direction: column;
   }
-  .stats div{
+  .stats div {
     margin-bottom: 20px;
   }
 }
