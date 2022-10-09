@@ -9,6 +9,7 @@
    - zlib => zip files
    - url
    - timers => setTimeout, setInterval
+   - child process module => spawn, exec
    - crypto => encrypting data
    - dns
    - events
