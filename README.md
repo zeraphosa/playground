@@ -12,4 +12,4 @@
    - child process module => spawn, exec
    - crypto => encrypting data
    - dns
-   - events
+   - events => eventEmitter
