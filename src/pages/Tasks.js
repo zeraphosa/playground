@@ -11,8 +11,8 @@ export default function Tasks() {
       <ul className="tasks_list">
         {data.map((data, idx) => (
           <li key={idx}>
-            <input type="checkbox" id="n" />
-            <label for="n">{data}</label>
+            <input type="checkbox" id={idx} />
+            <label for={idx}>{data}</label>
           </li>
         ))}
       </ul>

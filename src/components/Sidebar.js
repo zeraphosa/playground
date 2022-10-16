@@ -1,12 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/style.css";
 
 export default function Sidebar() {
+  const [active, set_active] = useState(null);
   return (
     <div className="sidebar">
       <div className="sidebar_inner">
         {pages.map((page, idx) => (
-          <Link key={idx} to={page.route} className="sidebar_text">
+          <Link onClick={() => set_active(idx)} 
+          key={idx} to={page.route} 
+          className={`sidebar_text ${active === idx && "active"}`}
+          >
             <p>{page.name}</p>
           </Link>
         ))}
