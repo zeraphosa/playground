@@ -1,0 +1,35 @@
+.tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tasks_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tasks_list {
+  width: 400px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: large;
+}
+.tasks_list li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tasks_list li input {
+  height: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

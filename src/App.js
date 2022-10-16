@@ -5,7 +5,7 @@ import Tasks from "./pages/Tasks";
 import Accounts from "./pages/Accounts";
 import Projects from "./pages/Projects";
 import Watchlist from "./pages/Watchlist";
-import "./styles/sidebar.css";
+import "./styles/style.css";
 
 export default function App() {
   return (

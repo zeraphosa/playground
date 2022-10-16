@@ -34,7 +34,30 @@ body {
 
 .main {
   width: 100%;
+  height: auto;
   margin-left: 50px;
   padding: 20px;
-  border: 1px solid red;
+}
+
+.input {
+  width: 350px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  font-size: large;
+  outline: none;
+}
+.button {
+  width: 355px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #1f2937;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: #fff;
+  color: #0c0c0c;
 }
