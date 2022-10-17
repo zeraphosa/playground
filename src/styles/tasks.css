@@ -37,3 +37,8 @@
 .tasks_list li label {
   cursor: pointer;
 }
+
+.task_label {
+  color: #a3a3a3;
+  text-decoration: line-through;
+}
