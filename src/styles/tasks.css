@@ -39,7 +39,8 @@
   cursor: pointer;
 }
 
-.task_label {
+.tasks_list li input:checked + label {
   color: #a3a3a3;
   text-decoration: line-through;
 }
+
