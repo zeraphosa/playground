@@ -20,7 +20,8 @@
 .wl_list td,
 .wl_list th {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .wl_list tr:nth-child(even) {
   background-color: #1c1c1c;
@@ -37,28 +38,33 @@
   text-transform: uppercase;
   font-weight: bolder;
 }
+.wl_items p {
+  border-radius: 5px;
+  text-align: center;
+  padding: 3px;
+}
 
-.wl_type{
-    width: 50px;
+.wl_type {
+  width: 50px;
 }
-.wl_status{
-    width: 70px;
+.wl_status {
+  width: 70px;
 }
-.blue{
-    background-color: #133B5C;
+.blue {
+  background-color: #133b5c;
 }
-.purple{
-    background-color: #570A57;
+.purple {
+  background-color: #570a57;
 }
-.gray{
-    background-color: li;
+.gray {
+  background-color: #647e68;
 }
-.green{
-    background-color: #1E5128;
+.green {
+  background-color: #1e5128;
 }
-.red{
-    background-color: #950101;
+.red {
+  background-color: #950101;
 }
-.yellow{
-    background-color: yellowgreen;
+.yellow {
+  background-color: #d49b54;
 }

@@ -1,6 +1,14 @@
 import "../styles/whatchlist.css";
 
 export default function Watchlist() {
+  function Delete() {
+    let alert = window.confirm("Are you sure you wish to delete this item?");
+    if (alert === true) {
+      console.log("Item deleted successfully");
+    } else {
+      console.log("Canceled");
+    }
+  }
   return (
     <div className="watchlist">
       <div className="wl_form">
@@ -16,10 +24,14 @@ export default function Watchlist() {
           <th>Status</th>
         </tr>
         {data.map((item, idx) => (
-          <tr className="wl_items" key={idx}>
+          <tr className="wl_items" key={idx} onDoubleClick={Delete}>
             <td>{item.name}</td>
-            <td className={`wl_type ${(item.type === "serie" && "blue") || (item.type === "film" && "purple") || (item.type === "doc" && "gray")}`}>{item.type}</td>
-            <td className={`wl_status ${(item.status === "half" && "yellow") || (item.status === "watch" && "red") || (item.status === "watched" && "green")}`}>{item.status}</td>
+            <td className="wl_type">
+              <p className={`${(item.type === "serie" && "blue") || (item.type === "film" && "purple") || (item.type === "doc" && "gray")}`}>{item.type}</p>
+            </td>
+            <td className="wl_status">
+              <p className={`${(item.status === "half" && "yellow") || (item.status === "watch" && "red") || (item.status === "watched" && "green")}`}>{item.status}</p>
+            </td>
           </tr>
         ))}
       </table>
@@ -34,7 +46,7 @@ const data = [
     status: "half",
   },
   {
-    name: "TWD",
+    name: "The walking dead",
     type: "serie",
     status: "watched",
   },
