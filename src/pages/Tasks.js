@@ -4,17 +4,18 @@ import "../styles/tasks.css";
 export default function Tasks() {
   const [task, set_task] = useState("");
   const [data, set_data] = useState(["bugun bunlari ele", "sabah bunlari ele"]);
-  function Delete() {
+
+  function Delete(idx) {
     let alert = window.confirm("Are you sure you wish to delete this item?");
     if (alert === true) {
+      set_data(data.filter((item,id) => idx !== id));
       console.log("Item deleted successfully");
     } else {
       console.log("Canceled");
     }
   }
   function Add() {
-    const new_data = [task, ...data];
-    set_data(new_data);
+    set_data([task, ...data]);
     set_task("");
   }
 
@@ -27,10 +28,10 @@ export default function Tasks() {
         </button>
       </div>
       <ul className="tasks_list">
-        {data.map((data, idx) => (
-          <li key={idx} onDoubleClick={Delete}>
+        {data.map((item, idx) => (
+          <li key={idx} onDoubleClick={() => Delete(idx)}>
             <input type="checkbox" id={idx} />
-            <label htmlFor={idx}>{data}</label>
+            <label htmlFor={idx}>{item}</label>
           </li>
         ))}
       </ul>
