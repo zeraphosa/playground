@@ -1,4 +1,3 @@
-import "../styles/style.css";
 import "../styles/tasks.css";
 
 export default function Tasks() {
