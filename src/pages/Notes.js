@@ -21,8 +21,8 @@ export default function Notes() {
   return (
     <div className="notes">
       <div className="notes_form">
-        <input type="text" placeholder="title" value={note.title} onChange={(e) => set_note({ title: e.target.value, text: null })} className="input" />
-        <input type="text" placeholder="new note" value={note.text} onChange={(e) => set_note({ title: note.title, text: e.target.value })} className="input" />
+        <input type="text" placeholder="title" value={note.title || ""} onChange={(e) => set_note({ title: e.target.value, text: null })} className="input" />
+        <input type="text" placeholder="new note" value={note.text || ""} onChange={(e) => set_note({ title: note.title, text: e.target.value })} className="input" />
         <button className="button" onClick={Add}>
           +
         </button>

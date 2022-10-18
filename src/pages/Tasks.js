@@ -8,7 +8,7 @@ export default function Tasks() {
   function Delete(idx) {
     let alert = window.confirm("Are you sure you wish to delete this item?");
     if (alert === true) {
-      set_data(data.filter((item,id) => idx !== id));
+      set_data(data.filter((item, id) => idx !== id));
       console.log("Item deleted successfully");
     } else {
       console.log("Canceled");
@@ -22,7 +22,7 @@ export default function Tasks() {
   return (
     <div className="tasks">
       <div className="tasks_form">
-        <input type="text" placeholder="new task" className="input" value={task} onChange={(e) => set_task(e.target.value)} />
+        <input type="text" placeholder="new task" className="input" value={task || ""} onChange={(e) => set_task(e.target.value)} />
         <button className="button" onClick={Add}>
           +
         </button>
