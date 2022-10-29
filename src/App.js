@@ -5,6 +5,7 @@ import Tasks from "./pages/Tasks";
 import Accounts from "./pages/Accounts";
 import Projects from "./pages/Projects";
 import Watchlist from "./pages/Watchlist";
+import Login from "./pages/Login";
 import "./styles/style.css";
 
 export default function App() {
@@ -14,7 +15,8 @@ export default function App() {
         <Sidebar />
         <div className="main">
           <Routes>
-            <Route path="/" element={<Tasks />} />
+            <Route path="/" element={<Login />} />
+            <Route path="/tasks" element={<Tasks />} />
             <Route path="/notes" element={<Notes />} />
             <Route path="/accounts" element={<Accounts />} />
             <Route path="/projects" element={<Projects />} />

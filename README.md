@@ -27,3 +27,12 @@ Tags -
 - Watch list and Todo list have different tags
 - Projects MUST THINK 
 - Watch lists has minisearch for films and series
+
+### Google Cloud
+1. login to google
+2. go to https://console.cloud.google.com
+3. create a project
+4. go to api credential
+5. accept consent screen
+6. create auth client id
+7. create .env file and save it as REACT_APP_GOOGLE_CLIENT_ID
