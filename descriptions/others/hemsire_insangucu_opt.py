@@ -86,3 +86,20 @@ def dogal_secilim(nsp_tablo, ceza_tablo):
         ara_populasyon[p] = nsp_tablo[idx]
 
     return ara_populasyon
+
+def caprazla(ara_populasyon):
+    arapop = ara_populasyon.copy()
+    cp = 0.95       #çaprazlama olasılığı
+    sirala = np.random.permutation(populasyon) 
+    for i in range(0, int(populasyon/2)):
+        id1 = sirala[2*i]
+        id2 = sirala[2*i+1]
+        ata1 = arapop[id1]
+        ata2 = arapop[id2]
+        if np.random.rand() < cp:
+            cpz_noktasi = np.random.randint(1,gun_sayisi-1)
+            ata1[:,cpz_noktasi:-1], ata2[:,cpz_noktasi:-1] = ata2[:,cpz_noktasi:-1].copy(), ata1[:,cpz_noktasi:-1].copy()
+            arapop[id1] = ata1
+            arapop[id2] = ata2
+                    
+    return arapop
