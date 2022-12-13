@@ -8,6 +8,4 @@
 - fit_pso.py (pso problem solving in class)
 - tavlama.py (Simulated Annealing)
 - ts.py (tabu search)
-
-<hr/>
-- hems.py
+- hemsire insangucu optimizasyonu (Nurse Scheduling Problem)
