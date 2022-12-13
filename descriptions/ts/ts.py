@@ -50,3 +50,11 @@ def get_komsuCozum(cozum,i,j):
     # i = j
     # j = takas
     return cozum
+
+baslangicCozumu = get_baslangicCozumu(isler)
+objval = Objfun(isler,baslangicCozumu, show=True)
+# sonuc = [7,1,5,10,2,3,4,6,8,9]
+
+# 5 ile 10 yerini degistiriyor
+komsuCozum = get_komsuCozum(baslangicCozumu, 5,10)
+objval = Objfun(isler,komsuCozum,show=True)
