@@ -37,3 +37,16 @@ def get_baslangicCozumu(isler, show=False):
     if show == True:
         print("\nBaslangic cozumu: {}".format(baslangicCozumu))
     return baslangicCozumu
+
+def get_komsuCozum(cozum,i,j):
+    cozum = cozum.copy()
+    i_index = cozum.index(i)
+    j_index = cozum.index(j)
+    # anlatimi asagidaki gibidir (yer degistirme)
+    cozum[i_index], cozum[j_index] = cozum[j_index], cozum[i_index]
+    # i = 5
+    # j = 4
+    # takas = i
+    # i = j
+    # j = takas
+    return cozum
