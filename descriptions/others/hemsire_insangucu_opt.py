@@ -105,7 +105,7 @@ def caprazla(ara_populasyon):
     return arapop
 
 def mutasyon(ara_populasyon2):
-    mts_orani = 0.05;
+    mts_orani = 0.05
     arapop = ara_populasyon2.copy()
     
     rnd = np.random.rand(populasyon,hemsire_sayisi, gun_sayisi+1)
@@ -122,4 +122,16 @@ def mutasyon(ara_populasyon2):
                     else:
                         arapop[p,i,j] = 16
     return arapop
-    
+
+# hemsire vardiya atamalarını rasgele yap
+nsp_tablo = np.zeros((populasyon,hemsire_sayisi, gun_sayisi+1))  # bir kolon haftalik_calisma, populasyon sayısı kadar
+for p in range(0,populasyon):
+    for i in range(0,gun_sayisi):
+        rnd = np.random.randint(5,hemsire_sayisi)
+        atamalar = random.sample(range(0,hemsire_sayisi),rnd)     #%% 3 gece vardiyası+ 2 gündüz vardiyası = en az 5 kişi seç
+        for j in range(0,rnd):
+            rnd2 = np.random.randint(0,2)
+            if rnd2 == 1:
+                nsp_tablo[p,atamalar[j],i] = 16
+            else:
+                nsp_tablo[p,atamalar[j], i] = 8
