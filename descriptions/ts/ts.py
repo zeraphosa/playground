@@ -66,3 +66,22 @@ def get_tabuStructure(isler):
     for takas in combinations(isler.keys(),2):
         liste[takas] = {'tabu_zamani':0,'hareket_objValue':0}
     return liste
+
+def TSearch(isler,baslangicCozumu):
+    tabu_structure = get_tabuStructure(isler)
+    # print(tabu_structure)
+    mevcut_cozum = baslangicCozumu
+    mevcut_objvalue = Objfun(isler,baslangicCozumu)
+
+    best_cozum = mevcut_cozum
+    best_objValue = mevcut_objvalue
+
+    iter = 0
+    Terminate = 0
+    while Terminate < 1:
+        print('\niter: {}, mevcut_objvalue: {}, best_objvalue: {}'.format(iter,mevcut_objvalue(),best_objValue))
+        # komsu cozumler arastiriliyor
+        for komsu in tabu_structure:
+            aday_cozum = get_komsuCozum(mevcut_cozum, komsu[0], komsu[1])
+            aday_objValue = Objfun(isler, aday_cozum)
+            tabu_structure[komsu]['hareket_objValue'] = aday_objValue
