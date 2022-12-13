@@ -22,3 +22,11 @@ def gece_vardiyası(NSPtablo):
             
     return tablo
 
+# ceza durumunu hesapla
+def haftalik_calisma(nsp_tablo):
+    for p in range(0,nsp_tablo.shape[0]):
+        for i in range(0,nsp_tablo.shape[1]):
+            nsp_tablo[p,i,-1] = 0
+            haftalik_calisma = nsp_tablo[p,i].sum()
+            nsp_tablo[p,i,-1] = haftalik_calisma
+    return nsp_tablo
