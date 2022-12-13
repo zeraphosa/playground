@@ -103,3 +103,23 @@ def caprazla(ara_populasyon):
             arapop[id2] = ata2
                     
     return arapop
+
+def mutasyon(ara_populasyon2):
+    mts_orani = 0.05;
+    arapop = ara_populasyon2.copy()
+    
+    rnd = np.random.rand(populasyon,hemsire_sayisi, gun_sayisi+1)
+    
+    for p in range(0,populasyon):
+        for i in range(0, hemsire_sayisi):
+            for j in range(0, gun_sayisi):
+                if rnd[p,i,j] < mts_orani:
+                    rs = np.random.randint(0,3)
+                    if rs == 0:
+                        arapop[p,i,j] = 0
+                    elif rs == 1:
+                        arapop[p,i,j] = 8
+                    else:
+                        arapop[p,i,j] = 16
+    return arapop
+    
