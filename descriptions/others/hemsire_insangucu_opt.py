@@ -135,3 +135,30 @@ for p in range(0,populasyon):
                 nsp_tablo[p,atamalar[j],i] = 16
             else:
                 nsp_tablo[p,atamalar[j], i] = 8
+
+# hatalı durumları 1. sınırlılığa göre tamir et 
+eniyideger = 10000
+
+iter = 0
+iter_max = 10000
+iter_durum = np.zeros(iter_max)
+while iter < iter_max:
+    nsp_tablo = gece_vardiyası(nsp_tablo)
+    nsp_tablo = haftalik_calisma(nsp_tablo)
+    ceza_tablo = ceza_hesapla(nsp_tablo) 
+    
+    #En iyi degeri ve durumu kaydet
+    if(ceza_tablo.min() < eniyideger):
+        eniyideger = ceza_tablo.min()
+        eniyicozum = nsp_tablo[np.argmin(ceza_tablo)]
+    
+    iter_durum[iter] = eniyideger
+    
+    
+    ara_populasyon = dogal_secilim(nsp_tablo, ceza_tablo)
+    ara_populasyon = caprazla(ara_populasyon)
+    nsp_tablo = mutasyon(ara_populasyon)
+    iter = iter + 1
+
+plt.plot(iter_durum)
+plt.show()
