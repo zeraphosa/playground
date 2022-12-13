@@ -146,3 +146,18 @@ def TSearch(isler, baslangicCozumu):
 
                 print('\n\niterasyon: {} icin en iyi cozum: {}, objValue:{}'.format(
                     iter, best_cozum, best_objValue))
+        return tabu_structure, best_cozum, best_objValue
+    # print(eniyi_degisim)
+    # print(degisimDegeri)
+    # print(tabu_time)
+    Terminate += 1
+    print(tabu_structure)
+
+
+tabuListe, EnIyiCozum, EnIyiDeger = TSearch(isler, baslangicCozumu)
+# print(tabuListe, EnIyiCozum, EnIyiDeger)
+
+
+# HAFTAYA TAVLAMA BENZETIMI
+# 25% teorik vize + uygulama (amac fonksiyonu hesabi olabilir)
+# 11.hafta uygulama
