@@ -21,23 +21,24 @@ def Objfun(isler, cozum):
         c_i += dict[is_]["islem_suresi"]
         d_i = dict[is_]["bitirme_zamani"]
         T_i = max(0, c_i - d_i)
-        W_i = dict[is_]["agirlik"]
+        W_i = dict[is_]['agirlik']
         objfun_degeri += W_i*T_i
-        #print("c_i:", c_i)
-        #print("d_i:", d_i)
-        #print("T_i:", T_i)
+        # print("c_i:", c_i)
+        # print("d_i", d_i)
+        # print("T_i", T_i)
     print('\n {} icin amac fonksiyonu degeri: {}\n'.format(cozum, objfun_degeri))
     return objfun_degeri
 
 
 cozum1 = [1, 2, 5, 6, 8, 9, 10, 3, 4, 7]
 Objfun(isler, cozum1)
-# sonuc 27.090000003 olmali
+# sonuc 27.0900000003 olmali
 
 
 def get_baslangicCozumu(isler, show=False):
     is_sayisi = len(isler)  # is sayisi
-    baslangicCozumu = list(np.random.permutation(is_sayisi)+1)
+    baslangicCozumu = list(np.random.permutation(
+        is_sayisi)+1)  # rasgele is sirasi
     if show == True:
         print("\nBaslangic cozumu: {}".format(baslangicCozumu))
     return baslangicCozumu
@@ -65,9 +66,8 @@ objval = Objfun(isler, baslangicCozumu, show=True)
 komsuCozum = get_komsuCozum(baslangicCozumu, 5, 10)
 objval = Objfun(isler, komsuCozum, show=True)
 
-# Tabu Search algoritmasi (baslangicCozum`e ve komsuCozum`e ihtiyaci olur)
 
-
+# Tabu Search algoritmasi (baslangicCozume ve komsuCozume ihtiyaci olur)
 def get_tabuStructure(isler):
     liste = {}
     # ikili kombinasyonlarini al keys tablodaki 1,2,3,4 sira kismi
@@ -88,13 +88,14 @@ def TSearch(isler, baslangicCozumu):
     iter = 0
     Terminate = 0
     while Terminate < 1:
-        print('\niter: {}, mevcut_objvalue: {}, best_objvalue: {}'.format(
+        print('\niter: {} mevcut_objvalue: {}, best_objvalue: {}'.format(
             iter, mevcut_objvalue(), best_objValue))
         # komsu cozumler arastiriliyor
         for komsu in tabu_structure:
             aday_cozum = get_komsuCozum(mevcut_cozum, komsu[0], komsu[1])
             aday_objValue = Objfun(isler, aday_cozum)
             tabu_structure[komsu]['hareket_objValue'] = aday_objValue
+
         while True:
             # komsu aday cozumler icerisinden en kucuk olani bul (minimizasyon problemleri icin)
             eniyi_degisim = min(
@@ -146,6 +147,7 @@ def TSearch(isler, baslangicCozumu):
 
                 print('\n\niterasyon: {} icin en iyi cozum: {}, objValue:{}'.format(
                     iter, best_cozum, best_objValue))
+
         return tabu_structure, best_cozum, best_objValue
     # print(eniyi_degisim)
     # print(degisimDegeri)
@@ -158,6 +160,6 @@ tabuListe, EnIyiCozum, EnIyiDeger = TSearch(isler, baslangicCozumu)
 # print(tabuListe, EnIyiCozum, EnIyiDeger)
 
 
-# HAFTAYA TAVLAMA BENZETIMI
+##### HAFTAYA TAVLAMA BENZETIMI
 # 25% teorik vize + uygulama (amac fonksiyonu hesabi olabilir)
 # 11.hafta uygulama
