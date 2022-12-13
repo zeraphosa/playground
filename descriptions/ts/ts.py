@@ -58,3 +58,11 @@ objval = Objfun(isler,baslangicCozumu, show=True)
 # 5 ile 10 yerini degistiriyor
 komsuCozum = get_komsuCozum(baslangicCozumu, 5,10)
 objval = Objfun(isler,komsuCozum,show=True)
+
+# Tabu Search algoritmasi (baslangicCozum`e ve komsuCozum`e ihtiyaci olur)
+def get_tabuStructure(isler):
+    liste = {}
+    # ikili kombinasyonlarini al keys tablodaki 1,2,3,4 sira kismi
+    for takas in combinations(isler.keys(),2):
+        liste[takas] = {'tabu_zamani':0,'hareket_objValue':0}
+    return liste
