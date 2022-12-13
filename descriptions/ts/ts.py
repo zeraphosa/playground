@@ -26,3 +26,14 @@ def Objfun(isler,cozum):
         #print("T_i:", T_i)
     print('\n {} icin amac fonksiyonu degeri: {}\n'.format(cozum,objfun_degeri))
     return objfun_degeri
+
+cozum1 = [1,2,5,6,8,9,10,3,4,7]
+Objfun(isler, cozum1)
+# sonuc 27.090000003 olmali
+
+def get_baslangicCozumu(isler, show=False):
+    is_sayisi = len(isler) # is sayisi
+    baslangicCozumu = list(np.random.permutation(is_sayisi)+1)
+    if show == True:
+        print("\nBaslangic cozumu: {}".format(baslangicCozumu))
+    return baslangicCozumu
