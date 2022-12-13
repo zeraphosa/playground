@@ -2,12 +2,12 @@
 # swarm, hiz, gbest, pos, iter
 import numpy as np
 
-population = 100
+population = 30
 dimension = 2
-position_min = -100.0
-position_max = 100.0
-generation = 400
-fitness_criterion = 10e-4
+position_min = -10.0
+position_max = 10.0
+generation = 1000
+fitness_criterion = 500
 r1 = np.random.uniform(0,1)
 r2 = np.random.uniform(0,1)
 w = np.random.uniform(0.5,1)
