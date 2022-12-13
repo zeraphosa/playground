@@ -1,8 +1,13 @@
 # opt
 - basics.py
-- ayca_pso.py
-- fit_pso.py
-- tavlama.py
+    - get_radius
+    - permutation
+    - tsp (Traveling Salesperson Problems)
+    - dp ()
+- ayca_pso.py (pso matlab to python with tutorial `ayca altay`)
+- fit_pso.py (pso problem solving in class)
+- tavlama.py (Simulated Annealing)
+- ts.py (tabu search)
+
 <hr/>
-- ts.py
 - hems.py
