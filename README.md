@@ -1,4 +1,4 @@
-# opt
+# optimization_algorithms
 - basics.py
     - get_radius
     - permutation
