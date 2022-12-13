@@ -69,3 +69,20 @@ def ceza_hesapla(nsp_tablo):
         ceza_tablo[p] = ceza
         
     return ceza_tablo
+
+def dogal_secilim(nsp_tablo, ceza_tablo):
+    o_tablo = 1/ceza_tablo    #minimizasyon problemi için kullanacağız
+    obj_toplam = o_tablo.sum()
+    
+    for i in range(0,o_tablo.shape[0]):
+        o_tablo[i] = o_tablo[i]/obj_toplam
+    cum = np.cumsum(o_tablo)
+    
+    rs = np.random.rand(populasyon)    
+    ara_populasyon = nsp_tablo.copy()
+    
+    for p in range(0, populasyon):
+        idx = len(cum[np.where(cum <= rs[p])])    # rasgele değerin birikimlik olasilikta nereye geldiği aranıyor
+        ara_populasyon[p] = nsp_tablo[idx]
+
+    return ara_populasyon
