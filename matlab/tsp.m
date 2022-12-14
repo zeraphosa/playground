@@ -6,7 +6,7 @@ fprintf('Tavlama Benzetimi ile TSP Çözümü....\n');
 sehirSayisi = input('Þehir Sayýsýný Giriniz: ');
 
 % sehirlerin birine olan uzaklýklarý simule edilecek
-uzaklik = sehirEkle(sehirSayisi);
+uzaklik = sehirEkle(sehirSayisi); 
 %load('uzaklik.mat');
 %sehirSayisi = length(uzaklik);
 
