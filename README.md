@@ -10,6 +10,3 @@
 - tavlama.py (Simulated Annealing)
 - ts.py (tabu search)
 - hemsire insangucu optimizasyonu (Nurse Scheduling Problem)
-
-#### Matlab
-- tsp.m Tsp solving with simulated annealing
