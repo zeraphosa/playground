@@ -33,4 +33,5 @@ Projects that i made with html css and javascript. Some of them made with tutori
 | 25  | [Random Password](https://github.com/zeracodes/html_css_javascript/tree/main/random-password)           | [Live Demo](https://zeracodes.github.io/html_css_javascript/random-password/index.html)      |
 | 26  | [Video Popup](https://github.com/zeracodes/html_css_javascript/tree/main/video-popup)                   | [Live Demo](https://zeracodes.github.io/html_css_javascript/video-popup/index.html)          |
 | 27  | [Verify Digit](https://github.com/zeracodes/html_css_javascript/tree/main/verify-digit)                 | [Live Demo](https://zeracodes.github.io/html_css_javascript/verify-digit/index.html)         |
-| 27  | [Send Email](https://github.com/zeracodes/html_css_javascript/tree/main/public/send-email)              | [Live Demo](https://zeracodes.github.io/html_css_javascript/send-email/public/index.html)    |
+| 28  | [Send Email](https://github.com/zeracodes/html_css_javascript/tree/main/public/send-email)              | [Live Demo](https://zeracodes.github.io/html_css_javascript/send-email/public/index.html)    |
+| 29  | [Scroll Snaps](https://github.com/zeracodes/html_css_javascript/tree/main/public/scroll-snaps)              | [Live Demo](https://zeracodes.github.io/html_css_javascript/scroll-snaps/public/index.html)    |
