@@ -1,71 +1,89 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
 }
-body{
-    width: 100%;
-    height: auto;
+body {
+  width: 100%;
+  height: auto;
 }
-.container{
-    border: 1px solid red;
-    background-color: #000000;
-    width: 100%;
-    height: auto;
-    padding: 0px 40px;
-    display: flex;
-    flex-direction: column;
+.container {
+  border: 1px solid red;
+  background-color: #000000;
+  width: 100%;
+  height: auto;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
 }
-.top{
-    border: 1px solid green;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
-    font-weight: 600;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: center;
-    text-align: center;
+.top {
+  border: 1px solid green;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: 600;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  text-align: center;
 }
-.center{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+.center {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
-.filter{
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding-top: 20px;
+.filter {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
 }
-.content{
-    width: 100%;
+.content {
+  /* width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap; */
+
+  display: grid;
+  /* padding: 1rem; */
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2px;
 }
-.card{
-    border: 0.1px solid rgb(54, 54, 54);
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+.card {
+  border: 0.1px solid rgb(54, 54, 54);
+  width: 275px;
+  height: 275px;
+  overflow: hidden;
 }
-.card img{
-    height: 200px;
-    width: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
+.card img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
-.bottom{
-    border: 1px solid slateblue;
-    width: 100%;
-    height: 300px;
+.bottom {
+  border: 1px solid slateblue;
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 700px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .content {
+    align-self: center;
+    grid-template-columns: 1fr;
+  }
 }
