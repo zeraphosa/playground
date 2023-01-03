@@ -55,6 +55,14 @@ body{
     border: 1px solid red;
     width: 200px;
     height: 200px;
+    overflow: hidden;
+}
+.card img{
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 .bottom{
     border: 1px solid slateblue;

@@ -9,35 +9,37 @@
   </head>
   <body>
     <div class="container">
-        <div class="top">
-            Web Projects using Vanilla HTML, CSS & Javascript
+      <div class="top">Web Projects using Vanilla HTML, CSS & Javascript</div>
+      <div class="center">
+        <div class="filter">
+          <a>All</a>
+          <a>Templates</a>
+          <a>Components</a>
+          <a>Others</a>
         </div>
-        <div class="center">
-          <div class="filter">
-            <a>All</a>
-            <a>Templates</a>
-            <a>Components</a>
-            <a>Others</a>
-          </div>
-          <div class="content">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-          </div>
+        <div class="content">
         </div>
-        <div class="bottom"></div>
+      </div>
+      <div class="bottom"></div>
     </div>
   </body>
 </html>
 
 <script>
+  var content = document.querySelector(".content");
   const data = [
     {
       n: "Calculator",
-      i: "img",
-    }
-  ]
+      i: "./assets/projects/calculator.png",
+    },
+    {
+      n: "adsf",
+      i: "./assets/projects/calculator.png",
+    },
+  ];
+  content.innerHTML = data.map((i) => `
+    <div class="card">
+      <img src=${i.i} alt="${i.i}"/>
+    </div>
+  `).join("");
 </script>
