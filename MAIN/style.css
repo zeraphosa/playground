@@ -29,12 +29,14 @@ body {
   object-fit: cover;
   background-position: center;
   text-align: center;
+  background-color: #393E46;
 }
 .center {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
+  background-color: #222831;
 }
 .filter {
   height: 50px;
@@ -79,11 +81,11 @@ body {
   align-items: center;
   gap: 20px;
 }
-.r_socials{
+.socials{
   display: flex;
   gap: 10px;
 }
-.r_btn{
+.btn{
   border: 1px solid rgb(97, 97, 97);
   width: 280px;
   height: 80px;
