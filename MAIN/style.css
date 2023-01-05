@@ -82,21 +82,21 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: #67CCDE;
-  position: relative;
-}
-.layer_btm{
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  background-color: #202525;
 }
 .socials {
   display: flex;
   gap: 10px;
 }
+.icon:hover .icon::after{
+  content: ".";
+  left: 0;
+  top: 0;
+  color: red;
+  /* background-color: #141818; */
+  cursor: pointer;
+}
+
 .btn {
   border: 1px solid rgb(97, 97, 97);
   width: 280px;
