@@ -47,6 +47,15 @@ body {
   justify-content: center;
   gap: 30px;
 }
+.filter a{
+  color: #fff;
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.filter a:hover{
+  opacity: 1;
+}
 .content {
   display: grid;
   /* padding: 1rem; */
@@ -106,6 +115,7 @@ body {
   align-items: center;
   transition: 0.3s;
   cursor: pointer;
+  text-decoration: none;
 }
 .btn:hover{
   border-color: #2C3333;
