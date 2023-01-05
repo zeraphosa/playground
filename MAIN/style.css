@@ -25,7 +25,7 @@ body {
   background-color: #181C1F;
 }
 .center {
-  padding: 0px 40px;
+  padding: 20px 0px;
   width: 100%;
   height: auto;
   display: flex;
@@ -33,8 +33,7 @@ body {
   background-color: #000000;
 }
 .filter {
-  height: 50px;
-  padding-top: 20px;
+  height: 40px;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -43,10 +42,11 @@ body {
   display: grid;
   /* padding: 1rem; */
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 2px;
+  gap: 20px;
+  align-self: center;
 }
 .card {
-  border: 0.1px solid rgb(54, 54, 54);
+  border: 0.1px solid #fff;
   width: 275px;
   height: 275px;
   overflow: hidden;
@@ -89,12 +89,17 @@ body {
   align-items: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1280px) {
   .content {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 2fr);
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 912px) {
+  .content {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media (max-width: 540px) {
   .content {
     align-self: center;
     grid-template-columns: 1fr;
