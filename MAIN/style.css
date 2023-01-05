@@ -86,25 +86,29 @@ body {
 }
 .socials {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
-.icon:hover .icon::after{
-  content: ".";
-  left: 0;
-  top: 0;
-  color: red;
-  /* background-color: #141818; */
+.icon{
   cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
 }
-
+.icon:hover{
+  opacity: 1;
+}
 .btn {
-  border: 1px solid rgb(97, 97, 97);
+  border: 2px solid #707070;
   width: 280px;
   height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn:hover{
+  border-color: #2C3333;
 }
 
 @media (max-width: 1280px) {
