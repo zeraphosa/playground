@@ -143,20 +143,24 @@ const data = [
 ];
 
 const content = document.querySelector(".content");
+var btnContainer = document.getElementById("btn_container");
+var btns = btnContainer.getElementsByClassName("btn");
+
 content.innerHTML = data
   .map(
     (i) => `
   <div class="column ${i.c}">
     <div class="card">
-      <img src=${i.i} alt="${i.i}"/>
+      <a class="card_link">
+        <img class="card_img" src=${i.i} alt="${i.i}"/>
+        <h3 class="card_text">${i.n}</h3>
+      </a>
     </div>
   </div>
 `,
   )
   .join("");
 
-var btnContainer = document.getElementById("btn_container");
-var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
