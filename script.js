@@ -21,14 +21,9 @@ const data = [
     c: "templates",
   },
   {
-    n: "7",
+    n: "Buta Assignment 3",
     i: "./assets/projects/buta-assignment-3.png",
     c: "templates",
-  },
-  {
-    n: "Send Email w Nodejs",
-    i: "./assets/projects/send-email.png",
-    c: "others",
   },
   {
     n: "Blog Template",
