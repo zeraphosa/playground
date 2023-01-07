@@ -3,6 +3,7 @@ const data = [
     n: "Potfolio Example 1",
     i: "./assets/projects/portfolio-example-1.png",
     c: "templates",
+    l: "./projects/portfolio-template-1/index.html"
   },
   {
     n: "Portfolio Example 2",
@@ -146,7 +147,7 @@ content.innerHTML = data
     (i) => `
   <div class="column ${i.c}">
     <div class="card">
-      <a class="card_link">
+      <a class="card_link" target="_blank" href="${i.l}">
         <img class="card_img" src=${i.i} alt="${i.i}"/>
         <h3 class="card_text">${i.n}</h3>
       </a>
