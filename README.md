@@ -4,40 +4,32 @@ Projects that i made with html css and javascript. Some of them made with tutori
 
 ☛ [Link for all projects](https://zeracodes.github.io/html-css-javascript/)
 
-|  #  | 
-    Project      | 
-            Live |
-| :-: | 
-    --     |
-        -- |
-| 01 | 
-    [Portfolio Template 1](https://github.com/zeracodes/html-css-javascript/tree/main/projects/portfolio-template-1)        |
-        [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/portfolio-template-1/index.html)               |
-| 02 |
-    [Portfolio Template 2](https://github.com/zeracodes/html-css-javascript/tree/main/projects/portfolio-template-0)        | 
-        [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/portfolio-template-0/index.html)               |
-| 03 | [SpaceX Template]()      | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/spacex-template/index.html)      |
-| 04 | [Express Template]()     | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/express-template/index.html)     |
-| 05 | [Buta Assignment 1]()    | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/buta-assignment-1/index.html)    |
-| 06 | [Buta Assignment 2]()    | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/buta-assignment-2/index.html)    |
-| 07 | [Buta Assignment 3]()    | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/buta-assignment-3/index.html)    |
-| 08 | [Blog Template]()        | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/blog-template/index.html)        |
-| 09 | [Todo list]()            | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/todo-app.html)                   |
-| 10 | [City tab]()             | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/citytab.html)                    |
-| 11 | [Calculator]()           | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/calculator.html)                 |
-| 12 | [Quiz app with json]()   | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/quiz-app/index.html)             |
-| 13 | [Expanding Cards]()      | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/expanding-cards.html)            |
-| 14 | [Progress Steps]()       | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/progress-steps.html)             |
-| 15 | [Rotating Navigation]()  | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/rotating-navigation.html)        |
-| 16 | [Hidden Search Widget]() | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/hidden-search-widget.html)       |
-| 17 | [Blurry Loading]()       | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/blurry-loading/index.html)       |
-| 18 | [Scroll Snaps]()         | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/scroll-snaps.html)               |
-| 19 | [Split Landing Page]()   | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/split-landing-page/index.html)   |
-| 20 | [Form Wave Animation]()  | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/form-wave-animation.html)        |
-| 21 | [Sound Board]()          | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/sound-board/index.html)          |
-| 22 | [Statistic Counter]()    | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/statistic-counter.html)          |
-| 23 | [Random Photos]()        | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/random-photos.html)              |
-| 24 | [Countdown]()            | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/countdown.html)                  |
-| 25 | [Random Password]()      | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/random-password.html)            |
-| 26 | [Video Popup]()          | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/video-popup/index.html)          |
-| 27 | [Verify Digit]()         | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/verify-digit.html)               |
+|  #  | Project | Live |
+| :-: | -- | -- |
+| 01 | [Portfolio Template 1](https://github.com/zeracodes/html-css-javascript/tree/main/projects/portfolio-template-1)      | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/portfolio-template-1/index.html)                                                                                    |
+| 02 | [Portfolio Template 2](https://github.com/zeracodes/html-css-javascript/tree/main/projects/portfolio-template-0)      | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/portfolio-template-0/index.html)                                                                                    |
+| 03 | [SpaceX Template](https://github.com/zeracodes/html-css-javascript/tree/main/projects/spacex-template)                | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/spacex-template/index.html)                                                                                         |
+| 04 | [Express Template](https://github.com/zeracodes/html-css-javascript/tree/main/projects/express-template)              | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/express-template/index.html)                                                                                        |
+| 05 | [Buta Assignment 1](https://github.com/zeracodes/html-css-javascript/tree/main/projects/buta-assignment-1)            | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/buta-assignment-1/index.html)                                                                                       |
+| 06 | [Buta Assignment 2](https://github.com/zeracodes/html-css-javascript/tree/main/projects/buta-assignment-2)            | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/buta-assignment-2/index.html)                                                                                       |
+| 07 | [Buta Assignment 3](https://github.com/zeracodes/html-css-javascript/tree/main/projects/buta-assignment-3)            | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/buta-assignment-3/index.html)                                                                                       |
+| 08 | [Blog Template](https://github.com/zeracodes/html-css-javascript/tree/main/projects/blog-template)                    | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/blog-template/index.html)                                                                                           |
+| 09 | [Todo list](https://github.com/zeracodes/html-css-javascript/blob/main/projects/todo-app.html)                        | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/todo-app.html)                                                                                                      |
+| 10 | [City tab](https://github.com/zeracodes/html-css-javascript/blob/main/projects/citytab.html)                          | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/citytab.html)                                                                                                       |
+| 11 | [Calculator](https://github.com/zeracodes/html-css-javascript/blob/main/projects/calculator.html)                     | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/calculator.html)                                                                                                    |
+| 12 | [Quiz app with json](https://github.com/zeracodes/html-css-javascript/tree/main/projects/quiz-app)                    | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/quiz-app/index.html)                                                                                                |
+| 13 | [Expanding Cards](https://github.com/zeracodes/html-css-javascript/blob/main/projects/expanding-cards.html)           | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/expanding-cards.html)                                                                                               |
+| 14 | [Progress Steps](https://github.com/zeracodes/html-css-javascript/blob/main/projects/progress-steps.html)             | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/progress-steps.html)                                                                                                |
+| 15 | [Rotating Navigation](https://github.com/zeracodes/html-css-javascript/blob/main/projects/rotating-navigation.html)   | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/rotating-navigation.html)                                                                                           |
+| 16 | [Hidden Search Widget](https://github.com/zeracodes/html-css-javascript/blob/main/projects/hidden-search-widget.html) | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/hidden-search-widget.html)                                                                                          |
+| 17 | [Blurry Loading](https://github.com/zeracodes/html-css-javascript/tree/main/projects/blurry-loading)                  | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/blurry-loading/index.html)                                                                                          |
+| 18 | [Scroll Snaps](https://github.com/zeracodes/html-css-javascript/blob/main/projects/scroll-snaps.html)                 | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/scroll-snaps.html)                                                                                                  |
+| 19 | [Split Landing Page](https://github.com/zeracodes/html-css-javascript/tree/main/projects/split-landing-page)          | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/split-landing-page/index.html)                                                                                      |
+| 20 | [Form Wave Animation](https://github.com/zeracodes/html-css-javascript/blob/main/projects/form-wave-animation.html)   | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/form-wave-animation.html)                                                                                           |
+| 21 | [Sound Board](https://github.com/zeracodes/html-css-javascript/tree/main/projects/sound-board)                        | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/sound-board/index.html)                                                                                             |
+| 22 | [Statistic Counter](https://github.com/zeracodes/html-css-javascript/blob/main/projects/statistic-counter.html)       | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/statistic-counter.html)                                                                                             |
+| 23 | [Random Photos](https://github.com/zeracodes/html-css-javascript/blob/main/projects/random-photos.html)               | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/random-photos.html)                                                                                                 |
+| 24 | [Countdown](https://github.com/zeracodes/html-css-javascript/blob/main/projects/countdown.html)                       | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/countdown.html)                                                                                                     |
+| 25 | [Random Password](https://github.com/zeracodes/html-css-javascript/blob/main/projects/random-password.html)           | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/random-password.html)                                                                                               |
+| 26 | [Video Popup](https://github.com/zeracodes/html-css-javascript/tree/main/projects/video-popup)                        | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/video-popup/index.html)                                                                                             |
+| 27 | [Verify Digit](https://github.com/zeracodes/html-css-javascript/blob/main/projects/verify-digit.html)                 | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/verify-digit.html)                                                                                                  |
