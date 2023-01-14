@@ -162,6 +162,12 @@ const data = [
     c: "others",
     l: "./projects/video-popup/index.html"
   },
+  {
+    n: "Scroll Animation",
+    i: "./assets/projects/scroll-animation.png",
+    c: "others",
+    l: "./projects/scroll-animation.html"
+  },
 ];
 
 const content = document.querySelector(".content");
