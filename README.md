@@ -1,5 +1,4 @@
-# Html Css Javascript
-<img src="https://github.com/zeracodes/html-css-javascript/blob/main/assets/bg.jpg" width="100%"><br/><br/>
+<img src="https://github.com/zeracodes/html-css-javascript/blob/main/assets/bg.jpg" width="100%"><br/>
 
 Projects that i made with html css and javascript. Some of them made with tutorials from udemy, youtube platforms. And you can find my old portfolio templates here.
 
