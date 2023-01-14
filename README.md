@@ -7,11 +7,11 @@ Projects that i made with html css and javascript. Some of them made with tutori
 |  #  | Project | Live |
 | :-: | -- | -- |
 | 01 | 
-[Portfolio Template 1](https://github.com/zeracodes/html-css-javascript/tree/main/projects/portfolio-template-1)        |
-[Live Demo](https://zeracodes.github.io/html-css-javascript/projects/portfolio-template-1/index.html)                   |
+    [Portfolio Template 1](https://github.com/zeracodes/html-css-javascript/tree/main/projects/portfolio-template-1)        |
+        [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/portfolio-template-1/index.html)               |
 | 02 |
-[Portfolio Template 2](https://github.com/zeracodes/html-css-javascript/tree/main/projects/portfolio-template-0)        | 
-[Live Demo](https://zeracodes.github.io/html-css-javascript/projects/portfolio-template-0/index.html)                   |
+    [Portfolio Template 2](https://github.com/zeracodes/html-css-javascript/tree/main/projects/portfolio-template-0)        | 
+        [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/portfolio-template-0/index.html)               |
 | 03 | [SpaceX Template]()      | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/spacex-template/index.html)      |
 | 04 | [Express Template]()     | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/express-template/index.html)     |
 | 05 | [Buta Assignment 1]()    | [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/buta-assignment-1/index.html)    |
