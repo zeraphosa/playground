@@ -4,8 +4,12 @@ Projects that i made with html css and javascript. Some of them made with tutori
 
 ☛ [Link for all projects](https://zeracodes.github.io/html-css-javascript/)
 
-|  #  | Project | Live |
-| :-: | -- | -- |
+|  #  | 
+    Project      | 
+            Live |
+| :-: | 
+    --     |
+        -- |
 | 01 | 
     [Portfolio Template 1](https://github.com/zeracodes/html-css-javascript/tree/main/projects/portfolio-template-1)        |
         [Live Demo](https://zeracodes.github.io/html-css-javascript/projects/portfolio-template-1/index.html)               |
