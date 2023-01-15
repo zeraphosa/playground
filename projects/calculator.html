@@ -7,78 +7,86 @@
     <title>Basic Calculator</title>
     <style>
       body {
-        background-color: #eff2f5;
-        color: #000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 80vh;
-        box-sizing: border-box;
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+        background-color: #679267;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       #main {
-        width: 245px;
-        height: 300px;
-        margin: 0 auto;
+        width: 260px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
       }
 
       #result {
+        width: 100%;
+        height: 70px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         background-color: #424c52;
-        width: 100%;
-        height: 50px;
-        overflow: hidden;
       }
-
       #resultInner {
         display: block;
-        margin: 10px;
-        background-color: #f0f0f0;
-        width: 225px;
-        height: 30px;
-        color: #000;
+        margin: 15px auto;
+        background-color: #424c52;
+        width: 95%;
+        height: 40px;
+        color: #ffffff;
         font-size: 30px;
+        text-align: end;
       }
-
-      #numbers {
-        background-color: #f0f0f0;
-        width: 185px;
-        height: 235px;
-        float: left;
-      }
-
-      #numbers .num,
-      #operators .operator,
-      #resultOperators .resultOperator {
-        width: 50px;
+      #operators {
+        width: 100%;
         height: 50px;
-        border: 1px solid #000000;
-        background-color: #ffffff;
-        border-radius: 4px;
-        margin: 4px;
+        display: flex;
       }
-
-      #operators {
-        width: 60px;
-        height: 235px;
-        float: right;
+      #numbers {
+        width: 100%;
+        height: 200px;
+        display: flex;
       }
-
-      #resultOperators,
-      #operators {
-        background-color: #5c5c5c;
+      .n-left {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
       }
-
+      .n-right {
+        width: 25%;
+      }
       #equation {
-        width: 175px !important;
+        height: 200px;
+        background-color: #ff7077;
+        border-bottom-right-radius: 10px;
+        border: none;
       }
-
-      .clear {
-        clear: both;
+      .num,
+      .operator,
+      .resultOperator {
+        height: 50px;
+        width: 65px;
+      }
+      .operator {
+        background-color: #d2dce4;
+        border: 1px solid #899dae;
+        font-weight: bolder;
+      }
+      .num,
+      .resultOperator {
+        background-color: #f0f0f0;
+        border: 1px solid #899dae;
+      }
+      .num[value="0"] {
+        border-bottom-left-radius: 10px;
+      }
+      .n-right .resultOperator {
+        font-weight: bolder;
       }
     </style>
   </head>
@@ -92,26 +100,26 @@
         <button value="+" class="operator">+</button>
         <button value="-" class="operator">-</button>
         <button value="*" class="operator">x</button>
-        <button value="/" class="operator">/</button>
+        <button value="/" class="operator">÷</button>
       </div>
       <div id="numbers">
-        <button value="7" class="num">7</button>
-        <button value="8" class="num">8</button>
-        <button value="9" class="num">9</button>
-        <button value="4" class="num">4</button>
-        <button value="5" class="num">5</button>
-        <button value="6" class="num">6</button>
-        <button value="1" class="num">1</button>
-        <button value="2" class="num">2</button>
-        <button value="3" class="num">3</button>
-        <button value="0" class="num">0</button>
-        <button id="dot" class="num">.</button>
-      </div>
-
-      <div class="clear"></div>
-      <div id="resultOperators">
-        <button class="resultOperator" id="equation">=</button>
-        <button class="resultOperator" id="delete">C</button>
+        <div class="n-left">
+          <button value="7" class="num">7</button>
+          <button value="8" class="num">8</button>
+          <button value="9" class="num">9</button>
+          <button value="4" class="num">4</button>
+          <button value="5" class="num">5</button>
+          <button value="6" class="num">6</button>
+          <button value="1" class="num">1</button>
+          <button value="2" class="num">2</button>
+          <button value="3" class="num">3</button>
+          <button value="0" class="num">0</button>
+          <button id="dot" class="num">.</button>
+          <button class="resultOperator" id="delete">C</button>
+        </div>
+        <div class="n-right">
+          <button class="resultOperator" id="equation">=</button>
+        </div>
       </div>
     </div>
   </body>
