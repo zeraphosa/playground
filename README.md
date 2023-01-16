@@ -1,12 +1,27 @@
 # mybot.az
-- website
-- work plan
-- sale strategy
-- pricing
-- tech support and prices
-- advertisement
-- mapping for interract with marketplaces
-- how much money to start
+
+### Color Schema
+
+### To Do
+- [] logo
+- [] navbar
+- [] carousel
+- [] about, why us?
+- [] example phone photos
+- [] packages | priecing
+- [] brands we worked
+- [] contact
+- [] copyright
+
+### Work Plan
+- [] website
+- [] work plan
+- [] sale strategy
+- [] pricing
+- [] tech support and prices
+- [] advertisement
+- [] mapping for interract with marketplaces
+- [] how much money to start
 
 ## Getting Started with Create React App
 
