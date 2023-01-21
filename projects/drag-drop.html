@@ -1,21 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drag & Drop to Upload File</title>
-</head>
-<body>
-    
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        background-color: #5256ad;
+      }
+      .container {
+        border: 2px dashed #fff;
+        height: 500px;
+        width: 700px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .container.active {
+        border: 2px solid #fff;
+      }
+      .icon {
+        font-size: 100px;
+        color: #fff;
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #fff;
+      }
+      span {
+        font-size: 25px;
+        font-weight: 500;
+        color: #fff;
+        margin: 10px 0 15px 0;
+      }
+      button {
+        padding: 10px 25px;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        color: #5256ad;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-        <h1>Drag & Drop to Upload File</h1>
-        <span>OR</span>
-        <button>Browse File</button>
-        <input type="file" hidden/>
-
+      <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+      <h1>Drag & Drop to Upload File</h1>
+      <span>OR</span>
+      <button>Browse File</button>
+      <input type="file" hidden />
     </div>
-
-</body>
+  </body>
 </html>
