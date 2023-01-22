@@ -168,6 +168,12 @@ const data = [
     c: "others",
     l: "./projects/scroll-animation.html"
   },
+  {
+    n: "Drag & Drop file Upload",
+    i: "./assets/projects/drag-drop.png",
+    c: "others",
+    l: "./projects/drag-drop.html"
+  },
 ];
 
 const content = document.querySelector(".content");
