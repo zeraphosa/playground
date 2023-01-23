@@ -1,5 +1,10 @@
 import React from "react";
+import CodeBar from "./components/CodeBar";
 
 export default function App() {
-  return <div className="App">sa</div>;
+  return (
+    <div>
+      <CodeBar /> 
+    </div>
+  );
 }
