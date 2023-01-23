@@ -8,6 +8,18 @@ Code editor for html, css &amp; javascript built with react js
 - react-media-recorder
 - react-resizable
 
+* jsconfig.json 
+Artık base url'iniz src/ klasörü olduğu için şu şekilde kullanmak yerine;
+
+import Header from '../../components/Header'
+import HeroSection from '../../components/HeroSection';
+import { numberFormat } from '../../../helpers/Mixins';
+
+böyle kullanabilirsiniz.
+
+import Header from 'components/Header'
+import HeroSection from 'components/HeroSection';
+import { numberFormat } from 'helpers/Mixins';
 
 # Getting Started with Create React App
 
