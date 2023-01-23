@@ -7,6 +7,10 @@ import JsEditor from "./Editor/JsEditor";
 
 export default function CodeBar() {
   const [activeTab, setActiveTab] = useState("html");
+  const [html, setHtml] = useState("");
+  const [css, setCss] = useState("");
+  const [js, setJs] = useState("");
+
   return (
     <aside className={styles.codebar}>
       <nav className={styles.tab}>
@@ -21,9 +25,9 @@ export default function CodeBar() {
         </button>
       </nav>
 
-        {activeTab === 'html' && <HtmlEditor/>}
-        {activeTab === 'css' && <CssEditor/>}
-        {activeTab === 'js' && <JsEditor/>}
+      {activeTab === "html" && <HtmlEditor value={html} onChange={setHtml} />}
+      {activeTab === "css" && <CssEditor value={css} onChange={setCss} />}
+      {activeTab === "js" && <JsEditor value={js} onChange={setJs} />}
     </aside>
   );
 }

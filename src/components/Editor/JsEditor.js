@@ -6,7 +6,7 @@ import "ace-builds/src-noconflict/snippets/javascript";
 import "ace-builds/src-min-noconflict/ext-searchbox";
 import "ace-builds/src-min-noconflict/ext-language_tools";
 
-export default function JsEditor({ value }) {
+export default function JsEditor({ value, onChange }) {
   return (
     <AceEditor
       placeholder="Write your JS codes here!"
@@ -15,6 +15,7 @@ export default function JsEditor({ value }) {
       name="editor_js"
       fontSize={14}
       value={value}
+      onChange={val => onChange(val)}
       showPrintMargin={true}
       showGutter={true}
       highlightActiveLine={true}

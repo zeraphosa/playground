@@ -6,7 +6,7 @@ import "ace-builds/src-noconflict/snippets/html";
 import "ace-builds/src-min-noconflict/ext-searchbox";
 import "ace-builds/src-min-noconflict/ext-language_tools";
 
-export default function HtmlEditor({ value }) {
+export default function HtmlEditor({ value, onChange }) {
   return (
     <AceEditor
       placeholder="Write your HTML codes here!"
@@ -15,6 +15,7 @@ export default function HtmlEditor({ value }) {
       name="editor_html"
       fontSize={14}
       value={value}
+      onChange={val => onChange(val)}
       showPrintMargin={true}
       showGutter={true}
       highlightActiveLine={true}
