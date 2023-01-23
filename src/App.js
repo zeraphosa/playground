@@ -1,10 +1,17 @@
 import React from "react";
+import "./index.css";
+import Header from "./components/Header";
+import Preview from "./components/Preview";
 import CodeBar from "./components/CodeBar";
 
 export default function App() {
   return (
-    <div>
-      <CodeBar /> 
-    </div>
+    <>
+      <CodeBar />
+      <main>
+        <Preview />
+        <Header />
+      </main>
+    </>
   );
 }
