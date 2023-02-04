@@ -45,3 +45,5 @@ Chatbot'u test edin ve geliştirin: Geliştirilmesi gereken alanları belirlemek
 Chatbot'u başlatın ve izleyin: Chatbot'u Instagram'da başlatın ve kullanıcının ihtiyaçlarını karşılamaya devam ettiğinden emin olmak için zaman içindeki performansını izleyin.
 
 Bu, bir Instagram sohbet botu oluşturma sürecine genel bir bakıştır. Belirli adımlar ve ayrıntılar, seçtiğiniz sohbet robotu oluşturma platformuna ve sohbet robotunuzun hedeflerine göre değişebilir.
+--------
+https://chatfuel.com/templates
