@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "react_examples",
   "version": "0.1.0",
   "private": true,
@@ -27,6 +28,19 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
 >>>>>>> exercise-redux
+=======
+  "name": "json_func_example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.0",
+    "styled-component": "^2.8.0",
+>>>>>>> edit-json
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -53,6 +67,7 @@
       "last 1 safari version"
     ]
 <<<<<<< HEAD
+<<<<<<< HEAD
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
@@ -60,5 +75,7 @@
     "tailwindcss": "^3.1.6"
 =======
 >>>>>>> exercise-redux
+=======
+>>>>>>> edit-json
   }
 }

@@ -5,10 +5,14 @@
 /.pnp
 .pnp.js
 <<<<<<< HEAD
+<<<<<<< HEAD
 .idea
 =======
 
 >>>>>>> exercise-redux
+=======
+
+>>>>>>> edit-json
 # testing
 /coverage
 
