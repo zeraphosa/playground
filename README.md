@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Building react project with Prototurk youtube channel
 
 
@@ -14,11 +15,14 @@ Building react project with Prototurk youtube channel
 7. useRef, forwardRef example
 8. cok fazla useState kullanilan yerlerde duzenli kod icin useReducer kullanimi
 =======
+=======
+>>>>>>> functions
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+<<<<<<< HEAD
 =======
 # Boilerplate
 
@@ -37,6 +41,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Available Scripts
 >>>>>>> boilerplate
+=======
+>>>>>>> functions
 
 In the project directory, you can run:
 
@@ -103,6 +109,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> exercise-redux
 =======
 # edit_json
@@ -130,3 +137,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # crud_nodejs
 >>>>>>> crud
 >>>>>>> exercise-nodejs
+=======
+>>>>>>> functions
