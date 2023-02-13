@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Building react project with Prototurk youtube channel
 
 
@@ -17,6 +18,24 @@ Building react project with Prototurk youtube channel
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+=======
+# Boilerplate
+
+Quick Start
+
+## Technologies
+
+- React js
+- Redux
+- React Router
+- Tailwind css
+
+## Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Available Scripts
+>>>>>>> boilerplate
 
 In the project directory, you can run:
 
@@ -82,7 +101,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<<<<<<< HEAD
 >>>>>>> exercise-redux
 =======
 # edit_json
 >>>>>>> edit-json
+=======
+>>>>>>> boilerplate

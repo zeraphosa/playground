@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from "react";
 
 export default function App() {
@@ -31,5 +32,19 @@ export default function App() {
       <CreateNewJson3 />
 >>>>>>> edit-json
     </div>
+=======
+import { BrowserRouter as Router } from "react-router-dom";
+import Component from "components/Component";
+
+export default function App() {
+  return (
+    <Router>
+      <div className="wrapper">
+        <Component />
+        <Component />
+      </div>
+      <Component />
+    </Router>
+>>>>>>> boilerplate
   );
 }
