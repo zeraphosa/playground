@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Building react project with Prototurk youtube channel
 
 
@@ -139,3 +140,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 >>>>>>> exercise-nodejs
 =======
 >>>>>>> functions
+=======
+# zera_blog
+>>>>>>> clone
