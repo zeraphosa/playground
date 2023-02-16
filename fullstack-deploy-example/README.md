@@ -4,4 +4,6 @@ creating node side:
     - express middleware
     - mysql database
     - nodemon live server
+- npm i cors (?)
+- add "start": "nodemon index.js" to package.json
 - create index.js
