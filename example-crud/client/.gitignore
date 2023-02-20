@@ -4,23 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-.idea
-=======
 
->>>>>>> exercise-redux
-=======
-
->>>>>>> edit-json
-=======
-
->>>>>>> boilerplate
-=======
-
->>>>>>> functions
 # testing
 /coverage
 
