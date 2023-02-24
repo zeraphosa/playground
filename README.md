@@ -56,9 +56,7 @@ https://chatfuel.com/templates
 - Paketler
 biznesinizi bizimle yeni dunyaya uygunlasdirin
 
-- Niye Chatbot:
-İşinizin siz çalışmadığınız zaman bele davam etmesini isteyerdiniz mi? Chatbot bunun üçün size kömek edecek. Satışını etdiyiniz levazimatların instagram ve whatsapp üzerinden (tesvir) teqdim edilerken müşterilerden gelen sualları cavablandırmaq vaxtınızı apara bilir. Chatbot bu işi 1 saniyeden az bir müddetde ede bilir. Müşterinin soruşduğu her suala sizin ağzınızdan cavablandıra bilir.
-
+-- Niye Chatbot:
 -- Numune şekiller (insta, wp)
 -- Pricing 
 Chatbotun qurulması ve ilk produktların sisteme girilmesi: 200 azn
