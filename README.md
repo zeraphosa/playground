@@ -47,3 +47,20 @@ Chatbot'u başlatın ve izleyin: Chatbot'u Instagram'da başlatın ve kullanıc�
 Bu, bir Instagram sohbet botu oluşturma sürecine genel bir bakıştır. Belirli adımlar ve ayrıntılar, seçtiğiniz sohbet robotu oluşturma platformuna ve sohbet robotunuzun hedeflerine göre değişebilir.
 --------
 https://chatfuel.com/templates
+
+--------
+#### Not
+- Ana sehife
+- Blog
+- Biz kimik?
+- Paketler
+biznesinizi bizimle yeni dunyaya uygunlasdirin
+
+- Niye Chatbot:
+İşinizin siz çalışmadığınız zaman bele davam etmesini isteyerdiniz mi? Chatbot bunun üçün size kömek edecek. Satışını etdiyiniz levazimatların instagram ve whatsapp üzerinden (tesvir) teqdim edilerken müşterilerden gelen sualları cavablandırmaq vaxtınızı apara bilir. Chatbot bu işi 1 saniyeden az bir müddetde ede bilir. Müşterinin soruşduğu her suala sizin ağzınızdan cavablandıra bilir.
+
+-- Numune şekiller (insta, wp)
+-- Pricing 
+Chatbotun qurulması ve ilk produktların sisteme girilmesi: 200 azn
+Aylıq destek paketi 200 produkt limit: 30 azn
+Sizin planınız (zeng ederek en uyğun paketi seçme)
