@@ -2,7 +2,7 @@
 
 Projects that i made with html css and javascript. Some of them made with tutorials from udemy, youtube platforms. And you can find my old portfolio templates here.
 
-☛ [Link for all projects](https://zeracodes.github.io/html-css-javascript/)
+[Link for all projects](https://zeracodes.github.io/html-css-javascript/)
 
 |  #  | Project | Live |
 | :-: | -- | -- |
