@@ -18,5 +18,25 @@ git commit
     3. database: "database name"
 - deploy node js to api.example.com and install node on plesk
 - build react app and deploy to app.example.com
-
+- if there are route problems showed up create web.config file on plesk and add these lines:
+[<configuration>
+      <system.webServer>
+        <handlers>
+          <add name="iisnode" path="app.js" verb="*" modules="iisnode" />
+        </handlers>
+    
+        <rewrite>
+          <rules>
+            <rule name="myapp">
+            <match url="/*" />
+            <action type="Rewrite" url="app.js" />
+          </rule>
+    <!-- Don't interfere with requests for node-inspector debugging -->
+        <rule name="NodeInspector" patternSyntax="ECMAScript" stopProcessing="true">
+           <match url="^app.js\/debug[\/]?" />
+        </rule>    
+      </rules>   
+    </rewrite>  
+  </system.webServer>
+ </configuration>]
 And project deployed success V
