@@ -19,7 +19,8 @@ git commit
 - deploy node js to api.example.com and install node on plesk
 - build react app and deploy to app.example.com
 - if there are route problems showed up create web.config file on plesk and add these lines:
-[<configuration>
+<code>
+  <configuration>
       <system.webServer>
         <handlers>
           <add name="iisnode" path="app.js" verb="*" modules="iisnode" />
@@ -38,5 +39,6 @@ git commit
       </rules>   
     </rewrite>  
   </system.webServer>
- </configuration>]
+ </configuration>
+</code>
 And project deployed success V
