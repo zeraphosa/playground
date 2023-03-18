@@ -41,4 +41,12 @@ git commit
   </system.webServer>
  </configuration>
 ```
+- or create .htaccess file and add this:
+```
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteBase /
+RewriteRule ^server/(.*)?$ http://127.0.0.1:3000/$1 [P,L]
+```
 And project deployed success V
