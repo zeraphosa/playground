@@ -62,3 +62,22 @@ Then add package.json new script:
 ```
 "build-css": "tailwindcss build src/styles.css -o public/styles.css"
 ```
+```
+npx tailwindcss init
+```
+Update tailwind.config.js
+```
+module.exports = {
+  content: [
+    './public/**/*.{html,js}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+```
+npm run build-css
+```
+
