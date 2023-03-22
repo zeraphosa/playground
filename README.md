@@ -79,5 +79,6 @@ module.exports = {
 ```
 ```
 npm run build-css
+npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch
 ```
 
