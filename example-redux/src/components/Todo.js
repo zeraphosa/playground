@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteTodo } from "../stores/todo";
+import Theme from "./Theme";
 
 export default function Todo() {
   const { todos } = useSelector((state) => state.todo);
@@ -18,6 +19,7 @@ export default function Todo() {
           </div>
         ))}
       </div>
+      <Theme />
     </div>
   );
 }
