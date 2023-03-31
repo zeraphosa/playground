@@ -82,3 +82,57 @@ npm run build-css
 npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch
 ```
 
+### Redux example
+- Create stores folder add index.js and other files you need. (todo.js)
+```
+index.js
+----
+import { configureStore } from "@reduxjs/toolkit";
+import todo from "./todo";
+import theme from "./theme";
+
+const store = configureStore({
+  reducer: {
+    todo,
+    theme,
+  },
+});
+
+export default store;
+```
+```
+todo.js
+import { createSlice } from "@reduxjs/toolkit";
+
+const todos = createSlice({
+  name: "todos",
+  initialState: {
+    todos: [],
+  },
+  reducers: {
+    addTodo: (state, action) => {
+      state.todos = [action.payload, ...state.todos];
+    },
+    deleteTodo: (state, action) => {
+      state.todos = state.todos.filter((t) => t !== action.payload);
+    },
+  },
+});
+
+export const { addTodo, deleteTodo } = todos.actions;
+export default todos.reducer;
+```
+- To get todos use this line:
+```
+import { useSelector } from "react-redux";
+const { todos } = useSelector((state) => state.todo);
+```
+- To change state:
+```
+import { useDispatch } from "react-redux";
+import { deleteTodo } from "../stores/todo";
+const dispatch = useDispatch();
+button className="delete" onClick={() => dispatch(deleteTodo(item))}>
+ Delete
+</button>
+```
