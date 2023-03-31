@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import Todo from "./Todo";
+import Input from "./components/Input";
+import Theme from "./components/Theme";
+import Todo from "./components/Todo";
 import "./style.css";
 
 export default function App() {
-  const [todos, setTodos] = useState([]);
-  const [todo, setTodo] = useState("");
-
+  const [theme, setTheme] = useState(false);
   return (
-    <div>
-      <Todo todos={todos} todo={todo} setTodo={setTodo} setTodos={setTodos} />
-     
+    <div className={`${theme ? "dark" : "light"}`}>
+      <Input />
+      <Todo />
+      <Theme theme={theme} setTheme={setTheme} />
     </div>
   );
 }
