@@ -1,0 +1,9 @@
+.list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.delete{
+    width: 70px;
+    height: 20px;
+}
