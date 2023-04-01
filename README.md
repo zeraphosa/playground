@@ -1,4 +1,3 @@
-Project start date - 01.04.2023
 ## Zera Store
 [www.zerastore.com](#)\
 [www.admin.zerastore.com](#)
