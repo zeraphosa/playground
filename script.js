@@ -1,17 +1,22 @@
 const data = [
   {
-    n: "Potfolio Example 1",
-    i: "./assets/projects/portfolio-example-1.png",
+    n: "Portfolio v3",
+    i: "./assets/projects/portfolio-template-3.png",
+    c: "templates",
+    l: "./projects/portfolio-template-3/index.html"
+  },
+  {
+    n: "Potfolio v2",
+    i: "./assets/projects/portfolio-template-2.png",
+    c: "templates",
+    l: "./projects/portfolio-template-2/index.html"
+  },
+  {
+    n: "Portfolio v1",
+    i: "./assets/projects/portfolio-template-1.png",
     c: "templates",
     l: "./projects/portfolio-template-1/index.html"
   },
-  {
-    n: "Portfolio Example 2",
-    i: "./assets/projects/portfolio-example-2.png",
-    c: "templates",
-    l: "./projects/portfolio-template-0/index.html"
-  },
-
   {
     n: "Buta Assignment 1",
     i: "./assets/projects/buta-assignment-1.png",
