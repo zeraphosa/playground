@@ -6,6 +6,12 @@ const data = [
     l: "./projects/portfolio-template-3/index.html"
   },
   {
+    n: "Bootstrap Template",
+    i: "./assets/projects/bootstrap-template.png",
+    c: "templates",
+    l: "./projects/bootstrap-template/index.html"
+  },
+  {
     n: "Potfolio v2",
     i: "./assets/projects/portfolio-template-2.png",
     c: "templates",
