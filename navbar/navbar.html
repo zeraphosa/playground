@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./navbar.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./navbar.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <div class="container">
-            <a>Logo</a>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Contact</li>
+      <div class="container">
+        <a>Logo</a>
+        <div id="nav-btn" class="nav-mobile">=</div>
+        <ul id="nav-menu" class="nav-ul">
+          <li>Home</li>
+          <li class="dropdown">
+            <span>Blog</span>
+            <ul class="dropdown-menu">
+                <li>Blog 1</li>
+                <li>Blog 2</li>
+                <li>Blog 3</li>
             </ul>
-        </div>
+          </li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
     </div>
     <div class="deneme">
-        <div class="container">
-            <div class="de">dedede</div>
-            <div class="de">dedede</div>
-            <div class="de">dedede</div>
-            <div class="de">dedede</div>
-        </div>
+      <div class="container">
+        <div class="de">dedede</div>
+        <div class="de">dedede</div>
+        <div class="de">dedede</div>
+        <div class="de">dedede</div>
+      </div>
     </div>
-</body>
+
+    <script>
+      var navBtn = document.getElementById("nav-btn");
+      var navMenu = document.getElementById("nav-menu");
+      navBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("mob-menu");
+      });
+    </script>
+  </body>
 </html>
