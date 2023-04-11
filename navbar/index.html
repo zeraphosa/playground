@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Navbar</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-div">
+        <a>Logo</a>
+        <ul class="nav-ul">
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li class="dropdown">
+            <a>Blog</a>
+            <ul class="dropdown-menu">
+              <li>Blog 1</li>
+              <li>Blog 2</li>
+              <li>Blog 3</li>
+            </ul>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
+        </ul>
+        <a id="mob-btn" class="mobile-btn">=</a>
+      </div>
+      <div id="mob-nav" class="mobile-nav">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li class="dropdown">
+            <a>Blog</a>
+            <ul class="dropdown-menu">
+              <li>Blog 1</li>
+              <li>Blog 2</li>
+              <li>Blog 3</li>
+            </ul>
+          </li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      var mobBtn = document.getElementById("mob-btn");
+      var mobNav = document.getElementById("mob-nav");
+      mobBtn.addEventListener("click", () => {
+        mobNav.classList.toggle("mob-nav");
+      });
+    </script>
+  </body>
+</html>
