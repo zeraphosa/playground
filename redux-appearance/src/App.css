@@ -10,18 +10,29 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
-.app div{
+.navbar{
   width: 400px;
-  height: 200px;
+  height: 60px;
+}
+.sidebar{
+  width: 400px;
+  height: 500px;
   border: 1px solid red;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .dark{
   background-color: #000;
   color: #fff;
+  text-decoration: none;
 }
 .light{
   background-color: red;
   color: #000;
+  text-decoration: none;
 }
