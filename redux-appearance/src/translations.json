@@ -1,0 +1,14 @@
+{
+  "en": {
+    "header": "Header",
+    "paragraph": "Paragraph"
+  },
+  "az": {
+    "header": "Başlıq",
+    "paragraph": "Paraqraf"
+  },
+  "tr": {
+    "header": "Başlık",
+    "paragraph": "Paragraf"
+  }
+}
