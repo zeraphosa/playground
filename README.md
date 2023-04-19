@@ -1,7 +1,6 @@
 # University Projects
 
-## optimization-algorithms 
-# python
+## Optimization Algorithms with Python
 basics.py
     - get_radius
     - permutation
