@@ -26,7 +26,7 @@ This project is for my Web Programming class assignment. Used technologies are A
  - The system works by transferring the news articles added to the database by the authors to the homepage.
  - The roles are set as admin, author, user.
 ### Database Diagram :
-![](https://github.com/zeraphosa1/university_projects/blob/main/documentation/news-page/db_diagram.PNG)
+![](https://github.com/zeraphosa1/optimization-algorithms/blob/main/documentation/news-page/db_diagram.PNG)
 ### Templates :
 ![](https://github.com/zeraphosa1/university_projects/blob/main/documentation/news-page/homepage.PNG)
 ![](https://github.com/zeraphosa1/university_projects/blob/main/documentation/news-page/admin-login.PNG)
