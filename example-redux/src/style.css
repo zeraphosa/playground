@@ -1,4 +1,4 @@
-.list{
+/* .list{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -12,4 +12,33 @@
 }
 .light{
     background-color: grey;
+} */
+
+.post{
+    max-width: 1200px;
+    height: 80vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header-container{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 20vh;
+}
+.post-input, .post-image{
+    height: 100%;    
+    width: 50%;
+    border: 1px solid green;
+}
+.article{
+    height: 50vh;
+    width: 100%;
+    border: 1px solid blue;
+}
+.save{
+    width: 100%;
+    height: 10vh;
 }
