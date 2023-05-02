@@ -1,6 +1,7 @@
 [
   {
-    "toyuq doner": {
+    "title": "Toyuq Doneri",
+    "content": {
       "Corekde": "1.50",
       "Lavas": "2.00",
       "Basdirma": "2.00",
@@ -10,17 +11,29 @@
     }
   },
   {
-    "et doner": {
-      "Corekde": "2.00",
-      "Lavas": "2.50",
-      "Basdirma": "2.50",
-      "Tombik": "3.00",
-      "Porsion": "5.00",
-      "Limuzin": "4.00"
-    }
+    "title": "et doner",
+    "content": [
+      {
+        "name": "Corekde",
+        "price": "2.00"
+      },
+      {
+        "name": "Lavas",
+        "price": "2.50"
+      },
+      {
+        "name": "Basdirma",
+        "price": "2.50"
+      },
+      {
+        "name": "Tombik",
+        "price": "3.00"
+      }
+    ]
   },
   {
-    "saurma": {
+    "title": "saurma",
+    "content": {
       "corekde toyuq": "2.00",
       "lavasda toyuq": "2.50",
       "corekde et": "2.50",
@@ -28,7 +41,27 @@
     }
   },
   {
-    "pizzalar": {
+    "title": "pideler",
+    "content": {
+      "pendirli": "4.00",
+      "qiymeli": "5.00",
+      "qiymeli pendirli": "6.00",
+      "toyuqlu": "6.00",
+      "spesyal": "8.00"
+    }
+  },
+  {
+    "title": "lahmacunlar",
+    "content": {
+      "sade": "1.50",
+      "pendirli": "2.00",
+      "cevizli": "3.00",
+      "qarisiq": "2.00"
+    }
+  },
+  {
+    "title": "Elaveler",
+    "content": {
       "margarita": {
         "24sm": "4",
         "28sm": "6",
@@ -74,24 +107,15 @@
     }
   },
   {
-    "pideler": {
-      "pendirli": "4.00",
-      "qiymeli": "5.00",
-      "qiymeli pendirli": "6.00",
-      "toyuqlu": "6.00",
-      "spesyal": "8.00"
+    "title": "Elaveler",
+    "content": {
+      "merci": "1.50",
+      "Fries": "2.00"
     }
   },
   {
-    "lahmacunlar": {
-      "sade": "1.50",
-      "pendirli": "2.00",
-      "cevizli": "3.00",
-      "qarisiq": "2.00"
-    }
-  },
-  {
-    "ickiler": {
+    "title": "ickiler",
+    "content": {
       "Pepsi (0.3l)": "0.60",
       "Pepsi (0.5l)": "1.00",
       "Pepsi (1l)": "1.50",
