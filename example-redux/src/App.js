@@ -1,29 +1,30 @@
-import React from "react";
-// import Input from "./components/Input";
-// import Todo from "./components/Todo";
+import { useState } from "react";
 import "./style.css";
-import { Editor } from "react-draft-wysiwyg";
-import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 
 export default function App() {
+  const [changeComponent, setChangeComponent] = useState(true);
   return (
-    <>
-      <div>{/* <Input />
-      <Todo /> */}</div>
-      <div className="post">
-        <div className="header-container">
-          <div className="post-input"></div>
-          <div className="post-image"></div>
+    <div>
+      {changeComponent ? (
+        <div className="signin">
+          <h1>Sign In</h1>
+          <input type="text" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <button>SIGN IN</button>
+          <h2>OR</h2>
+          <button onClick={() => setChangeComponent(false)}>SIGN UP NOW</button>
         </div>
-        <div className="article">
-        <Editor
-          toolbarClassName="toolbarClassName"
-          wrapperClassName="wrapperClassName"
-          editorClassName="editorClassName"
-        />
+      ) : (
+        <div className="signin">
+          <h1>Sign Up</h1>
+          <input type="text" placeholder="username" />
+          <input type="text" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <button onClick={()=> setChangeComponent(true)}>SIGN UP</button>
+          <h2>OR</h2>
+          <button onClick={() => setChangeComponent(true)}>SIGN IN NOW</button>
         </div>
-        <div className="save"></div>
-      </div>
-    </>
+      )}
+    </div>
   );
 }
