@@ -1,52 +1,25 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import "./style.css";
+import Home from "./components/Home";
+import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
+import { useEffect, useState } from "react";
 
 export default function App() {
-  const [changeComponent, setChangeComponent] = useState(true);
-  const [users, setUsers] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const FetchAllUsers = async () => {
-      try {
-        const res = await axios.get("http://localhost:8800/");
-        setUsers(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    FetchAllUsers();
-  }, []);
+    if (isLoggedIn) navigate("/signin");
+  }, [isLoggedIn, navigate]);
 
   return (
-    <div>
-      {users.map((item)=>(
-        <div key={item.id}>
-          <p>{item.username}</p>
-          <p>{item.email}</p>
-          <p>{item.password}</p>
-        </div>
-      ))}
-      {changeComponent ? (
-        <div className="signin">
-          <h1>Sign In</h1>
-          <input type="text" placeholder="email" />
-          <input type="password" placeholder="password" />
-          <button>SIGN IN</button>
-          <h2>OR</h2>
-          <button onClick={() => setChangeComponent(false)}>SIGN UP NOW</button>
-        </div>
-      ) : (
-        <div className="signin">
-          <h1>Sign Up</h1>
-          <input type="text" placeholder="username" />
-          <input type="text" placeholder="email" />
-          <input type="password" placeholder="password" />
-          <button onClick={() => setChangeComponent(true)}>SIGN UP</button>
-          <h2>OR</h2>
-          <button onClick={() => setChangeComponent(true)}>SIGN IN NOW</button>
-        </div>
-      )}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
