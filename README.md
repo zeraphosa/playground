@@ -21,15 +21,20 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 - Node js, Mongo db
 
 ## Todo
-- [] Header
-    - [] MP logo
-    - [] About
-    - [] Contact
-    - [] Missing pet (call to action) 
-- [] Main page style
-    - [] Search by name, address, gender, breed, age
-    - [] Cards with picture, name, age, address
-    - [] Filter
-- [] About page style
-- [] Contact page style
-- [] Footer
+- [ ] Header
+    - [ ] MP logo
+    - [ ] About
+    - [ ] Contact
+    - [ ] Missing pet (call to action)
+        - [ ] Add pictures of pet
+        - [ ] About pet (name, age, what it likes)
+        - [ ] Owner`s name, address, number
+        - [ ] Date of missing
+        - [ ] More info (where he/she missed)
+- [ ] Main page style
+    - [ ] Search by name, address, gender, breed, age
+    - [ ] Cards with picture, name, age, address
+    - [ ] Filter
+- [ ] About page style
+- [ ] Contact page style
+- [ ] Footer
