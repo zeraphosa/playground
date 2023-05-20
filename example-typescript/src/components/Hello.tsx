@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface IProps {
   name: string;
@@ -6,27 +6,16 @@ interface IProps {
   label?: string;
   onSmthHappen: (name: string) => void;
 }
-// export default function Hello({ name, description, label, onSmthHappen }: IProps) {
-//   return (
-//     <div>
-//       <h1>
-//         Hello {name}, {description}, {label}
-//       </h1>
-//       <div>{onSmthHappen(name)}</div>
-//     </div>
-//   );
-// }
 
 const Hello: React.FC<IProps> = ({ name, description = "Desc" }) => {
-  const handleChange = (event: React.FormEvent<HTMLDivElement>) : void => {
-    console.log(event)
-  };
+  const [count, setCount] = useState<number | string | null | undefined>(1453);
+  setCount("44");
   return (
     <div>
       <h1>
         Hello {name}, {description}
       </h1>
-      <div onChange={handleChange} />
+      {count}
       {/* {onSmthHappen(name)} */}
     </div>
   );
