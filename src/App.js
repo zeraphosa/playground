@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Today from "./pages/Today";
 import All from "./pages/All";
 import Login from "./pages/Login/Login";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import "./style.css";
 
 export default function App() {

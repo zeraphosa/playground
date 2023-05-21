@@ -6,12 +6,18 @@
 body{
     width: 100%;
     height: auto;
-    border: 1px solid red;
-    background-color: #0c0c0c;
+    background-color: #2C3333;
+    color: #fff;
 }
 .app{
     max-width: 1000px;
     height: auto;
     border: 1px solid blue;
     margin: 0 auto;
+}
+.content{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    border: 1px solid yellow;
 }
