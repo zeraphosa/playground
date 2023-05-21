@@ -1,1 +1,0 @@
-# cini.zaursharifov.com

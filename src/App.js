@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState } from "react";
+import Home from "./pages/Home";
+import Today from "./pages/Today";
+import All from "./pages/All";
+import Login from "./pages/Login/Login";
+import Navbar from "./components/Navbar";
+import "./style.css";
 
-function App() {
+export default function App() {
+  const loginStatus = localStorage.getItem("status");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <Navbar />
+        <div className="content">
+          {loginStatus ? (
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/today" element={<Today />} />
+              <Route path="/all" element={<All />} />
+            </Routes>
+          ) : (
+            <Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+          )}
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
-
-export default App;

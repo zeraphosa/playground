@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+    background-color: #0c0c0c;
+}
+.app{
+    max-width: 1000px;
+    height: auto;
+    border: 1px solid blue;
+    margin: 0 auto;
+}
