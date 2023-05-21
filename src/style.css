@@ -12,7 +12,6 @@ body{
 .app{
     max-width: 1000px;
     height: auto;
-    border: 1px solid blue;
     margin: 0 auto;
 }
 .content{

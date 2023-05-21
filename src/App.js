@@ -16,7 +16,7 @@ export default function App() {
       <div className="app">
         <Navbar />
         <div className="content">
-          {loginStatus ? (
+          {loginStatus === "true" ? (
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/today" element={<Today />} />

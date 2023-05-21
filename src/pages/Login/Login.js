@@ -9,7 +9,7 @@ export default function Login({ setIsLoggedIn }) {
   const navigate = useNavigate();
 
   function checkLogin() {
-    data.map((item) => {
+    data?.map((item) => {
       if (item.name === name && item.pass === pass) {
         setIsLoggedIn(true);
         const status = "true";
@@ -23,15 +23,15 @@ export default function Login({ setIsLoggedIn }) {
 
   useEffect(() => {
     navigate("/login");
-    setData({ name: "cini", pass: "1234" });
+    setData([{ name: "cini", pass: "1234" }]);
   }, [navigate]);
 
   return (
     <div className="login-bg">
       <div className="login-container">
         <input type="text" placeholder="ad" autoFocus onChange={(e) => setName(e.target.value)} />
-        <input type="password" placeholder="şifre" autoFocus onChange={(e) => setPass(e.target.value)} />
-        <button onClick={checkLogin}>Giriş yap</button>
+        <input type="password" placeholder="şifre" onChange={(e) => setPass(e.target.value)} />
+        <button onClick={checkLogin}>Giriş et</button>
       </div>
     </div>
   );
