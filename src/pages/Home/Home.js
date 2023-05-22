@@ -2,24 +2,51 @@ import { useState } from "react";
 import "./style.css";
 
 export default function Home() {
-  const [showToyuq, setShowToyuq] = useState(true);
-  const [showEt, setShowEt] = useState(false);
+  const [showDoner, setShowDoner] = useState(true);
 
   return (
     <div className="home">
-      <div class="menu">
-        <div class="menu-item">
+      <div className="menu">
+        <div className="menu-item">
           <div>
-            <button>Toyuq</button>
-            <button>Et</button>
+            <button onClick={(e) => setShowDoner(true)} style={showDoner ? { backgroundColor: "green" } : { backgroundColor: "red" }}>
+              Toyuq
+            </button>
+            <button onClick={(e) => setShowDoner(false)} style={showDoner ? { backgroundColor: "red" } : { backgroundColor: "green" }}>Et</button>
           </div>
-          <div>Doner menu</div>
+          {donerler.map((item, id) => (
+            <div key={id}>
+              {showDoner
+                ? item.nov === "toyuq" &&
+                  item.menu.map((e, id) => (
+                    <div key={id} className="menu-info" style={showDoner ? { backgroundColor: "green" } : { backgroundColor: "red" }}>
+                      <div>{e.tip}</div>
+                      <div>
+                        <span>-</span>
+                        <span>{e.qiy}</span>
+                        <span>+</span>
+                      </div>
+                    </div>
+                  ))
+                : item.nov === "et" &&
+                  item.menu.map((d, id) => (
+                    <div key={id} className="menu-info" style={showDoner ? { backgroundColor: "red" } : { backgroundColor: "green" }}>
+                      <div>{d.tip}</div>
+                      <div>
+                        <span>-</span>
+                        <span>{d.qiy}</span>
+                        <span>+</span>
+                      </div>
+                    </div>
+                  ))}
+            </div>
+          ))}
         </div>
-        <div class="menu-item">Burger, Şorba, Salat, Cig kofte</div>
-        <div class="menu-item">Kofte</div>
-        <div class="menu-item">Tost</div>
-        <div class="menu-item">MY Burger Set, Business Lunch</div>
-        <div class="menu-item">Ickiler</div>
+        <div className="menu-item">Burger, Şorba, Salat, Cig kofte</div>
+        <div className="menu-item">Kofte</div>
+        <div className="menu-item">Tost</div>
+        <div className="menu-item">MY Burger Set, Business Lunch</div>
+        <div className="menu-item">Ickiler</div>
       </div>
       <div className="info">Paket, Col, Normal</div>
       <div className="done">Sifarisi tamamla</div>
