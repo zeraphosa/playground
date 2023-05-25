@@ -9,33 +9,35 @@ export default function Home() {
       <div className="menu">
         <div className="menu-item">
           <div>
-            <button onClick={() => setShowDoner(true)} style={showDoner ? { backgroundColor: "green" } : { backgroundColor: "red" }}>
+            <button onClick={() => setShowDoner(true)} style={showDoner === true && { backgroundColor: "#5C8984" }}>
               Toyuq
             </button>
-            <button onClick={() => setShowDoner(false)} style={showDoner ? { backgroundColor: "red" } : { backgroundColor: "green" }}>Et</button>
+            <button onClick={() => setShowDoner(false)} style={showDoner === false && { backgroundColor: "#867070" }}>
+              Et
+            </button>
           </div>
           {donerler.map((item, id) => (
             <div key={id}>
               {showDoner
                 ? item.nov === "toyuq" &&
                   item.menu.map((e, id) => (
-                    <div key={id} className="menu-info" style={showDoner ? { backgroundColor: "green" } : { backgroundColor: "red" }}>
+                    <div key={id} className="menu-info" style={showDoner === true && { backgroundColor: "#5C8984" }}>
                       <div>{e.tip}</div>
-                      <div>
-                        <span>-</span>
+                      <div className="price-info">
+                        <span className="count-btn">-</span>
                         <span>{e.qiy}</span>
-                        <span>+</span>
+                        <span className="count-btn">+</span>
                       </div>
                     </div>
                   ))
                 : item.nov === "et" &&
                   item.menu.map((d, id) => (
-                    <div key={id} className="menu-info" style={showDoner ? { backgroundColor: "red" } : { backgroundColor: "green" }}>
+                    <div key={id} className="menu-info" style={showDoner === false && { backgroundColor: "#867070" }}>
                       <div>{d.tip}</div>
-                      <div>
-                        <span>-</span>
+                      <div className="price-info">
+                        <span className="count-btn">-</span>
                         <span>{d.qiy}</span>
-                        <span>+</span>
+                        <span className="count-btn">+</span>
                       </div>
                     </div>
                   ))}
