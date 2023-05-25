@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  margin-bottom: 20px;
 }
 .menu {
   display: flex;
@@ -37,4 +38,11 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid #fff;
+}
+
+
+@media (max-width: 500px){
+  .menu-item {
+    width: 90%;
+  }
 }

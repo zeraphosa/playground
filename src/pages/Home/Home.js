@@ -9,10 +9,10 @@ export default function Home() {
       <div className="menu">
         <div className="menu-item">
           <div>
-            <button onClick={(e) => setShowDoner(true)} style={showDoner ? { backgroundColor: "green" } : { backgroundColor: "red" }}>
+            <button onClick={() => setShowDoner(true)} style={showDoner ? { backgroundColor: "green" } : { backgroundColor: "red" }}>
               Toyuq
             </button>
-            <button onClick={(e) => setShowDoner(false)} style={showDoner ? { backgroundColor: "red" } : { backgroundColor: "green" }}>Et</button>
+            <button onClick={() => setShowDoner(false)} style={showDoner ? { backgroundColor: "red" } : { backgroundColor: "green" }}>Et</button>
           </div>
           {donerler.map((item, id) => (
             <div key={id}>
