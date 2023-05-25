@@ -2,47 +2,11 @@ import { useState } from "react";
 import "./style.css";
 
 export default function Home() {
-  const [showDoner, setShowDoner] = useState(true);
-
   return (
     <div className="home">
       <div className="menu">
         <div className="menu-item">
-          <div>
-            <button onClick={() => setShowDoner(true)} style={showDoner === true && { backgroundColor: "#5C8984" }}>
-              Toyuq
-            </button>
-            <button onClick={() => setShowDoner(false)} style={showDoner === false && { backgroundColor: "#867070" }}>
-              Et
-            </button>
-          </div>
-          {donerler.map((item, id) => (
-            <div key={id}>
-              {showDoner
-                ? item.nov === "toyuq" &&
-                  item.menu.map((e, id) => (
-                    <div key={id} className="menu-info" style={showDoner === true && { backgroundColor: "#5C8984" }}>
-                      <div>{e.tip}</div>
-                      <div className="price-info">
-                        <span className="count-btn">-</span>
-                        <span>{e.qiy}</span>
-                        <span className="count-btn">+</span>
-                      </div>
-                    </div>
-                  ))
-                : item.nov === "et" &&
-                  item.menu.map((d, id) => (
-                    <div key={id} className="menu-info" style={showDoner === false && { backgroundColor: "#867070" }}>
-                      <div>{d.tip}</div>
-                      <div className="price-info">
-                        <span className="count-btn">-</span>
-                        <span>{d.qiy}</span>
-                        <span className="count-btn">+</span>
-                      </div>
-                    </div>
-                  ))}
-            </div>
-          ))}
+          <Donerler />
         </div>
         <div className="menu-item">Burger, Şorba, Salat, Cig kofte</div>
         <div className="menu-item">Kofte</div>
@@ -53,6 +17,50 @@ export default function Home() {
       <div className="info">Paket, Col, Normal</div>
       <div className="done">Sifarisi tamamla</div>
     </div>
+  );
+}
+
+function Donerler() {
+  const [showDoner, setShowDoner] = useState(true);
+
+  return (
+    <>
+      <div>
+        <button onClick={() => setShowDoner(true)} style={{ backgroundColor: "#5C8984" }}>
+          Toyuq
+        </button>
+        <button onClick={() => setShowDoner(false)} style={{ backgroundColor: "#867070" }}>
+          Et
+        </button>
+      </div>
+      {donerler.map((item, id) => (
+        <div key={id}>
+          {showDoner
+            ? item.nov === "toyuq" &&
+              item.menu.map((e, id) => (
+                <div key={id} className="menu-info" style={{ backgroundColor: "#5C8984" }}>
+                  <div>{e.tip}</div>
+                  <div className="price-info">
+                    <span className="count-btn">-</span>
+                    <span>{e.qiy}</span>
+                    <span className="count-btn">+</span>
+                  </div>
+                </div>
+              ))
+            : item.nov === "et" &&
+              item.menu.map((d, id) => (
+                <div key={id} className="menu-info" style={{ backgroundColor: "#867070" }}>
+                  <div>{d.tip}</div>
+                  <div className="price-info">
+                    <span className="count-btn">-</span>
+                    <span>{d.qiy}</span>
+                    <span className="count-btn">+</span>
+                  </div>
+                </div>
+              ))}
+        </div>
+      ))}
+    </>
   );
 }
 
