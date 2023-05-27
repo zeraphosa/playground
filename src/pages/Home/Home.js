@@ -8,81 +8,81 @@ export default function Home() {
       menu: [
         {
           id: 0,
-          tip: "corekde",
-          qiy: "2.00",
-          cnt: 1,
+          name: "corekde",
+          price: "2.00",
+          count: 1,
         },
         {
           id: 1,
-          tip: "lavasda",
-          qiy: "3.00",
-          cnt: 3,
+          name: "lavasda",
+          price: "3.00",
+          count: 3,
         },
         {
           id: 2,
-          tip: "Bastirma",
-          qiy: "3.00",
-          cnt: 0,
+          name: "Bastirma",
+          price: "3.00",
+          count: 0,
         },
         {
           id: 3,
-          tip: "Porsion",
-          qiy: "3.00",
-          cnt: 0,
+          name: "Porsion",
+          price: "3.00",
+          count: 0,
         },
         {
           id: 4,
-          tip: "Sezar",
-          qiy: "3.00",
-          cnt: 0,
+          name: "Sezar",
+          price: "3.00",
+          count: 0,
         },
         {
           id: 5,
-          tip: "Pilov ustu",
-          qiy: "3.00",
-          cnt: 0,
+          name: "Pilov ustu",
+          price: "3.00",
+          count: 0,
         },
         {
           id: 6,
-          tip: "My Doner Roll",
-          qiy: "3.00",
-          cnt: 0,
+          name: "My Doner Roll",
+          price: "3.00",
+          count: 0,
         },
         {
           id: 7,
-          tip: "Pendirli corek",
-          qiy: "3.00",
-          cnt: 0,
+          name: "Pendirli corek",
+          price: "3.00",
+          count: 0,
         },
         {
           id: 8,
-          tip: "Pendirli lavas",
-          qiy: "3.00",
-          cnt: 0,
+          name: "Pendirli lavas",
+          price: "3.00",
+          count: 0,
         },
         {
           id: 9,
-          tip: "Limuzin corek",
-          qiy: "3.00",
-          cnt: 0,
+          name: "Limuzin corek",
+          price: "3.00",
+          count: 0,
         },
         {
           id: 10,
-          tip: "Limuzin lavas",
-          qiy: "3.00",
-          cnt: 0,
+          name: "Limuzin lavas",
+          price: "3.00",
+          count: 0,
         },
         {
           id: 11,
-          tip: "Saurma corek",
-          qiy: "3.00",
-          cnt: 0,
+          name: "Saurma corek",
+          price: "3.00",
+          count: 0,
         },
         {
           id: 12,
-          tip: "Saurma lavas",
-          qiy: "3.00",
-          cnt: 0,
+          name: "Saurma lavas",
+          price: "3.00",
+          count: 0,
         },
       ],
     },
@@ -90,79 +90,94 @@ export default function Home() {
       nov: "et",
       menu: [
         {
-          tip: "corekde",
-          qiy: "2.00",
-          cnt: 0,
+          id: 0,
+          name: "corekde",
+          price: "2.00",
+          count: 0,
         },
         {
-          tip: "lavasda",
-          qiy: "3.00",
-          cnt: 0,
+          id: 1,
+          name: "lavasda",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Bastirma",
-          qiy: "3.00",
-          cnt: 0,
+          id: 2,
+          name: "Bastirma",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Porsion",
-          qiy: "3.00",
-          cnt: 0,
+          id: 3,
+          name: "Porsion",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Sezar",
-          qiy: "3.00",
-          cnt: 0,
+          id: 4,
+          name: "Sezar",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Pilov ustu",
-          qiy: "3.00",
-          cnt: 0,
+          id: 5,
+          name: "Pilov ustu",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "My Doner Roll",
-          qiy: "3.00",
-          cnt: 0,
+          id: 6,
+          name: "My Doner Roll",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Pendirli corek",
-          qiy: "3.00",
-          cnt: 0,
+          id: 7,
+          name: "Pendirli corek",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Pendirli lavas",
-          qiy: "3.00",
-          cnt: 0,
+          id: 8,
+          name: "Pendirli lavas",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Limuzin corek",
-          qiy: "3.00",
-          cnt: 0,
+          id: 9,
+          name: "Limuzin corek",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Limuzin lavas",
-          qiy: "3.00",
-          cnt: 0,
+          id: 10,
+          name: "Limuzin lavas",
+          price: "3.00",
+          count: 11,
         },
         {
-          tip: "Saurma corek",
-          qiy: "3.00",
-          cnt: 0,
+          id: 12,
+          name: "Saurma corek",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Saurma lavas",
-          qiy: "3.00",
-          cnt: 0,
+          id: 13,
+          name: "Saurma lavas",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Iskender",
-          qiy: "3.00",
-          cnt: 0,
+          id: 14,
+          name: "Iskender",
+          price: "3.00",
+          count: 0,
         },
         {
-          tip: "Mix Doner",
-          qiy: "3.00",
-          cnt: 0,
+          id: 15,
+          name: "Mix Doner",
+          price: "3.00",
+          count: 0,
         },
       ],
     },
@@ -189,14 +204,36 @@ export default function Home() {
 function Donerler({ donerler, setDonerler }) {
   const [showDoner, setShowDoner] = useState(true);
 
-  function decreaseCount() {
-      const count = donerler.map((item) => item.nov === "toyuq" && item.menu.map((e) => e.cnt));
-      console.log(count)
-      setDonerler(...donerler, count > 0 ? count - 1 : 0);
+  function decreaseCount(el) {
+    const newState = donerler.map((item) => {
+      if (item.menu.id === el.id && item.menu.count > 0) {
+        return { ...item.menu, count: item.menu.count - 1 };
+      }
+      return item.menu;
+    });
+    setDonerler(newState);
+    // const newState = donerler.map((item) => {
+    //   if (item.nov === "toyuq" && item.menu.id === id && item.menu.count > 0) {
+    //     return { ...item.menu, count: item.menu.count - 1 };
+    //   }
+    //   return item.menu;
+    // });
+    // setDonerler(newState);
   }
-  function increaseCount(cnt) {
-    // setCount(cnt => cnt + 1);
+
+  function increaseCount(id, type) {
+    const filteredData = donerler.filter((item) => item.nov === type && item.menu);
+    filteredData.map((item) =>
+      item.menu.map((e) => {
+        if (e.id === id) {
+          console.log("e:", { ...e, count: e.count + 1 });
+          setDonerler([ { ...e, count: e.count + 1 }]);
+        }
+        return item;
+      }),
+    );
   }
+
   return (
     <>
       <div>
@@ -213,14 +250,14 @@ function Donerler({ donerler, setDonerler }) {
             ? item.nov === "toyuq" &&
               item.menu.map((e) => (
                 <div key={e.id} className="menu-info" style={{ backgroundColor: "#5C8984" }}>
-                  <div>{e.tip}</div>
-                  <div>{e.qiy} azn</div>
+                  <div>{e.name}</div>
+                  <div>{e.price} azn</div>
                   <div className="price-info">
-                    <span className="count-btn" onClick={decreaseCount}>
+                    <span className="count-btn" onClick={() => decreaseCount(e.id, "toyuq")}>
                       -
                     </span>
-                    <span>{e.cnt}</span>
-                    <span className="count-btn" onClick={increaseCount}>
+                    <span>{e.count}</span>
+                    <span className="count-btn" onClick={() => increaseCount(e.id, "toyuq")}>
                       +
                     </span>
                   </div>
@@ -229,12 +266,16 @@ function Donerler({ donerler, setDonerler }) {
             : item.nov === "et" &&
               item.menu.map((d, id) => (
                 <div key={id} className="menu-info" style={{ backgroundColor: "#867070" }}>
-                  <div>{d.tip}</div>
-                  <div>{d.qiy} azn</div>
+                  <div>{d.name}</div>
+                  <div>{d.price} azn</div>
                   <div className="price-info">
-                    <span className="count-btn">-</span>
-                    <span>{0}</span>
-                    <span className="count-btn">+</span>
+                    <span className="count-btn" onClick={() => decreaseCount(d.id, "et")}>
+                      -
+                    </span>
+                    <span>{d.count}</span>
+                    <span className="count-btn" onClick={() => increaseCount(d.id, "et")}>
+                      +
+                    </span>
                   </div>
                 </div>
               ))}
