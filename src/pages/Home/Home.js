@@ -223,9 +223,25 @@ export default function Home() {
 function Donerler({ donerler, setDonerler }) {
   const [showDoner, setShowDoner] = useState(true);
 
-  function decreaseCount() {}
+  function decreaseCount(id) {
+    const newState = donerler.map((item) => {
+      if (item.id === id && item.count > 0) {
+        return { ...item, count: item.count - 1 };
+      }
+      return item;
+    });
+    setDonerler(newState);
+  }
 
-  function increaseCount() {}
+  function increaseCount(id) {
+    const newState = donerler.map((item) => {
+      if (item.id === id) {
+        return { ...item, count: item.count + 1 };
+      }
+      return item;
+    });
+    setDonerler(newState);
+  }
 
   return (
     <>
@@ -237,66 +253,30 @@ function Donerler({ donerler, setDonerler }) {
           Ət
         </button>
       </div>
-      {donerler.map((item) => {
-        if ((showDoner && item.type === "toyuq") || (!showDoner && item.type === "et")) {
-          return (
-            <div key={item.name}>
-              <div className="menu-info" style={{ backgroundColor: "#5C8984" }}>
-                <div>{item.name}</div>
-                <div>{item.price}</div>
-                <div className="price-info">
-                  <span className="count-btn" onClick={() => decreaseCount(item.id, "toyuq")}>
-                    -
-                  </span>
-                  <span>{item.count}</span>
-                  <span className="count-btn" onClick={() => increaseCount(item.id, "toyuq")}>
-                    +
-                  </span>
-                </div>
-              </div>
-            </div>
-          );
-        }
-        return null;
-      })}
-
-      {/*{donerler.map((item, id) => (
-        <div key={id}>
-          {showDoner
-            ? item.nov === "toyuq" &&
-              item.menu.map((e) => (
-                <div key={e.id} className="menu-info" style={{ backgroundColor: "#5C8984" }}>
-                  <div>{e.name}</div>
-                  <div>{e.price} azn</div>
+      <div>
+        {donerler.map((item) => {
+          if ((showDoner && item.type === "toyuq") || (!showDoner && item.type === "et")) {
+            return (
+              <div key={item.id}>
+                <div className="menu-info" style={item.type === "toyuq" ? { backgroundColor: "#5C8984" } : { backgroundColor: "#867070" }}>
+                  <div>{item.name}</div>
+                  <div>{item.price}</div>
                   <div className="price-info">
-                    <span className="count-btn" onClick={() => decreaseCount(e.id, "toyuq")}>
+                    <span className="count-btn" onClick={() => decreaseCount(item.id, "toyuq")}>
                       -
                     </span>
-                    <span>{e.count}</span>
-                    <span className="count-btn" onClick={() => increaseCount(e.id, "toyuq")}>
+                    <span>{item.count}</span>
+                    <span className="count-btn" onClick={() => increaseCount(item.id, "toyuq")}>
                       +
                     </span>
                   </div>
                 </div>
-              ))
-            : item.nov === "et" &&
-              item.menu.map((d, id) => (
-                <div key={id} className="menu-info" style={{ backgroundColor: "#867070" }}>
-                  <div>{d.name}</div>
-                  <div>{d.price} azn</div>
-                  <div className="price-info">
-                    <span className="count-btn" onClick={() => decreaseCount(d.id, "et")}>
-                      -
-                    </span>
-                    <span>{d.count}</span>
-                    <span className="count-btn" onClick={() => increaseCount(d.id, "et")}>
-                      +
-                    </span>
-                  </div>
-                </div>
-              ))} 
               </div>
-              */}
+            );
+          }
+          return null;
+        })}
+      </div>
     </>
   );
 }
