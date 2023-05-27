@@ -216,11 +216,11 @@ function Donerler({ donerler, setDonerler }) {
                   <div>{e.tip}</div>
                   <div>{e.qiy} azn</div>
                   <div className="price-info">
-                    <span className="count-btn" onClick={() => decreaseCount()}>
+                    <span className="count-btn" onClick={decreaseCount}>
                       -
                     </span>
                     <span>{e.cnt}</span>
-                    <span className="count-btn" onClick={() => increaseCount(e.cnt)}>
+                    <span className="count-btn" onClick={increaseCount}>
                       +
                     </span>
                   </div>
