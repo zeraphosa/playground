@@ -6,13 +6,13 @@ export default function Navbar() {
     <div className="navbar">
       <ul>
         <li>
-          <NavLink to="/" className="navlink">MyDoner</NavLink>
+          <NavLink to="/" className="navlink">MyDönər</NavLink>
         </li>
         <li>
-          <NavLink to="/today" className="navlink">Bugünün hesabatı</NavLink>
+          <NavLink to="/today" className="navlink">Bugünün hesabı</NavLink>
         </li>
         <li>
-          <NavLink to="/all" className="navlink">Bütün hesabatlar</NavLink>
+          <NavLink to="/all" className="navlink">Bütün hesablar</NavLink>
         </li>
       </ul>
     </div>
