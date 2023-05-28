@@ -1,26 +1,26 @@
 import { useState } from "react";
 
-export default function Donerler({ donerler, setDonerler }) {
+export default function Donerler({ data, setData }) {
   const [showDoner, setShowDoner] = useState(true);
 
   function decreaseCount(id) {
-    const newState = donerler.map((item) => {
+    const newState = data.map((item) => {
       if (item.id === id && item.count > 0) {
         return { ...item, count: item.count - 1 };
       }
       return item;
     });
-    setDonerler(newState);
+    setData(newState);
   }
 
   function increaseCount(id) {
-    const newState = donerler.map((item) => {
+    const newState = data.map((item) => {
       if (item.id === id) {
         return { ...item, count: item.count + 1 };
       }
       return item;
     });
-    setDonerler(newState);
+    setData(newState);
   }
 
   return (
@@ -34,7 +34,7 @@ export default function Donerler({ donerler, setDonerler }) {
         </button>
       </div>
       <div>
-        {donerler.map((item) => {
+        {data.map((item) => {
           if ((showDoner && item.type === "toyuq") || (!showDoner && item.type === "et")) {
             return (
               <div key={item.id}>
