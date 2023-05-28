@@ -58,7 +58,7 @@ export default function Home() {
     <div className="home">
       <div className="buttons">
         {types.map((item, id) => (
-          <button key={id} className={menuType === item.type && "active"} onClick={() => menuTypeHandler(item.type)}>
+          <button key={id} className={`${menuType === item.type && "active"}`} onClick={() => menuTypeHandler(item.type)}>
             {item.name}
           </button>
         ))}
@@ -67,7 +67,7 @@ export default function Home() {
         {data.map(
           (item) =>
             item.type === menuType && (
-              <div key={item.id}>
+              <div key={item.id} className="menu-item">
                 <div className="menu-info">
                   <div>{item.name}</div>
                   <div>{item.price}</div>
@@ -81,20 +81,20 @@ export default function Home() {
             ),
         )}
       </div>
-      <div className="check">Check</div>
+      <div className="check">
+        <div>
+          <input id="paket" type="checkbox" />
+          <label for="paket">Paket</label>
+        </div>
+        <div>
+          <p>Toyuq: Çörək 5 ədəd - 10.00</p>
+          <p>Cola 0.5ml 2 ədəd - 2.80</p>
+        </div>
+        <div>
+          Toplam: <span>12.80</span>
+          <button>Göndər</button>
+        </div>
+      </div>
     </div>
   );
 }
-
-// <div className="home">
-//   <div className="menu">
-//     <div className="menu-item">
-//   <Left data={data} setData={setData} />
-//     </div>
-//     <div className="menu-item">
-//       <Others data={data} setData={setData} />
-//     </div>
-//   </div>
-//   <div className="info">Paket</div>
-//   <div className="done">Sifarişi tamamla</div>
-// </div>

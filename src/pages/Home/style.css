@@ -8,11 +8,11 @@
 }
 .buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  gap: 10px;
+  gap: 5px;
 }
 .buttons button {
   width: 160px;
@@ -26,11 +26,110 @@
   border: none;
   cursor: pointer;
 }
-.buttons .active{
-    background-color: green;
+.buttons .active {
+  background-color: green;
+  color: #fff;
 }
-.menu{
-    border: 1px solid red;
-    width: 100%;
-    height: auto;    
+.menu {
+  width: 100%;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.menu-item {
+  width: 49%;
+}
+.menu-info {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  border: 1px solid #fff;
+}
+.menu-info div:first-child {
+  width: 40%;
+}
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.count-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  background-color: #ededed;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+}
+.check {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  border: 1px solid green;
+  margin-bottom: 30px;
+  background-color: #ededed;
+  color: #000;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.check div:first-child {
+  gap: 5px;
+}
+.check div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.check div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.check div button {
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  background-color: #2c3333;
+  color: #fff;
+  cursor: pointer;
+}
+.check div span {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.check div p {
+  width: auto;
+  background-color: #2c3333;
+  color: #fff;
+  padding: 7px 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  .menu {
+    height: auto;
+    align-items: center;
+  }
+  .menu-item {
+    width: 90%;
+  }
 }

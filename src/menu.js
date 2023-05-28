@@ -180,7 +180,7 @@ const menu = [
     type: "et",
     name: "Limuzin lavaş",
     price: "4.70",
-    count: 11,
+    count: 0,
   },
   {
     id: 26,
