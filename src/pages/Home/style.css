@@ -1,7 +1,6 @@
 .home {
   width: 100%;
   height: auto;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -26,4 +25,12 @@
   box-sizing: border-box;
   border: none;
   cursor: pointer;
+}
+.buttons .active{
+    background-color: green;
+}
+.menu{
+    border: 1px solid red;
+    width: 100%;
+    height: auto;    
 }

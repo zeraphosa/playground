@@ -7,23 +7,63 @@ import "./style.css";
 export default function Home() {
   const [data, setData] = useState(menu);
   const [menuType, setMenuType] = useState("toyuq");
+  const types = [
+    {
+      type: "toyuq",
+      name: "Toyuq dönər",
+    },
+    {
+      type: "et",
+      name: "Ət dönər",
+    },
+    {
+      type: "burger",
+      name: "Burger",
+    },
+    {
+      type: "sorba",
+      name: "Şorba",
+    },
+    {
+      type: "salat",
+      name: "Salat",
+    },
+    {
+      type: "cigkofte",
+      name: "çİğ köftə",
+    },
+    {
+      type: "kofte",
+      name: "köftə",
+    },
+    {
+      type: "tost",
+      name: "tost",
+    },
+    {
+      type: "lunch",
+      name: "Business lunch",
+    },
+    {
+      type: "icki",
+      name: "İçkİ",
+    },
+  ];
+
+  function menuTypeHandler(value) {
+    setMenuType(value);
+  }
 
   return (
     <div className="home">
       <div className="buttons">
-        <button onClick={() => setMenuType("toyuq")}>Toyuq dönər</button>
-        <button onClick={() => setMenuType("et")}>Ət dönər</button>
-        <button onClick={() => setMenuType("burger")}>Burger</button>
-        <button onClick={() => setMenuType("sorba")}>Şorba</button>
-        <button onClick={() => setMenuType("salat")}>Salat</button>
-        <button onClick={() => setMenuType("cigkofte")}>çİğ köftə</button>
-        <button onClick={() => setMenuType("kofte")}>köftə</button>
-        <button onClick={() => setMenuType("tost")}>tost</button>
-        <button onClick={() => setMenuType("lunch")}>Business lunch</button>
-        <button onClick={() => setMenuType("icki")}>İçkİ</button>
+        {types.map((item, id) => (
+          <button key={id} className={menuType === item.type && "active"} onClick={() => menuTypeHandler(item.type)}>
+            {item.name}
+          </button>
+        ))}
       </div>
       <div className="menu">
-        <h1>{menuType}</h1>
         {data.map(
           (item) =>
             item.type === menuType && (
