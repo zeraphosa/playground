@@ -50,36 +50,17 @@ export default function Home() {
     },
   ];
 
-  function menuTypeHandler(value) {
-    setMenuType(value);
-  }
-
   return (
     <div className="home">
       <div className="buttons">
         {types.map((item, id) => (
-          <button key={id} className={`${menuType === item.type && "active"}`} onClick={() => menuTypeHandler(item.type)}>
+          <button key={id} className={`${menuType === item.type && "active"}`} onClick={() => setMenuType(item.type)}>
             {item.name}
           </button>
         ))}
       </div>
       <div className="menu">
-        {data.map(
-          (item) =>
-            item.type === menuType && (
-              <div key={item.id} className="menu-item">
-                <div className="menu-info">
-                  <div>{item.name}</div>
-                  <div>{item.price}</div>
-                  <div className="price-info">
-                    <span className="count-btn">-</span>
-                    <span>{item.count}</span>
-                    <span className="count-btn">+</span>
-                  </div>
-                </div>
-              </div>
-            ),
-        )}
+        <Menu data={data} setData={setData} menuType={menuType} />
       </div>
       <div className="check">
         <div>
@@ -96,5 +77,51 @@ export default function Home() {
         </div>
       </div>
     </div>
+  );
+}
+
+function Menu({ data, setData, menuType }) {
+  function decreaseCount(id) {
+    const newState = data.map((item) => {
+      if (item.id === id && item.count > 0) {
+        return { ...item, count: item.count - 1 };
+      }
+      return item;
+    });
+    setData(newState);
+  }
+  function increaseCount(id) {
+    const newState = data.map((item) => {
+      if (item.id === id) {
+        return { ...item, count: item.count + 1, price: item.count >= 1 ? item.price = (item.count -1)* item.price : item.price};
+      }
+      return item;
+    });
+    setData(newState);
+  }
+
+  return (
+    <>
+      {data.map(
+        (item) =>
+          item.type === menuType && (
+            <div key={item.id} className="menu-item">
+              <div className="menu-info">
+                <div>{item.name}</div>
+                <div>{item.price}</div>
+                <div className="price-info">
+                  <span className="count-btn" onClick={() => decreaseCount(item.id)}>
+                    -
+                  </span>
+                  <span>{item.count}</span>
+                  <span className="count-btn" onClick={() => increaseCount(item.id)}>
+                    +
+                  </span>
+                </div>
+              </div>
+            </div>
+          ),
+      )}
+    </>
   );
 }
