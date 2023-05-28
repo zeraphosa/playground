@@ -57,6 +57,56 @@ export default function Donerler({ data, setData }) {
           return null;
         })}
       </div>
+      <div className="kofte">
+        <h1>Köftə</h1>
+        {data.map((item) => {
+          if (item.type === "kofte") {
+            return (
+              <div key={item.id}>
+                <div className="menu-info" style={{ backgroundColor: "#829460" }}>
+                  <div>{item.name}</div>
+                  <div>{item.price}</div>
+                  <div className="price-info">
+                    <span className="count-btn" onClick={() => decreaseCount(item.id, "toyuq")}>
+                      -
+                    </span>
+                    <span>{item.count}</span>
+                    <span className="count-btn" onClick={() => increaseCount(item.id, "toyuq")}>
+                      +
+                    </span>
+                  </div>
+                </div>
+              </div>
+            );
+          }
+          return null;
+        })}
+      </div>
+      <div className="kofte">
+        <h1>İçkİlər</h1>
+        {data.map((item) => {
+          if (item.type === "icki") {
+            return (
+              <div key={item.id}>
+                <div className="menu-info" style={{ backgroundColor: "#5E454B" }}>
+                  <div>{item.name}</div>
+                  <div>{item.price}</div>
+                  <div className="price-info">
+                    <span className="count-btn" onClick={() => decreaseCount(item.id, "toyuq")}>
+                      -
+                    </span>
+                    <span>{item.count}</span>
+                    <span className="count-btn" onClick={() => increaseCount(item.id, "toyuq")}>
+                      +
+                    </span>
+                  </div>
+                </div>
+              </div>
+            );
+          }
+          return null;
+        })}
+      </div>
     </>
   );
 }

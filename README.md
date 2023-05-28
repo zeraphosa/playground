@@ -1,5 +1,16 @@
 Ə ə
-
+menu:
+- toyuq doner
+- et doner
+- burger
+- sorba
+- salat
+- cig kofte
+- kofte
+- tost
+- lunch
+- set
+- icki
 
 # Getting Started with Create React App
 

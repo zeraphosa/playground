@@ -104,6 +104,81 @@ export default function Others({ data, setData }) {
             return null;
           })}
         </div>
+        <div className="others">
+          <h1>My Burger Set</h1>
+          {data.map((item) => {
+            if (item.type === "set") {
+              return (
+                <div key={item.id}>
+                  <div className="menu-info" style={{ backgroundColor: "#9E9D89" }}>
+                    <div>{item.name}</div>
+                    <div>{item.price}</div>
+                    <div className="price-info">
+                      <span className="count-btn" onClick={() => decreaseCount(item.id, "toyuq")}>
+                        -
+                      </span>
+                      <span>{item.count}</span>
+                      <span className="count-btn" onClick={() => increaseCount(item.id, "toyuq")}>
+                        +
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+            return null;
+          })}
+        </div>
+        <div className="others">
+          <h1>Business Lunch</h1>
+          {data.map((item) => {
+            if (item.type === "lunch") {
+              return (
+                <div key={item.id}>
+                  <div className="menu-info" style={{ backgroundColor: "#E6B566" }}>
+                    <div>{item.name}</div>
+                    <div>{item.price}</div>
+                    <div className="price-info">
+                      <span className="count-btn" onClick={() => decreaseCount(item.id, "toyuq")}>
+                        -
+                      </span>
+                      <span>{item.count}</span>
+                      <span className="count-btn" onClick={() => increaseCount(item.id, "toyuq")}>
+                        +
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+            return null;
+          })}
+        </div>
+        <div className="others">
+          <h1>Tost</h1>
+          {data.map((item) => {
+            if (item.type === "tost") {
+              return (
+                <div key={item.id}>
+                  <div className="menu-info" style={{ backgroundColor: "#9656A1" }}>
+                    <div>{item.name}</div>
+                    <div>{item.price}</div>
+                    <div className="price-info">
+                      <span className="count-btn" onClick={() => decreaseCount(item.id, "toyuq")}>
+                        -
+                      </span>
+                      <span>{item.count}</span>
+                      <span className="count-btn" onClick={() => increaseCount(item.id, "toyuq")}>
+                        +
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+            return null;
+          })}
+        </div>
       </>
     );
   }
