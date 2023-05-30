@@ -5,29 +5,25 @@ export default function All() {
     {
       id: 0,
       name: "corek",
-      count: 2,
+      count: 0,
+      defPrice: 2,
+      totalPrice: 2,
     },
     {
       id: 1,
       name: "lavas",
-      count: 3,
+      count: 0,
+      defPrice: 2.5,
+      totalPrice: 2.5,
     },
   ]);
 
-  function decreaseCount(id) {
-    const newState = data.map((item) => {
-      if (item.id === id && item.count > 0) {
-        return { ...item, count: item.count - 1 };
-      }
-      return item;
-    });
-    setData(newState);
-  }
+  function decreaseCount(id) {}
 
   function increaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id) {
-        return { ...item, count: item.count + 1 };
+        return { ...item, count: item.count + 1, totalPrice: item.count >0 ? item.totalPrice + item.defPrice : item.totalPrice };
       }
       return item;
     });
@@ -41,8 +37,9 @@ export default function All() {
         <div key={item.id} style={{ display: "flex", gap: "30px", padding: "30px" }}>
           <p>{item.name}</p>
           <p>{item.count}</p>
-          <button onClick={() => decreaseCount(item.id)}>AZALT</button>
-          <button onClick={() => increaseCount(item.id)}>ARTIR</button>
+          <p>{item.totalPrice}</p>
+          <button onClick={() => decreaseCount(item.id, item.price)}>AZALT</button>
+          <button onClick={() => increaseCount(item.id, item.price)}>ARTIR</button>
         </div>
       ))}
     </div>
