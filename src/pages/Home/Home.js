@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import Left from "../../components/Left";
 // import Others from "../../components/Others";
 import menu from "../../menu";
@@ -49,16 +49,14 @@ export default function Home() {
       name: "İçkİ",
     },
   ];
-  const [totalProduct, setTotalProduct] = useState([
-    {
-      id: 0,
-      type: "",
-      name: "",
-      totalPrice: 0,
-      defPrice: 0,
-      count: 1,
-    },
-  ]);
+  const [totalProduct, setTotalProduct] = useState([]);
+  const [sumTotalPrice, setSumTotalPrice] = useState(0);
+
+  useEffect(() => {
+    totalProduct.map((item) => {
+      return setSumTotalPrice(sumTotalPrice + item.totalPrice);
+    });
+  }, [totalProduct]);
 
   return (
     <div className="home">
@@ -77,17 +75,15 @@ export default function Home() {
           <p>Paket</p>
         </div>
         <div className="check-info">
-          {totalProduct.map(
-            (item, id) =>
-              item.type && (
-                <p key={id}>
-                  {item.name} <span>{item.count}</span> ədəd <span>{Number(item.totalPrice.toFixed(1))}</span>
-                </p>
-              ),
-          )}
+          {totalProduct?.map((item, id) => (
+            <p key={id}>
+              {item.name} <span>{item.count}</span> ədəd <span>{Number(item.totalPrice.toFixed(1))}</span>
+            </p>
+          ))}
         </div>
         <div className="check-btn">
-          <span>12.80</span>
+          <p>Toplam</p>
+          <span>{sumTotalPrice}</span>
         </div>
       </div>
     </div>
