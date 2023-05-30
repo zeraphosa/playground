@@ -111,7 +111,7 @@ export default function Home() {
 }
 
 function Menu({ data, setData, menuType, totalProduct, setTotalProduct }) {
-  const [array, setArray] = useState([]);
+  const [denme, setDenme] = useState([]);
   function decreaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id && item.count > 0) {
@@ -123,23 +123,16 @@ function Menu({ data, setData, menuType, totalProduct, setTotalProduct }) {
   }
 
   function increaseCount(id, item) {
-    let lastId = 0;
-    if (totalProduct.map((item) => item.id === lastId)) {
-      console.log("ids:", item.id, id);
-    }
-
     const newState = data.map((item) => {
       if (item.id === id) {
-        lastId = item.id;
         return { ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice };
       }
       return item;
     });
     setData(newState);
-
-    setTotalProduct([{ ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice }]);
-
-    console.log(totalProduct);
+    newState.filter((w) => w.count !== 0 && setDenme([w]));
+    setTotalProduct([...denme,{ ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice }]);
+    console.log(totalProduct)
   }
 
   return (

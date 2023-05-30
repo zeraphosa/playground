@@ -17,17 +17,19 @@ export default function All() {
       totalPrice: 2.5,
     },
   ]);
+  const [totalProducts, setTotalProducts] = useState([]);
 
-  function decreaseCount(id) {}
-
-  function increaseCount(id) {
+  function increaseCount(id, item) {
     const newState = data.map((item) => {
       if (item.id === id) {
-        return { ...item, count: item.count + 1, totalPrice: item.count >0 ? item.totalPrice + item.defPrice : item.totalPrice };
+        return { ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice };
       }
       return item;
     });
     setData(newState);
+
+    const changedProducts = newState.filter((item)=> item.count !== 0);
+    setTotalProducts(changedProducts)
   }
 
   return (
@@ -38,10 +40,19 @@ export default function All() {
           <p>{item.name}</p>
           <p>{item.count}</p>
           <p>{item.totalPrice}</p>
-          <button onClick={() => decreaseCount(item.id, item.price)}>AZALT</button>
-          <button onClick={() => increaseCount(item.id, item.price)}>ARTIR</button>
+          <button onClick={() => increaseCount(item.id, item)}>ARTIR</button>
         </div>
       ))}
+      <div>
+        TOTAL:{" "}
+        {totalProducts.map((item) => (
+          <div>
+            <p>{item.name}</p>
+            <p>{item.count}</p>
+            <p>{item.totalPrice}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
