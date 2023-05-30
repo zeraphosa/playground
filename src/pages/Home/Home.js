@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useState } from "react";
 // import Left from "../../components/Left";
 // import Others from "../../components/Others";
 import menu from "../../menu";
@@ -84,7 +84,7 @@ function Menu({ data, setData, menuType }) {
   function decreaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id && item.count > 0) {
-        return { ...item, count: item.count - 1 };
+        return { ...item, count: item.count - 1, totalPrice: item.count > 1 ? item.totalPrice - item.defPrice : item.totalPrice };
       }
       return item;
     });
