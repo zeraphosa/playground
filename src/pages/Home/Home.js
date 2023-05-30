@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 // import Left from "../../components/Left";
 // import Others from "../../components/Others";
 import menu from "../../menu";
@@ -65,7 +65,7 @@ export default function Home() {
       <div className="check">
         <div>
           <input id="paket" type="checkbox" />
-          <label for="paket">Paket</label>
+          <label htmlFor="paket">Paket</label>
         </div>
         <div>
           <p>Toyuq: Çörək 5 ədəd - 10.00</p>
@@ -90,14 +90,17 @@ function Menu({ data, setData, menuType }) {
     });
     setData(newState);
   }
-  function increaseCount(id) {
+  function increaseCount(id, local) {
     const newState = data.map((item) => {
+      console.log(local)
       if (item.id === id) {
-        return { ...item, count: item.count + 1, price: item.count >= 1 ? item.price = (item.count -1)* item.price : item.price};
+        return { ...item, count: item.count + 1, price: item.count > 0 ? parseFloat(localStorage.getItem("price")) + item.price : item.price };
       }
       return item;
     });
     setData(newState);
+
+    // console.log( price: item.count >= 1 ? item.price = (item.count -1)* item.price : item.price)
   }
 
   return (
@@ -110,11 +113,11 @@ function Menu({ data, setData, menuType }) {
                 <div>{item.name}</div>
                 <div>{item.price}</div>
                 <div className="price-info">
-                  <span className="count-btn" onClick={() => decreaseCount(item.id)}>
+                  <span className="count-btn" onClick={() => decreaseCount(item.id, localStorage.setItem("price", item.price))}>
                     -
                   </span>
                   <span>{item.count}</span>
-                  <span className="count-btn" onClick={() => increaseCount(item.id)}>
+                  <span className="count-btn" onClick={() => increaseCount(item.id, localStorage.setItem("price", item.price))}>
                     +
                   </span>
                 </div>
