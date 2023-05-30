@@ -81,7 +81,6 @@ export default function Home() {
 }
 
 function Menu({ data, setData, menuType }) {
-
   function decreaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id && item.count > 0) {
@@ -94,6 +93,7 @@ function Menu({ data, setData, menuType }) {
   function increaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id) {
+        console.log(item.totalPrice);
         return { ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice };
       }
       return item;
@@ -109,7 +109,7 @@ function Menu({ data, setData, menuType }) {
             <div key={item.id} className="menu-item">
               <div className="menu-info">
                 <div>{item.name}</div>
-                <div>{item.totalPrice}</div>
+                <div>{Number(item.totalPrice.toFixed(1))}</div>
                 <div className="price-info">
                   <span className="count-btn" onClick={() => decreaseCount(item.id)}>
                     -
