@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import Left from "../../components/Left";
 // import Others from "../../components/Others";
 import menu from "../../menu";
@@ -49,6 +49,16 @@ export default function Home() {
       name: "İçkİ",
     },
   ];
+  const [totalProduct, setTotalProduct] = useState([
+    {
+      id: 0,
+      type: "",
+      name: "",
+      totalPrice: 0,
+      defPrice: 0,
+      count: 1,
+    },
+  ]);
 
   return (
     <div className="home">
@@ -60,17 +70,22 @@ export default function Home() {
         ))}
       </div>
       <div className="menu">
-        <Menu data={data} setData={setData} menuType={menuType} />
+        <Menu data={data} setData={setData} menuType={menuType} totalProduct={totalProduct} setTotalProduct={setTotalProduct} />
       </div>
       <div className="check">
         <div>
           <input id="paket" type="checkbox" />
           <label htmlFor="paket">Paket</label>
         </div>
-        <div>
-          <p>Toyuq: Çörək 5 ədəd - 10.00</p>
-          <p>Cola 0.5ml 2 ədəd - 2.80</p>
-        </div>
+        {totalProduct.map((item, id) => (
+          <div key={id}>
+            {item.type && (
+              <p>
+                {item.type} {item.name} {item.count} ədəd {item.totalPrice} azn
+              </p>
+            )}
+          </div>
+        ))}
         <div>
           Toplam: <span>12.80</span>
           <button>Göndər</button>
@@ -80,7 +95,7 @@ export default function Home() {
   );
 }
 
-function Menu({ data, setData, menuType }) {
+function Menu({ data, setData, menuType, totalProduct, setTotalProduct }) {
   function decreaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id && item.count > 0) {
@@ -90,15 +105,16 @@ function Menu({ data, setData, menuType }) {
     });
     setData(newState);
   }
-  function increaseCount(id) {
+
+  function increaseCount(id, item) {
     const newState = data.map((item) => {
       if (item.id === id) {
-        console.log(item.totalPrice);
         return { ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice };
       }
       return item;
     });
     setData(newState);
+    setTotalProduct([{ ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice }]);
   }
 
   return (
@@ -115,7 +131,7 @@ function Menu({ data, setData, menuType }) {
                     -
                   </span>
                   <span>{item.count}</span>
-                  <span className="count-btn" onClick={() => increaseCount(item.id)}>
+                  <span className="count-btn" onClick={() => increaseCount(item.id, item)}>
                     +
                   </span>
                 </div>
