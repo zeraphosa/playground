@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-// import Left from "../../components/Left";
-// import Others from "../../components/Others";
 import menu from "../../menu";
 import "./style.css";
 
 export default function Home() {
   const [data, setData] = useState(menu);
-  const [menuType, setMenuType] = useState("toyuq");
+  const [menuType, setMenuType] = useState(localStorage.getItem("menuType") === null ? "toyuq" : localStorage.getItem("menuType"));
   const types = [
     {
       type: "toyuq",
@@ -53,10 +51,11 @@ export default function Home() {
   const [sumTotalPrice, setSumTotalPrice] = useState(0);
 
   useEffect(() => {
-    totalProduct.map((item) => {
-      return setSumTotalPrice(sumTotalPrice + item.totalPrice);
-    });
-  }, [totalProduct]);
+    localStorage.setItem("menuType", menuType);
+    // totalProduct.map((item) => {
+    //   setSumTotalPrice((item.totalPrice += 1));
+    // });
+  }, [menuType]);
 
   return (
     <div className="home">
@@ -77,7 +76,7 @@ export default function Home() {
         <div className="check-info">
           {totalProduct?.map((item, id) => (
             <p key={id}>
-              {item.name} <span>{item.count}</span> ədəd <span>{Number(item.totalPrice.toFixed(1))}</span>
+              <span>{item.count}</span> ədəd {item.name} <span>{Number(item.totalPrice.toFixed(1))}</span> azn
             </p>
           ))}
         </div>
