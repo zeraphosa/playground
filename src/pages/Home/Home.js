@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // import Left from "../../components/Left";
 // import Others from "../../components/Others";
 import menu from "../../menu";
@@ -59,12 +59,6 @@ export default function Home() {
       count: 1,
     },
   ]);
-  // const [array, setArray] = useState([]);
-
-  // useEffect(() => {
-  //   setArray((prevArray) => [...prevArray, ...totalProduct]);
-  // }, [totalProduct]);
-  // console.log(array);
 
   return (
     <div className="home">
@@ -83,20 +77,11 @@ export default function Home() {
           <input id="paket" type="checkbox" />
           <label htmlFor="paket">Paket</label>
         </div>
-        {/* {totalProduct.map((item, id) => (
-          <div key={id}>
-            {item.type && (
-              <p>
-                {item.type} {item.name} {item.count} ədəd {item.totalPrice} azn
-              </p>
-            )}
-          </div>
-        ))} */}
         {totalProduct.map((item, id) => (
           <div key={id}>
             {item.type && (
               <p>
-                {item.type} {item.name} {item.count} ədəd {item.totalPrice} azn
+                {item.type} {item.name} {item.count} ədəd {Number(item.totalPrice.toFixed(1))} azn
               </p>
             )}
           </div>
@@ -111,7 +96,6 @@ export default function Home() {
 }
 
 function Menu({ data, setData, menuType, totalProduct, setTotalProduct }) {
-  const [denme, setDenme] = useState([]);
   function decreaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id && item.count > 0) {
@@ -130,9 +114,8 @@ function Menu({ data, setData, menuType, totalProduct, setTotalProduct }) {
       return item;
     });
     setData(newState);
-    newState.filter((w) => w.count !== 0 && setDenme([w]));
-    setTotalProduct([...denme,{ ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice }]);
-    console.log(totalProduct)
+    const changedProducts = newState.filter((item) => item.count !== 0);
+    setTotalProduct(changedProducts);
   }
 
   return (
