@@ -59,6 +59,12 @@ export default function Home() {
       count: 1,
     },
   ]);
+  // const [array, setArray] = useState([]);
+
+  // useEffect(() => {
+  //   setArray((prevArray) => [...prevArray, ...totalProduct]);
+  // }, [totalProduct]);
+  // console.log(array);
 
   return (
     <div className="home">
@@ -77,6 +83,15 @@ export default function Home() {
           <input id="paket" type="checkbox" />
           <label htmlFor="paket">Paket</label>
         </div>
+        {/* {totalProduct.map((item, id) => (
+          <div key={id}>
+            {item.type && (
+              <p>
+                {item.type} {item.name} {item.count} ədəd {item.totalPrice} azn
+              </p>
+            )}
+          </div>
+        ))} */}
         {totalProduct.map((item, id) => (
           <div key={id}>
             {item.type && (
@@ -96,6 +111,7 @@ export default function Home() {
 }
 
 function Menu({ data, setData, menuType, totalProduct, setTotalProduct }) {
+  const [array, setArray] = useState([]);
   function decreaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id && item.count > 0) {
@@ -107,14 +123,23 @@ function Menu({ data, setData, menuType, totalProduct, setTotalProduct }) {
   }
 
   function increaseCount(id, item) {
+    let lastId = 0;
+    if (totalProduct.map((item) => item.id === lastId)) {
+      console.log("ids:", item.id, id);
+    }
+
     const newState = data.map((item) => {
       if (item.id === id) {
+        lastId = item.id;
         return { ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice };
       }
       return item;
     });
     setData(newState);
+
     setTotalProduct([{ ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice }]);
+
+    console.log(totalProduct);
   }
 
   return (
