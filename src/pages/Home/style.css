@@ -77,53 +77,51 @@
   padding: 10px;
   box-sizing: border-box;
   width: 100%;
+  min-height: 100px;
   height: auto;
-  border: 1px solid green;
   margin-bottom: 30px;
   background-color: #ededed;
-  color: #000;
   border-radius: 10px;
-  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
-.check div:first-child {
-  gap: 5px;
-}
-.check div:nth-child(2) {
+.check-info {
+  gap: 20px;
+  height: auto;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  border: 1px solid red;
   padding: 0 30px;
   box-sizing: border-box;
 }
-.check div {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+
+.check-btn{
+  border: 1px solid red;
+  height: 100%;
 }
-.check div button {
-  padding: 10px 15px;
-  font-size: 20px;
+
+.check span {
   font-weight: 700;
   letter-spacing: 1px;
-  border: none;
-  background-color: #2c3333;
-  color: #fff;
-  cursor: pointer;
-}
-.check div span {
   font-weight: 700;
-  letter-spacing: 1px;
+  color: #ff1e00;
+  font-size: 25px;
 }
-.check div p {
+
+.check p {
   width: auto;
+  font-size: 25px;
   background-color: #2c3333;
   color: #fff;
   padding: 7px 10px;
   text-align: center;
   box-sizing: border-box;
 }
+
 @media (max-width: 500px) {
   .menu {
     height: auto;

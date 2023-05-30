@@ -70,32 +70,31 @@ export default function Home() {
         ))}
       </div>
       <div className="menu">
-        <Menu data={data} setData={setData} menuType={menuType} totalProduct={totalProduct} setTotalProduct={setTotalProduct} />
+        <Menu data={data} setData={setData} menuType={menuType} setTotalProduct={setTotalProduct} />
       </div>
       <div className="check">
-        <div>
-          <input id="paket" type="checkbox" />
-          <label htmlFor="paket">Paket</label>
+        <div className="check-btn">
+          <p>Paket</p>
         </div>
-        {totalProduct.map((item, id) => (
-          <div key={id}>
-            {item.type && (
-              <p>
-                {item.type} {item.name} {item.count} ədəd {Number(item.totalPrice.toFixed(1))} azn
-              </p>
-            )}
-          </div>
-        ))}
-        <div>
-          Toplam: <span>12.80</span>
-          <button>Göndər</button>
+        <div className="check-info">
+          {totalProduct.map(
+            (item, id) =>
+              item.type && (
+                <p key={id}>
+                  {item.name} <span>{item.count}</span> ədəd <span>{Number(item.totalPrice.toFixed(1))}</span>
+                </p>
+              ),
+          )}
+        </div>
+        <div className="check-btn">
+          <span>12.80</span>
         </div>
       </div>
     </div>
   );
 }
 
-function Menu({ data, setData, menuType, totalProduct, setTotalProduct }) {
+function Menu({ data, setData, menuType, setTotalProduct }) {
   function decreaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id && item.count > 0) {
