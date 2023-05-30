@@ -91,18 +91,14 @@ function Menu({ data, setData, menuType }) {
     });
     setData(newState);
   }
-  function increaseCount(id, lastPrice) {
-    // localStorage.setItem("price", lastPrice);
-
+  function increaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id) {
-        return { ...item, count: item.count + 1, price: item.count > 0 ? parseFloat(localStorage.getItem("price")) + item.price : item.price };
+        return { ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice };
       }
       return item;
     });
     setData(newState);
-
-    // console.log( price: item.count >= 1 ? item.price = (item.count -1)* item.price : item.price)
   }
 
   return (
@@ -113,13 +109,13 @@ function Menu({ data, setData, menuType }) {
             <div key={item.id} className="menu-item">
               <div className="menu-info">
                 <div>{item.name}</div>
-                <div>{item.price}</div>
+                <div>{item.totalPrice}</div>
                 <div className="price-info">
-                  <span className="count-btn" onClick={() => decreaseCount(item.id, item.price)}>
+                  <span className="count-btn" onClick={() => decreaseCount(item.id)}>
                     -
                   </span>
                   <span>{item.count}</span>
-                  <span className="count-btn" onClick={() => increaseCount(item.id, item.price)}>
+                  <span className="count-btn" onClick={() => increaseCount(item.id)}>
                     +
                   </span>
                 </div>
