@@ -48,13 +48,16 @@ export default function Home() {
     },
   ];
   const [totalProduct, setTotalProduct] = useState([]);
+  const [allTotalPrice, setAllTotalPrice] = useState(0);
 
   useEffect(() => {
+    const array = [];
     localStorage.setItem("menuType", menuType);
     totalProduct.map((item) => {
-      setTotalProduct(item.totalPrice);
+      return array.push(item.totalPrice);
     });
-  }, [totalProduct, menuType]);
+    setAllTotalPrice(array.reduce((a, b) => a + b, 0));
+  }, [totalProduct, menuType, allTotalPrice]);
 
   return (
     <div className="home">
@@ -81,7 +84,7 @@ export default function Home() {
         </div>
         <div className="check-btn">
           <p>Toplam</p>
-          <span>{0}</span>
+          <span>{allTotalPrice}</span>
         </div>
       </div>
     </div>
