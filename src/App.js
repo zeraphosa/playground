@@ -10,6 +10,8 @@ import "./style.css";
 export default function App() {
   const loginStatus = localStorage.getItem("status");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [totalProduct, setTotalProduct] = useState([]);
+  const [allTotalPrice, setAllTotalPrice] = useState(0);
 
   return (
     <BrowserRouter>
@@ -18,8 +20,8 @@ export default function App() {
         <div className="content">
           {loginStatus === "true" ? (
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/today" element={<Today />} />
+              <Route path="/" element={<Home totalProduct={totalProduct} setTotalProduct={setTotalProduct} allTotalPrice={allTotalPrice} setAllTotalPrice={setAllTotalPrice} />} />
+              <Route path="/today" element={<Today totalProduct={totalProduct} allTotalPrice={allTotalPrice} />} />
               <Route path="/all" element={<All />} />
             </Routes>
           ) : (

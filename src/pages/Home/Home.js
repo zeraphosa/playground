@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import menu from "../../menu";
 import "./style.css";
 
-export default function Home() {
+export default function Home({ totalProduct, setTotalProduct, allTotalPrice, setAllTotalPrice }) {
   const [data, setData] = useState(menu);
   const [menuType, setMenuType] = useState(localStorage.getItem("menuType") === null ? "toyuq" : localStorage.getItem("menuType"));
   const types = [
@@ -47,9 +47,8 @@ export default function Home() {
       name: "İçkİ",
     },
   ];
-  const [totalProduct, setTotalProduct] = useState([]);
-  const [allTotalPrice, setAllTotalPrice] = useState(0);
-  const [sendingData, setSendingData] = useState([]);
+  
+
   useEffect(() => {
     const array = [];
     localStorage.setItem("menuType", menuType);
@@ -57,7 +56,7 @@ export default function Home() {
       return array.push(item.totalPrice);
     });
     setAllTotalPrice(array.reduce((a, b) => a + b, 0));
-  }, [totalProduct, menuType, allTotalPrice]);
+  }, [totalProduct, allTotalPrice, menuType, setAllTotalPrice]);
 
   return (
     <div className="home">
