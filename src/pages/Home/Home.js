@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import menu from "../../menu";
 import "./style.css";
 
-export default function Home({ allData, setAllData }) {
+export default function Home({ setAllData }) {
   const [data, setData] = useState(menu);
   const [menuType, setMenuType] = useState(localStorage.getItem("menuType") === null ? "toyuq" : localStorage.getItem("menuType"));
   const types = [
@@ -50,6 +50,22 @@ export default function Home({ allData, setAllData }) {
   const [totalProduct, setTotalProduct] = useState([]);
   const [allTotalPrice, setAllTotalPrice] = useState(0);
   const [isPackage, setIsPackage] = useState(false);
+  const newArray = [];
+  function handleSendData() {
+    let newName = "";
+    const newState = totalProduct.map((item) => {
+      if (item.id) {
+        newName = item.name + " " + item.count + " ədəd " + item.totalPrice;
+        return newName;
+      }
+      return item;
+      // return { products: [item.name], totalPrice: allTotalPrice, isPackage: isPackage };
+      // return item;
+    });
+
+    newArray.push(newState);
+    setAllData([{ products: newArray, totalPrice: allTotalPrice, isPackage: isPackage }]);
+  }
 
   useEffect(() => {
     const array = [];
@@ -60,26 +76,8 @@ export default function Home({ allData, setAllData }) {
     setAllTotalPrice(array.reduce((a, b) => a + b, 0));
   }, [totalProduct, menuType]);
 
-  useEffect(() => {
-    const newState = totalProduct.map((item) => {
-      if (item.id) {
-        return { products: item.name, totalPrice: allTotalPrice, isPackage: isPackage };
-      }
-      return item;
-    });
-    setAllData(newState);
-  }, [totalProduct, setAllData, allData, allTotalPrice, isPackage]);
-
   return (
     <div className="home">
-      {allData.map((item) => (
-        <div>
-          <p>{item.id}</p>
-          <p>{item.products}</p>
-          <p>{item.isPackage}</p>
-          <p>{item.totalPrice}</p>
-        </div>
-      ))}
       <div className="buttons">
         {types.map((item, id) => (
           <button key={id} className={`${menuType === item.type && "active"}`} onClick={() => setMenuType(item.type)}>
@@ -101,7 +99,7 @@ export default function Home({ allData, setAllData }) {
             </p>
           ))}
         </div>
-        <div className="check-btn" onClick={() => setTotalProduct([...totalProduct, { allTotal: allTotalPrice }])}>
+        <div className="check-btn" onClick={handleSendData}>
           <p>Toplam</p>
           <span>{allTotalPrice}</span>
         </div>

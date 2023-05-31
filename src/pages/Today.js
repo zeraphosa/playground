@@ -1,9 +1,16 @@
-export default function Today() {
+export default function Today({ allData }) {
   // 79 | products | isPaket | totalPrice |
-
   return (
     <div className="today">
-      <div className="header">
+      {allData.map((item) => (
+        <div key={item.id}>
+          <p>{item.id}</p>
+          <p>{item.products}</p>
+          <p>{item.isPackage}</p>
+          <p>{item.totalPrice}</p>
+        </div>
+      ))}
+      {/* <div className="header">
         <h2>
           Toplam Paket {19} ədəd {56} azn
         </h2>
@@ -23,7 +30,7 @@ export default function Today() {
             <td>8.8 azn</td>
           </tr>
         </table>
-      </div>
+      </div> */}
     </div>
   );
 }

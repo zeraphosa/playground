@@ -19,6 +19,7 @@ export default function App() {
     },
   ]);
 
+  console.log(allData)
   return (
     <BrowserRouter>
       <div className="app">
@@ -27,7 +28,7 @@ export default function App() {
           {loginStatus === "true" ? (
             <Routes>
               <Route path="/" element={<Home allData={allData} setAllData={setAllData} />} />
-              <Route path="/today" element={<Today />} />
+              <Route path="/today" element={<Today allData={allData} />} />
               <Route path="/all" element={<All />} />
             </Routes>
           ) : (
