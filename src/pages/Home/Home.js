@@ -49,7 +49,7 @@ export default function Home() {
   ];
   const [totalProduct, setTotalProduct] = useState([]);
   const [allTotalPrice, setAllTotalPrice] = useState(0);
-
+  const [sendingData, setSendingData] = useState([]);
   useEffect(() => {
     const array = [];
     localStorage.setItem("menuType", menuType);
@@ -82,11 +82,16 @@ export default function Home() {
             </p>
           ))}
         </div>
-        <div className="check-btn">
+        <div className="check-btn" onClick={() => setTotalProduct([...totalProduct, { allTotal: allTotalPrice }])}>
           <p>Toplam</p>
           <span>{allTotalPrice}</span>
         </div>
       </div>
+      {totalProduct.map((item) => (
+        <p key={item.id}>
+          {item.name} {item.totalPrice} {item.allTotalPrice}
+        </p>
+      ))}
     </div>
   );
 }
