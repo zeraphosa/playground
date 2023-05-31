@@ -13,10 +13,10 @@ export default function Today({ allData }) {
       </div>
       <table className="table-container">
         <thead>
-          <th>#</th>
-          <th>Product</th>
-          <th>Paket</th>
-          <th>Toplam</th>
+          <td>#</td>
+          <td>Product</td>
+          <td>Paket</td>
+          <td>Toplam</td>
         </thead>
         {allData.map((item) => (
           <tbody key={item.id}>

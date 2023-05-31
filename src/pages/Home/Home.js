@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import menu from "../../menu";
 import "./style.css";
 
-export default function Home({ setAllData }) {
+export default function Home({ allData, setAllData }) {
   const [data, setData] = useState(menu);
   const [menuType, setMenuType] = useState(localStorage.getItem("menuType") === null ? "toyuq" : localStorage.getItem("menuType"));
   const types = [
