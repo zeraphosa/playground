@@ -2,7 +2,7 @@ const menu = [
   {
     id: 0,
     type: "toyuq",
-    name: "çörək",
+    name: "toyuq çörək",
     defPrice: 2.0,
     count: 0,
     totalPrice: 2.0,
@@ -10,7 +10,7 @@ const menu = [
   {
     id: 1,
     type: "toyuq",
-    name: "lavaş",
+    name: "Toyuq lavaş",
     defPrice: 2.2,
     count: 0,
     totalPrice: 2.2,
@@ -18,7 +18,7 @@ const menu = [
   {
     id: 2,
     type: "toyuq",
-    name: "Porsion",
+    name: "Toyuq Porsion",
     defPrice: 4.5,
     count: 0,
     totalPrice: 4.5,
@@ -26,7 +26,7 @@ const menu = [
   {
     id: 3,
     type: "toyuq",
-    name: "Bastırma",
+    name: "Toyuq Bastırma",
     defPrice: 2.5,
     count: 0,
     totalPrice: 2.5,
@@ -34,7 +34,7 @@ const menu = [
   {
     id: 4,
     type: "toyuq",
-    name: "Tombili",
+    name: "Toyuq Tombili",
     defPrice: 2.5,
     count: 0,
     totalPrice: 2.5,
@@ -42,7 +42,7 @@ const menu = [
   {
     id: 5,
     type: "toyuq",
-    name: "Sezar",
+    name: "Toyuq Sezar",
     defPrice: 3.0,
     count: 0,
     totalPrice: 3.0,
@@ -50,7 +50,7 @@ const menu = [
   {
     id: 6,
     type: "toyuq",
-    name: "Pilov üstü",
+    name: "Toyuq Pilov üstü",
     defPrice: 5.5,
     count: 0,
     totalPrice: 5.5,
@@ -58,7 +58,7 @@ const menu = [
   {
     id: 7,
     type: "toyuq",
-    name: "My Dönər Roll",
+    name: "Toyuq My Dönər Roll",
     defPrice: 3.7,
     count: 0,
     totalPrice: 3.7,
@@ -66,7 +66,7 @@ const menu = [
   {
     id: 8,
     type: "toyuq",
-    name: "Pendirli çörək",
+    name: "Toyuq Pendirli çörək",
     defPrice: 2.5,
     count: 0,
     totalPrice: 2.5,
@@ -74,7 +74,7 @@ const menu = [
   {
     id: 9,
     type: "toyuq",
-    name: "Pendirli lavaş",
+    name: "Toyuq Pendirli lavaş",
     defPrice: 2.7,
     count: 0,
     totalPrice: 2.7,
@@ -82,7 +82,7 @@ const menu = [
   {
     id: 10,
     type: "toyuq",
-    name: "Limuzin çörək",
+    name: "Toyuq Limuzin çörək",
     defPrice: 3.5,
     count: 0,
     totalPrice: 3.5,
@@ -90,7 +90,7 @@ const menu = [
   {
     id: 11,
     type: "toyuq",
-    name: "Limuzin lavaş",
+    name: "Toyuq Limuzin lavaş",
     defPrice: 3.7,
     count: 0,
     totalPrice: 3.7,
@@ -98,7 +98,7 @@ const menu = [
   {
     id: 12,
     type: "toyuq",
-    name: "Şaurma çörək",
+    name: "Toyuq Şaurma çörək",
     defPrice: 2.7,
     count: 0,
     totalPrice: 2.7,
@@ -106,7 +106,7 @@ const menu = [
   {
     id: 13,
     type: "toyuq",
-    name: "Şaurma lavaş",
+    name: "Toyuq Şaurma lavaş",
     defPrice: 2.9,
     count: 0,
     totalPrice: 2.9,
@@ -115,7 +115,7 @@ const menu = [
   {
     id: 14,
     type: "et",
-    name: "çörək",
+    name: "Ət çörək",
     defPrice: 2.5,
     count: 0,
     totalPrice: 2.5,
@@ -123,7 +123,7 @@ const menu = [
   {
     id: 15,
     type: "et",
-    name: "lavaş",
+    name: "Ət lavaş",
     defPrice: 2.7,
     count: 0,
     totalPrice: 2.7,
@@ -131,7 +131,7 @@ const menu = [
   {
     id: 16,
     type: "et",
-    name: "Porsion",
+    name: "Ət Porsion",
     defPrice: 5.5,
     count: 0,
     totalPrice: 5.5,
@@ -139,7 +139,7 @@ const menu = [
   {
     id: 17,
     type: "et",
-    name: "Bastırma",
+    name: "Ət Bastırma",
     defPrice: 3.0,
     count: 0,
     totalPrice: 3.0,
@@ -147,7 +147,7 @@ const menu = [
   {
     id: 18,
     type: "et",
-    name: "Tombili",
+    name: "Ət Tombili",
     defPrice: 3.0,
     count: 0,
     totalPrice: 3.0,
@@ -155,7 +155,7 @@ const menu = [
   {
     id: 19,
     type: "et",
-    name: "Sezar",
+    name: "Ət Sezar",
     defPrice: 3.5,
     count: 0,
     totalPrice: 3.5,
@@ -163,7 +163,7 @@ const menu = [
   {
     id: 20,
     type: "et",
-    name: "Pilov üstü",
+    name: "Ət Pilov üstü",
     defPrice: 6.5,
     count: 0,
     totalPrice: 6.5,
@@ -171,7 +171,7 @@ const menu = [
   {
     id: 21,
     type: "et",
-    name: "My Dönər Roll",
+    name: "Ət My Dönər Roll",
     defPrice: 4.7,
     count: 0,
     totalPrice: 4.7,
@@ -179,7 +179,7 @@ const menu = [
   {
     id: 22,
     type: "et",
-    name: "Pendirli çörək",
+    name: "Ət Pendirli çörək",
     defPrice: 3.0,
     count: 0,
     totalPrice: 3.0,
@@ -187,7 +187,7 @@ const menu = [
   {
     id: 23,
     type: "et",
-    name: "Pendirli lavaş",
+    name: "Ət Pendirli lavaş",
     defPrice: 3.2,
     count: 0,
     totalPrice: 3.2,
@@ -195,7 +195,7 @@ const menu = [
   {
     id: 24,
     type: "et",
-    name: "Limuzin çörək",
+    name: "Ət Limuzin çörək",
     defPrice: 4.5,
     count: 0,
     totalPrice: 4.5,
@@ -203,7 +203,7 @@ const menu = [
   {
     id: 25,
     type: "et",
-    name: "Limuzin lavaş",
+    name: "Ət Limuzin lavaş",
     defPrice: 4.7,
     count: 0,
     totalPrice: 4.7,
@@ -211,7 +211,7 @@ const menu = [
   {
     id: 26,
     type: "et",
-    name: "Şaurma çörək",
+    name: "Ət Şaurma çörək",
     defPrice: 3.0,
     count: 0,
     totalPrice: 3.0,
@@ -219,7 +219,7 @@ const menu = [
   {
     id: 27,
     type: "et",
-    name: "Şaurma lavaş",
+    name: "Ət Şaurma lavaş",
     defPrice: 3.2,
     count: 0,
     totalPrice: 3.2,
@@ -227,7 +227,7 @@ const menu = [
   {
     id: 28,
     type: "et",
-    name: "İskəndər",
+    name: "Ət İskəndər",
     defPrice: 7.9,
     count: 0,
     totalPrice: 7.9,
@@ -235,7 +235,7 @@ const menu = [
   {
     id: 29,
     type: "et",
-    name: "Mix Dönər",
+    name: "Ət Mix Dönər",
     defPrice: 2.5,
     count: 0,
     totalPrice: 2.5,
