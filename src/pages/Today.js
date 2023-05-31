@@ -1,12 +1,9 @@
-export default function Today({ setTotalProduct, totalProduct }) {
+export default function Today() {
   // 79 | products | isPaket | totalPrice |
 
   return (
     <div className="today">
-      {totalProduct.map((item) => (
-        <h1>{item.name}</h1>
-      ))}
-      {/* <div className="header">
+      <div className="header">
         <h2>
           Toplam Paket {19} ədəd {56} azn
         </h2>
@@ -26,7 +23,7 @@ export default function Today({ setTotalProduct, totalProduct }) {
             <td>8.8 azn</td>
           </tr>
         </table>
-      </div> */}
+      </div>
     </div>
   );
 }

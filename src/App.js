@@ -10,8 +10,14 @@ import "./style.css";
 export default function App() {
   const loginStatus = localStorage.getItem("status");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [totalProduct, setTotalProduct] = useState([]);
-  const [allTotalPrice, setAllTotalPrice] = useState(0);
+  const [allData, setAllData] = useState([
+    {
+      id: 0,
+      products: "",
+      totalPrice: 0,
+      isPackage: false,
+    },
+  ]);
 
   return (
     <BrowserRouter>
@@ -20,8 +26,8 @@ export default function App() {
         <div className="content">
           {loginStatus === "true" ? (
             <Routes>
-              <Route path="/" element={<Home totalProduct={totalProduct} setTotalProduct={setTotalProduct} allTotalPrice={allTotalPrice} setAllTotalPrice={setAllTotalPrice} />} />
-              <Route path="/today" element={<Today totalProduct={totalProduct} allTotalPrice={allTotalPrice} />} />
+              <Route path="/" element={<Home allData={allData} setAllData={setAllData} />} />
+              <Route path="/today" element={<Today />} />
               <Route path="/all" element={<All />} />
             </Routes>
           ) : (

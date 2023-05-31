@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import menu from "../../menu";
 import "./style.css";
 
-export default function Home({ totalProduct, setTotalProduct, allTotalPrice, setAllTotalPrice }) {
+export default function Home({ allData, setAllData }) {
   const [data, setData] = useState(menu);
   const [menuType, setMenuType] = useState(localStorage.getItem("menuType") === null ? "toyuq" : localStorage.getItem("menuType"));
   const types = [
@@ -47,7 +47,9 @@ export default function Home({ totalProduct, setTotalProduct, allTotalPrice, set
       name: "İçkİ",
     },
   ];
-  
+  const [totalProduct, setTotalProduct] = useState([]);
+  const [allTotalPrice, setAllTotalPrice] = useState(0);
+  const [isPackage, setIsPackage] = useState(false);
 
   useEffect(() => {
     const array = [];
@@ -56,10 +58,28 @@ export default function Home({ totalProduct, setTotalProduct, allTotalPrice, set
       return array.push(item.totalPrice);
     });
     setAllTotalPrice(array.reduce((a, b) => a + b, 0));
-  }, [totalProduct, allTotalPrice, menuType, setAllTotalPrice]);
+  }, [totalProduct, menuType]);
+
+  useEffect(() => {
+    const newState = totalProduct.map((item) => {
+      if (item.id) {
+        return { products: item.name, totalPrice: allTotalPrice, isPackage: isPackage };
+      }
+      return item;
+    });
+    setAllData(newState);
+  }, [totalProduct, setAllData, allData, allTotalPrice, isPackage]);
 
   return (
     <div className="home">
+      {allData.map((item) => (
+        <div>
+          <p>{item.id}</p>
+          <p>{item.products}</p>
+          <p>{item.isPackage}</p>
+          <p>{item.totalPrice}</p>
+        </div>
+      ))}
       <div className="buttons">
         {types.map((item, id) => (
           <button key={id} className={`${menuType === item.type && "active"}`} onClick={() => setMenuType(item.type)}>
@@ -71,8 +91,8 @@ export default function Home({ totalProduct, setTotalProduct, allTotalPrice, set
         <Menu data={data} setData={setData} menuType={menuType} setTotalProduct={setTotalProduct} />
       </div>
       <div className="check">
-        <div className="check-btn">
-          <p>Paket</p>
+        <div className="check-btn" onClick={() => setIsPackage(!isPackage)} style={isPackage === true ? { backgroundColor: "green" } : { backgroundColor: "#2c3333" }}>
+          <h2>Paket</h2>
         </div>
         <div className="check-info">
           {totalProduct?.map((item, id) => (
