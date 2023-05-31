@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import Home from "./pages/Home/Home";
-import Today from "./pages/Today";
+import Today from "./pages/Today/Today";
 import All from "./pages/All";
 import Login from "./pages/Login/Login";
 import Navbar from "./components/Navbar/Navbar";
@@ -19,7 +19,6 @@ export default function App() {
     },
   ]);
 
-  console.log(allData)
   return (
     <BrowserRouter>
       <div className="app">

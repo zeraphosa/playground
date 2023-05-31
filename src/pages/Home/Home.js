@@ -51,20 +51,19 @@ export default function Home({ setAllData }) {
   const [allTotalPrice, setAllTotalPrice] = useState(0);
   const [isPackage, setIsPackage] = useState(false);
   const newArray = [];
+
   function handleSendData() {
     let newName = "";
-    const newState = totalProduct.map((item) => {
+    totalProduct.map((item) => {
       if (item.id) {
-        newName = item.name + " " + item.count + " ədəd " + item.totalPrice;
-        return newName;
+        newName = item.name + " " + item.count + " ədəd " + item.totalPrice + " ";
+        newArray.push(newName);
+        setAllData([{ id: item.id, products: newArray, totalPrice: allTotalPrice, isPackage: isPackage }]);
       }
       return item;
-      // return { products: [item.name], totalPrice: allTotalPrice, isPackage: isPackage };
-      // return item;
     });
 
-    newArray.push(newState);
-    setAllData([{ products: newArray, totalPrice: allTotalPrice, isPackage: isPackage }]);
+    // newArray.push(newState);
   }
 
   useEffect(() => {
@@ -104,11 +103,6 @@ export default function Home({ setAllData }) {
           <span>{allTotalPrice}</span>
         </div>
       </div>
-      {totalProduct.map((item) => (
-        <p key={item.id}>
-          {item.name} {item.totalPrice} {item.allTotalPrice}
-        </p>
-      ))}
     </div>
   );
 }
@@ -122,9 +116,11 @@ function Menu({ data, setData, menuType, setTotalProduct }) {
       return item;
     });
     setData(newState);
+    const changedProducts = newState.filter((item) => item.count !== 0);
+    setTotalProduct(changedProducts);
   }
 
-  function increaseCount(id, item) {
+  function increaseCount(id) {
     const newState = data.map((item) => {
       if (item.id === id) {
         return { ...item, count: item.count + 1, totalPrice: item.count > 0 ? item.totalPrice + item.defPrice : item.totalPrice };
@@ -150,7 +146,7 @@ function Menu({ data, setData, menuType, setTotalProduct }) {
                     -
                   </span>
                   <span>{item.count}</span>
-                  <span className="count-btn" onClick={() => increaseCount(item.id, item)}>
+                  <span className="count-btn" onClick={() => increaseCount(item.id)}>
                     +
                   </span>
                 </div>
