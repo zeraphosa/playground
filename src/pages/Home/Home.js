@@ -62,8 +62,13 @@ export default function Home({ allData, setAllData }) {
       }
       return item;
     });
-
-    // newArray.push(newState);
+    data.map((item) => {
+      item.count = 0;
+      item.totalPrice = item.defPrice;
+    });
+    setTotalProduct([]);
+    setIsPackage(false);
+    setAllTotalPrice(0);
   }
 
   useEffect(() => {
