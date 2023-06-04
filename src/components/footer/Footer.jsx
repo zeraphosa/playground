@@ -1,5 +1,8 @@
 export default function Footer(){
     return(
-        <div>Footer</div>
+        <div>
+            <div>©2023 Zeragency. All rights reserved.</div>
+            <div></div>
+        </div>
     )
 }
