@@ -1,34 +1,25 @@
-.container{
+.container {
   display: flex;
   align-items: center;
   gap: 100px;
 }
-.item{
+.item {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.title{
+.title {
   font-size: 72px;
   background: linear-gradient(to bottom, #194c33, #bbb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.desc{
+.desc {
   font-size: 24px;
   font-weight: 300;
 }
-.button{
-  width: max-content;
-  color: #fff;
-  padding: 20px;
-  cursor: pointer;
-  background-color: #53c28b;
-  border: none;
-  border-radius: 5px;
-}
-.img{
+.img {
   width: 100%;
   height: 500px;
   object-fit: cover;
