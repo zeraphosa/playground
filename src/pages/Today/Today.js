@@ -1,8 +1,24 @@
+import { useEffect, useState } from "react";
 import "./style.css";
+import axios from "axios";
 
 export default function Today({ allData }) {
+  const url = "http://localhost:5600/today";
+  const [data, setData] = useState([]);
   // 79 | products | isPaket | totalPrice |
-  console.log(allData)
+
+  useEffect(() => {
+    const fetchAllData = async () => {
+      try {
+        const res = await axios.get(`${url}`);
+        setData(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchAllData();
+  }, [url, data]);
+
   return (
     <div className="today">
       <div className="header">
@@ -18,7 +34,7 @@ export default function Today({ allData }) {
           <td>Paket</td>
           <td>Toplam</td>
         </thead>
-        {allData.map((item) => (
+        {data?.map((item) => (
           <tbody key={item.id}>
             <td>{item.id}</td>
             <td>{item.products}</td>

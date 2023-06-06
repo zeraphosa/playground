@@ -64,7 +64,7 @@ export default function Home({ allData, setAllData }) {
     });
     data.map((item) => {
       item.count = 0;
-      item.totalPrice = item.defPrice;
+      return item.totalPrice = item.defPrice;
     });
     setTotalProduct([]);
     setIsPackage(false);
