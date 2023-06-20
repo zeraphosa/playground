@@ -1,13 +1,22 @@
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import styles from "./page.module.css";
 
-export default function BlogPost() {
-  console.log(Number(5).toPrecision(300));
+async function getData(id) {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, { cache: "no-store" });
+  if (!res.ok) {
+    throw notFound();
+  }
+  return res.json();
+}
+
+export default async function BlogPost({ params }) {
+  const data = await getData(params.id);
   return (
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.info}>
-          <h1 className={styles.title}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <h1 className={styles.title}>{data.title}</h1>
           <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae facilis aliquid deleniti. Excepturi et beatae corporis possimus dolores aliquid doloribus facilis, aperiam voluptates, deleniti, ea delectus tempore sunt sit dolore!</p>
           <div className={styles.author}>
             <Image src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="author" width={40} height={40} className={styles.avatar} />
