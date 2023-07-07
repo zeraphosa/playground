@@ -19,16 +19,19 @@ export default function App() {
       }),
     })
       .then((res) => res.json())
-      .then((res) => setData(res.data));
+      .then((res) => setData(res.data.bookmarks));
   }, []);
-
-  // data.map((item) => console.log("item:", item));
-  // console.log(data.bookmarks.map(item=> item));
 
   return (
     <div>
       <h1>Bookmarks</h1>
-      {data.bookmarks}
+      {data.map((item)=> (
+        <div key={item.id}>
+          <h2>{item.name}</h2>
+          <p>{item.url}</p>
+          <p>{item.id}</p>
+        </div>
+      ))}
     </div>
   );
 }
