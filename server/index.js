@@ -21,9 +21,14 @@ app.get("/today", (req, res) => {
   });
 });
 
-app.post("/today",(req,res)=>{
-    const q = "INSERT INTO daily (`products`,`isPackage`,`totalPrice`) VALUES (?)"
-})
+app.post("/today", (req, res) => {
+  const q = "INSERT INTO daily (`products`,`isPackage`,`totalPrice`) VALUES (?)";
+  const values = [req.body.products, req.body.isPackage, req.body.totalPrice];
+  db.query(q, [values], (err, data) => {
+    if (err) return res.json(err);
+    return res.json("order created successfully");
+  });
+});
 
 app.listen(process.env.PORT || 5600, () => {
   console.log("Connected to server!");
