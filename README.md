@@ -1,1 +1,0 @@
-# terakep_landing
