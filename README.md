@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Playground
 
 ### To hide react project codes:
@@ -168,3 +169,6 @@ git fetch project-a --tags
 git merge --allow-unrelated-histories project-a/master # or whichever branch you want to merge
 git remote remove project-a
 ```
+=======
+# terakep_landing
+>>>>>>> t
