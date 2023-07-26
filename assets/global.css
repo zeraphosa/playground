@@ -44,6 +44,9 @@
 .f-col{
   flex-direction: column;
 }
+.pt{
+  padding-top: 16px;
+}
 a {
   /* Link */
   font-size: 16px;
@@ -96,6 +99,17 @@ h4 {
   font-weight: 600;
   line-height: 100%;
   letter-spacing: -1.04px;
+}
+
+.blue-btn{
+  display: flex;
+  padding: 10px 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: var(--soft-blue);
 }
 
 @media (min-width: 768px) {
