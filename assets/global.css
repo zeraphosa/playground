@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca";
+}
+a {
+  /* Link */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration-line: underline;
+}
+h1 {
+  /* H1/Desktop */
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64px;
+}
+p {
+  /* Paragraph/Desktop */
+  font-size: 18px;
+  line-height: 27px;
+}
+h3 {
+  /* H3 */
+  font-size: 24px;
+  line-height: 30px;
+}
+caption {
+  /* Caption/Desktop */
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.14px;
+}
+h3 {
+  /* H4 */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .h1-mb {
+    /* H1/Mobile */
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .p-mb {
+    /* Paragraph/Mobile */
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .caption-mb {
+    color: var(--desaturated-blue, #7676b2);
+    /* Caption/Mobile */
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 0.12px;
+  }
+}
