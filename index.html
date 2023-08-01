@@ -14,18 +14,18 @@
         <a href="#" id="menubtn" class="menuicon">
           <i class="fa-solid fa-bars"></i>
         </a>
+        <ul id="menu" class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Client</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-      <ul id="menu" class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Client</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
     </nav>
 
     <script>
@@ -35,7 +35,7 @@
 
       menubtn.addEventListener("click", () => {
         menu.classList.toggle("active");
-        menubtn.classList.toggle('closeicon');
+        menubtn.classList.toggle("closeicon");
         menubtn.className == "menuicon"
           ? (menubtn.innerHTML = `
           <i class="fa-solid fa-bars"></i>
