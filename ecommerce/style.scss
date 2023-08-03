@@ -1,8 +1,0 @@
-@import "functions";
-@import "variables";
-
-$primary: #8BC34A;
-
-$theme-colors: map-merge($theme-colors,(
-    "primary": $primary
-))
