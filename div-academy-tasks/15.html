@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #res {
+        display: flex;
+        gap: 10px;
+      }
+      .div {
+        height: 10px;
+        width: 10px;
+        border: 1px solid blue;
+        margin-top: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="content"></div>
+    <button onclick="dede()">ok</button>
+    <div id="res"></div>
+
+    <script>
+      const content = document.getElementById("content");
+      const res = document.getElementById("res");
+      let code = "";
+      let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      for (let i = 0; i < arr.length; i++) {
+        code += `
+                <input class="item" type="checkbox"/>
+            `;
+      }
+      content.innerHTML = code;
+
+      function dede() {
+        const items = document.getElementsByClassName("item");
+        let newcode = "";
+        for (let j = 0; j < items.length; j++) {
+          newcode += `
+                    <div class='div'></div>
+                `;
+          if (items[j].checked) {
+            console.log(j);
+          }
+        }
+        res.innerHTML = newcode;
+      }
+    </script>
+  </body>
+</html>
