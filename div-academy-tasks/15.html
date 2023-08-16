@@ -5,49 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      #res {
+      #content {
         display: flex;
-        gap: 10px;
+        gap: 9px;
+        margin-top: 10px;
       }
-      .div {
-        height: 10px;
+      #div {
         width: 10px;
-        border: 1px solid blue;
-        margin-top: 5px;
+        height: 10px;
+        border: 1px solid red;
       }
-
     </style>
   </head>
   <body>
-    <div id="content"></div>
+    <div id="inputs"></div>
     <button onclick="dede()">ok</button>
-    <div id="res"></div>
+    <div id="content"></div>
 
     <script>
+      const inputs = document.getElementById("inputs");
       const content = document.getElementById("content");
-      const res = document.getElementById("res");
-      let code = "";
-      let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      let inputarr = [1, 2, 3, 4, 5];
+      let inputkod = "";
 
-      for (let i = 0; i < arr.length; i++) {
-        code += `
-                <input class="item" type="checkbox"/>
-            `;
+      for (let i = 0; i < inputarr.length; i++) {
+        inputkod += `<input class="inputitem" type="checkbox"/>`;
       }
-      content.innerHTML = code;
+      inputs.innerHTML = inputkod;
 
       function dede() {
-        const items = document.getElementsByClassName("item");
-        let newcode = "";
-        for (let j = 0; j < items.length; j++) {
-          newcode += `
-                    <div class='div'></div>
-                `;
-          if (items[j].checked) {
-            console.log(j);
+        const inputitem = document.getElementsByClassName("inputitem");
+        let divkod = "";
+
+        for (let j = 0; j < inputitem.length; j++) {
+          if (inputitem[j].checked) {
+            divkod += `<div id="div" style="background-color: red"></div>`;
+          }else{
+            divkod += `<div id="div"></div>`;
           }
         }
-        res.innerHTML = newcode;
+        content.innerHTML = divkod;
       }
     </script>
   </body>
