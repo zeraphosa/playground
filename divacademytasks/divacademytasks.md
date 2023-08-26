@@ -1,6 +1,3 @@
 # Div Academy JS tasks
-<p>1. Create 2 inputs and switch them on click.</p>
-<details>
-    <summary>See Answer</summary>
-    <code></code>
-</details>
+
+1. Create 2 inputs and switch them on click. [See Answer]('./1.js')
