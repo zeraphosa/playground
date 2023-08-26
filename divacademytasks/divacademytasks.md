@@ -7,4 +7,4 @@
 3. Find the multiplication and division of the two numbers. [See Answer](3.html)
 4. Find the perimeter and area of the numbers a and b. [See Answer](4.html)
 5. Create a function with the inputs and calculate its discriminant. [See Answer](5.html)
-
+6. Find min, max values of 3 numbers typed with inputs. [See Answer](6.html)
