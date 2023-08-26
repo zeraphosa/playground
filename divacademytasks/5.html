@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div><input type="number" id="a" />x<sup>2</sup></div>
+    <p>+</p>
+    <div><input type="number" id="b" />x</div>
+    <p>+</p>
+    <input type="number" id="c" />
+    <button onclick="findDiscriminant()">=</button>
+    <p>0</p>
+    <div>
+      <p id="x1"></p>
+      <p id="x2"></p>
+    </div>
+
+    <script>
+      const a = document.getElementById("a");
+      const b = document.getElementById("b");
+      const c = document.getElementById("c");
+      const x1 = document.getElementById("x1");
+      const x2 = document.getElementById("x2");
+      let disc;
+
+      function findDiscriminant() {
+        disc = b.value ** 2 - 4 * a.value * c.value;
+        if (disc > 0) {
+          x1.innerHTML = (-b.value + Math.sqrt(disc)) / (2 * a.value);
+          x2.innerHTML = (-b.value - Math.sqrt(disc)) / (2 * a.value);
+        } else if (disc == 0) {
+          x1.innerHTML = x2.innerHTML = -b.value / (2 * a.value);
+        } else {
+          x1.innerHTML = -b.value / (2 * a.value) + Math.sqrt(-disc) / (2 * a.value);
+          x2.innerHTML = -b.value / (2 * a.value) - Math.sqrt(-disc) / (2 * a.value);
+        }
+      }
+    </script>
+  </body>
+</html>

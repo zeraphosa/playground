@@ -6,3 +6,5 @@
 2. Sum 2 number with using inputs. [See Answer](2.html)
 3. Find the multiplication and division of the two numbers. [See Answer](3.html)
 4. Find the perimeter and area of the numbers a and b. [See Answer](4.html)
+5. Create a function with the inputs and calculate its discriminant. [See Answer](5.html)
+
