@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Playground
 
 ### To hide react project codes:
@@ -44,7 +43,7 @@
  </configuration>
 ```
 
-- Or create .htaccess file and add this:
+Or create .htaccess file and add this:
 
 ```
 RewriteEngine On
@@ -100,7 +99,7 @@ npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch
 
 ### Redux example
 
-- Create stores folder add index.js and other files you need. (todo.js)
+Create stores folder add index.js and other files you need. (todo.js)
 
 ```
 index.js
@@ -142,14 +141,14 @@ export const { addTodo, deleteTodo } = todos.actions;
 export default todos.reducer;
 ```
 
-- To get todos use this line:
+To get todos use this line:
 
 ```
 import { useSelector } from "react-redux";
 const { todos } = useSelector((state) => state.todo);
 ```
 
-- To change state:
+To change state:
 
 ```
 import { useDispatch } from "react-redux";
@@ -163,12 +162,13 @@ button className="delete" onClick={() => dispatch(deleteTodo(item))}>
 ### Merge project-a into project-b
 
 ```
-cd path/to/project-b
-git remote add project-a /path/to/project-a
-git fetch project-a --tags
-git merge --allow-unrelated-histories project-a/master # or whichever branch you want to merge
-git remote remove project-a
+git fetch https://github.com/username/repoyouwanttoclone main:branch_name
 ```
-=======
-# terakep_landing
->>>>>>> t
+```
+git merge --allow-unrelated-histories branch_name
+```
+```
+git add .
+git commit -m ""
+git push
+```
