@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <input id="num" type="number" placeholder="number">
+    <button onclick="ok()">ok</button>
+    <p id="result"></p>
+
+    <script>
+        const num = document.getElementById('num');
+        const result = document.getElementById('result');
+        
+
+        function ok(){
+            let n = num.value
+            if(n == 0) result.innerHTML = `${n} - zero`
+            else if(n < 0) result.innerHTML = `${n} - negative`
+            else if(n % 2 == 0) result.innerHTML = `${n} - positive cift`
+            else result.innerHTML = `${n} - positive tek`
+        }
+    </script>
+</body>
+</html>
