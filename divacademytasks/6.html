@@ -21,32 +21,31 @@
     <input type="number" placeholder="num1" id="num1" />
     <input type="number" placeholder="num2" id="num2" />
     <input type="number" placeholder="num3" id="num3" />
-    <button onclick="find()">MIN</button>
-    <p id="minresult"></p>
-    <p id="maxresult"></p>
+    <button onclick="min()">min</button>
+    <button onclick="max()">max</button>
+    <p id="result"></p>
     <script>
       const num1 = document.getElementById("num1");
       const num2 = document.getElementById("num2");
       const num3 = document.getElementById("num3");
-      const minresult = document.getElementById("minresult");
-      const maxresult = document.getElementById("maxresult");
+      const result = document.getElementById("result");
 
-      function find() {
-        if (num1.value < num2.value && num1.value < num3.value) {
-          minresult.innerHTML = "num1 - " + num1.value;
-          if (num2.value < num3.value) {
-            maxresult.innerHTML = "num3: " + num3.value;
-          } else {
-            maxresult.innerHTML = "num2: " + num2.value;
-          }
-        } else if (num2.value < num1.value && num2.value < num3.value) {
-          minresult.innerHTML = "num2 - " + num2.value;
-          if (num1.value < num3.value) {
-            maxresult.innerHTML = "num3: " + num3.value;
-          } else {
-            maxresult.innerHTML = "num1: " + num1.value;
-          }
+      function min() {
+        let arr = [num1.value, num2.value, num3.value];
+        let min = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+          if (arr[i] < min) min = arr[i];
         }
+        result.innerHTML = "MIN:" + min;
+      }
+
+      function max() {
+        let arr = [num1.value, num2.value, num3.value];
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+          if (arr[i] > max) max = arr[i];
+        }
+        result.innerHTML = "MAX:" + max;
       }
     </script>
   </body>
