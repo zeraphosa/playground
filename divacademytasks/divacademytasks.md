@@ -10,3 +10,4 @@
 6. Find min, max values of 3 numbers typed with inputs. [See Answer](6.html)
 7. Write a code that determines whether the entered input is 0, negative, positive odd, or positive even number. [See Answer](7.html)
 8. Create basic currency converter with select tag. [See Answer](8.html)
+9. Compare two number. [See Answer](9.html)
