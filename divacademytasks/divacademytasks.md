@@ -11,3 +11,4 @@
 7. Write a code that determines whether the entered input is 0, negative, positive odd, or positive even number. [See Answer](7.html)
 8. Create basic currency converter with select tag. [See Answer](8.html)
 9. Compare two number. [See Answer](9.html)
+10. Create number from input to 1. [See Answer](10.html)
