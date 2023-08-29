@@ -26,3 +26,4 @@
 9. 2 inputa yazilan reqemlerin boyuk, kicik veya beraber olmagini yoxlayan ve deyeri butonun icinde gosteren kodu yaz.
 10. inputa yazilan sayidan 1`e qeder olan sayilari yazdiran funksiyani kodla.
 11. 1-den 100-e qeder olan sayilari inputa yazilan sayi qeder toplayan kodu yaz.
+12. Ok basanda, 1-den etibaren ikinci qutuya yazilmis artis miqdari ile, birinci qutuya yazilmis edede qeder sayilar yazilsin.
