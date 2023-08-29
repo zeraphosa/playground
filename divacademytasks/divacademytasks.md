@@ -12,7 +12,7 @@
 8. Create basic currency converter with select tag. [See Answer](8.html)
 9. Compare two number. [See Answer](9.html)
 10. Create number from input to 1. [See Answer](10.html)
-
+11. Sum numbers 1 to 100 with inputs value 10 => 1,11,21 [See Answer](11.html)
 
 ---
 1. 2 input yarat ve duymeye basdiqda inputa yazilanlarin yerini deyisdir.
@@ -25,4 +25,4 @@
 8. select istifade ederek inputa yazilan deyerin USD, TL secimine gore qarsiligini gosteren funksiyani yaz.
 9. 2 inputa yazilan reqemlerin boyuk, kicik veya beraber olmagini yoxlayan ve deyeri butonun icinde gosteren kodu yaz.
 10. inputa yazilan sayidan 1`e qeder olan sayilari yazdiran funksiyani kodla.
-11. 
+11. 1-den 100-e qeder olan sayilari inputa yazilan sayi qeder toplayan kodu yaz.
