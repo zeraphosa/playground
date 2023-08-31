@@ -20,17 +20,19 @@
   <body>
     <p id="result"></p>
     <script>
+      const result = document.getElementById("result");
       let arr = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
-      let newarr = [];
 
       for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i]);
         for (let j = i + 1; j < arr.length; j++) {
-          if (arr[i] < arr[j]) {
-            console.log("arrj:", arr[j]);
+          if (arr[j] < arr[i]) {
+            let oldval = arr[j];
+            arr[j] = arr[i];
+            arr[i] = oldval;
           }
         }
       }
+      result.innerHTML = arr;
     </script>
   </body>
 </html>
