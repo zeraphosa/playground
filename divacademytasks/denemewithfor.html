@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+
+      for (let i = 0; i < arr.length; i++) {
+        let ival = arr[i];
+        for (let j = i + 1; j < arr.length; j++) {
+          let jval = arr[j];
+          if (jval < ival) {
+            let oldval = jval;
+            jval = ival;
+            ival = oldval;
+          }
+        }
+      }
+      console.log(arr);
+    </script>
+  </body>
+</html>

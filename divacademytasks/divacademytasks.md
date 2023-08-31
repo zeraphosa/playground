@@ -19,4 +19,8 @@
 17. - Massivin elementlerini cesidlemek (bir defe sortla bir defe for ile) kodunu yaz. Numune: arr = [-3,8,7,6,5,-4,3,2,1]. Istenilen netice: -4,-3,1,2,3,5,6,7,8
 18. - Massivde en cox rast gelinen elementi tapmaq ucun js funksiyasi yaz. Numune: arr = [3,'a','a','a',2,3,'a',3,'a',2,4,9,3]. Istenilen netice: a (5 defe)
 19. - Setiri giris kimi qebul eden ve her simvolun herfini deyisdiren js kodunu yazin. Numune: 'Div Vahid mellim' daxil etseniz, netice: 'DIV VAHID MELLIM' olmalidir.
-
+20. ---- inputa yazilan adi adlarin icinde axtaran asagida gosteren kodu yaz.
+21. - inputa yazilan adin her herfini ferqli renge ceviren kodu yaz.
+22. - inputa yazilan adin her defesinde sonraki herfini boyuk herf eden kodu yaz. numune: vahid. netice: Vahid vAhid vaHid
+23. - 23cu taski img qovlugundaki sekilde gore bilersiniz.
+24. - 24cu taski img qovlugundaki sekilde gore bilersiniz.
