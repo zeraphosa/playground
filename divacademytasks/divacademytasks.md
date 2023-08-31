@@ -12,13 +12,13 @@
 10. inputa yazilan sayidan 1`e qeder olan sayilari yazdiran funksiyani kodla.
 11. 1-den 100-e qeder olan sayilari inputa yazilan sayi qeder toplayan kodu yaz.
 12. Ok basanda, 1-den etibaren ikinci qutuya yazilmis artis miqdari ile, birinci qutuya yazilmis edede qeder sayilar yazilsin.
-13. Inputa yazilmis ededden 1-e kimi ededler, bir setrli cedvelin xanalarinda yazilsin. 
+13. Inputa yazilmis ededden 1-e kimi ededler, bir setrli cedvelin xanalarinda yazilsin.
 14. - 14cu taski img qovlugundaki sekilde gore bilersiniz.
 15. - 15ci taski img qovlugundaki sekilde gore bilersiniz.
 16. Verilen massivin butun elementlerini setirde birlesdirmek ucun sade js funksiyasi yazin. Numune: rengler = ['Qirmizi','Yasil','Ag','Qara']. Istenilen netice: 'Qirmizi, Yasil, Ag, Qara' ve 'Qirmizi+Yasil+Ag+Qara'
-17. - Massivin elementlerini cesidlemek (bir defe sortla bir defe for ile) kodunu yaz. Numune: arr = [-3,8,7,6,5,-4,3,2,1]. Istenilen netice: -4,-3,1,2,3,5,6,7,8
+17. Massivin elementlerini cesidlemek (bir defe sortla bir defe for ile) kodunu yaz. Numune: arr = [-3,8,7,6,5,-4,3,2,1]. Istenilen netice: -4,-3,1,2,3,5,6,7,8
 18. - Massivde en cox rast gelinen elementi tapmaq ucun js funksiyasi yaz. Numune: arr = [3,'a','a','a',2,3,'a',3,'a',2,4,9,3]. Istenilen netice: a (5 defe)
-19. - Setiri giris kimi qebul eden ve her simvolun herfini deyisdiren js kodunu yazin. Numune: 'Div Vahid mellim' daxil etseniz, netice: 'DIV VAHID MELLIM' olmalidir.
+19. Setiri giris kimi qebul eden ve her simvolun herfini deyisdiren js kodunu yazin. Numune: 'Div Vahid mellim' daxil etseniz, netice: 'DIV VAHID MELLIM' olmalidir.Eyni sekilde verilen massivdeki elementleri boyuk herfe cevirin. numune: ['div vahid mellim','div zaur Mellim']. netice: ['DIV VAHID MELLIM','DIV ZAUR MELLIM']
 20. ---- inputa yazilan adi adlarin icinde axtaran asagida gosteren kodu yaz.
 21. - inputa yazilan adin her herfini ferqli renge ceviren kodu yaz.
 22. - inputa yazilan adin her defesinde sonraki herfini boyuk herf eden kodu yaz. numune: vahid. netice: Vahid vAhid vaHid
