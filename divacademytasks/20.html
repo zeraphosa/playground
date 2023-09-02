@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        margin: 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="inp" />
+      <div id="result"></div>
+    </div>
+
+    <script>
+      const inp = document.getElementById("inp");
+      const result = document.getElementById("result");
+      let arr = ["zaur", "zara", "abbas", "massiv"];
+      let searchedItems = [];
+
+      function search() {
+        for (const item of arr) {
+          if (inp.value == "") {
+            result.innerHTML += `<p>${item}</p>`;
+          } else result.innerHTML = "";
+        }
+      }
+      search()
+      inp.addEventListener("change", () => {
+        for (const item of arr) {
+          if (item.includes(inp.value)) {
+            searchedItems.push(item);
+            for (const searchedItem of searchedItems) {
+              result.innerHTML += `<p>${searchedItem}</p>`;
+              search()
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
