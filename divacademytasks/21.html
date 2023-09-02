@@ -17,35 +17,26 @@
         flex-direction: column;
         gap: 30px;
       }
-      .container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
     </style>
   </head>
   <body>
     <input type="text" id="inp" />
-    <div class="container">
-      <div id="result"></div>
-    </div>
+    <div id="result"></div>
 
     <script>
       const inp = document.getElementById("inp");
       const result = document.getElementById("result");
       let colors = ["red", "green", "purple", "yellow", "grey", "orange"];
-      let words = [];
-      inp.addEventListener("change", () => {
-        let el = document.createElement('p');
-        result.appendChild('p');
-        // const pres = 
-        for (let i = 0; i < inp.value.length; i++) {
-          //   words.push([inp.value[i]]);
 
-          result.innerHTML += `<p>${inp.value[i]}</p>`;
+      inp.addEventListener("change", () => {
+        for (let i = 0; i < inp.value.length; i++) {
+          result.innerHTML += `<span style='color: ${colors[random(0, colors.length)]}'>${inp.value[i]}</span>`;
         }
-        console.log(words);
       });
+
+      function random(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
     </script>
   </body>
 </html>
