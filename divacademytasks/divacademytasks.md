@@ -20,7 +20,7 @@
 18. Massivde en cox rast gelinen elementi tapmaq ucun js funksiyasi yaz. Numune: arr = [3,'a','a','a',2,3,'a',3,'a',2,4,9,3]. Istenilen netice: a (5 defe)
 19. Setiri giris kimi qebul eden ve her simvolun herfini deyisdiren js kodunu yazin. Numune: 'Div Vahid mellim' daxil etseniz, netice: 'DIV VAHID MELLIM' olmalidir. Eyni sekilde verilen massivdeki elementleri boyuk herfe cevirin. numune: ['div vahid mellim','div zaur Mellim']. netice: ['DIV VAHID MELLIM','DIV ZAUR MELLIM']
 20. inputa yazilan adi adlarin icinde axtaran asagida gosteren kodu yaz.
-21. - inputa yazilan adin her herfini ferqli renge ceviren kodu yaz.
+21. inputa yazilan adin her herfini ferqli renge ceviren kodu yaz.
 22. - inputa yazilan adin her defesinde sonraki herfini boyuk herf eden kodu yaz. numune: vahid. netice: Vahid vAhid vaHid
 23. - 23cu taski img qovlugundaki sekilde gore bilersiniz.
 24. - 24cu taski img qovlugundaki sekilde gore bilersiniz.
