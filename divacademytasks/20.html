@@ -28,28 +28,25 @@
     <script>
       const inp = document.getElementById("inp");
       const result = document.getElementById("result");
-      let arr = ["zaur", "zara", "abbas", "massiv"];
-      let searchedItems = [];
+      const data = [];
 
-      function search() {
-        for (const item of arr) {
-          if (inp.value == "") {
-            result.innerHTML += `<p>${item}</p>`;
-          } else result.innerHTML = "";
-        }
+      for (const item of ["zaur", "zara", "zera", "massiv", "abbas"]) {
+        data.push(item);
       }
-      search()
-      inp.addEventListener("change", () => {
-        for (const item of arr) {
-          if (item.includes(inp.value)) {
-            searchedItems.push(item);
-            for (const searchedItem of searchedItems) {
-              result.innerHTML += `<p>${searchedItem}</p>`;
-              search()
-            }
+
+      function updateResult() {
+        const text = inp.value;
+        result.innerHTML = "";
+
+        for (const item of data) {
+          if (item.includes(text)) {
+            result.innerHTML += `<p>${item}</p>`;
           }
         }
-      });
+      }
+
+      inp.addEventListener("input", updateResult);
+      updateResult();
     </script>
   </body>
 </html>
