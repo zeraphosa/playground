@@ -18,25 +18,25 @@
     </style>
   </head>
   <body>
-    <p id="res"></p>
-    <script>
-      let arr = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
-      let encoxTekrar = "";
-      let encoxSay = 0;
-      for (let i = 0; i < arr.length; i++) {
-        let tekrarSay = 0;
+    <p id="result"></p>
 
+    <script>
+      const result = document.getElementById("result");
+      let arr = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+      let maxCount = 0;
+
+      for (let i = 0; i < arr.length; i++) {
+        let count = 0;
         for (let j = 0; j < arr.length; j++) {
           if (arr[i] === arr[j]) {
-            tekrarSay++;
+            count++;
+          }
+          if (count > maxCount) {
+            maxCount = count;
+            result.innerHTML = arr[i] + " " + maxCount + " defe";
           }
         }
-        if (tekrarSay > encoxSay) {
-          encoxSay = tekrarSay;
-          encoxTekrar = arr[i];
-        }
       }
-      console.log("Ən çox təkrarlanan element:", encoxSay, "(defe)", encoxTekrar);
     </script>
   </body>
 </html>
