@@ -21,7 +21,7 @@
 19. Setiri giris kimi qebul eden ve her simvolun herfini deyisdiren js kodunu yazin. Numune: 'Div Vahid mellim' daxil etseniz, netice: 'DIV VAHID MELLIM' olmalidir. Eyni sekilde verilen massivdeki elementleri boyuk herfe cevirin. numune: ['div vahid mellim','div zaur Mellim']. netice: ['DIV VAHID MELLIM','DIV ZAUR MELLIM']
 20. inputa yazilan adi adlarin icinde axtaran asagida gosteren kodu yaz.
 21. inputa yazilan adin her herfini ferqli renge ceviren kodu yaz.
-22. - inputa yazilan adin her defesinde sonraki herfini boyuk herf eden kodu yaz. numune: vahid. netice: Vahid vAhid vaHid
+22. inputa yazilan adin her defesinde sonraki herfini boyuk herf eden kodu yaz. numune: vahid. netice: Vahid vAhid vaHid
 23. - 23cu taski img qovlugundaki sekilde gore bilersiniz.
 24. - 24cu taski img qovlugundaki sekilde gore bilersiniz.
 25. - [1,2,2,5,6,6,8,7,2] massivinden unique olanlari cixardan funksiyani yaz.
