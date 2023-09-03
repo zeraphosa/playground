@@ -25,15 +25,9 @@
     <script>
       const inp = document.getElementById("inp");
       const res = document.getElementById("result");
-      let arr = [];
-      let resarr = [];
-
       inp.addEventListener("change", () => {
         for (let i = 0; i < inp.value.length; i++) {
-          arr.push(inp.value);
-          console.log(arr[i][i].toLocaleUpperCase())
-
-          // res.innerHTML += `<span>${inp.value[i].toLocaleUpperCase()}</span></br>`
+          res.innerHTML += `<span>${inp.value.replace(inp.value[i], inp.value[i].toLocaleUpperCase())}</span></br>`;
         }
       });
     </script>
