@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="inp" />
+    <div id="result"></div>
+
+    <script>
+      const inp = document.getElementById("inp");
+      const res = document.getElementById("result");
+      let arr = [];
+      let resarr = [];
+
+      inp.addEventListener("change", () => {
+        for (let i = 0; i < inp.value.length; i++) {
+          arr.push(inp.value);
+          console.log(arr[i][i].toLocaleUpperCase())
+
+          // res.innerHTML += `<span>${inp.value[i].toLocaleUpperCase()}</span></br>`
+        }
+      });
+    </script>
+  </body>
+</html>
