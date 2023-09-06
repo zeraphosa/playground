@@ -24,5 +24,5 @@
 22. inputa yazilan adin her defesinde sonraki herfini boyuk herf eden kodu yaz. numune: vahid. netice: Vahid vAhid vaHid
 23. - 23cu taski img qovlugundaki sekilde gore bilersiniz.
 24. - 24cu taski img qovlugundaki sekilde gore bilersiniz.
-25. - [1,2,2,5,6,6,8,7,2] massivinden unique olanlari cixardan funksiyani yaz.
-26. - massivin eksini veren funksiyani yaz
+25. [1,2,2,5,6,6,8,7,2] massivinden unique olanlari cixardan funksiyani yaz.
+26. massivin eksini veren funksiyani yaz
