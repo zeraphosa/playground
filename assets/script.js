@@ -83,3 +83,43 @@ function show(item) {
     `),
   );
 }
+
+function toggle() {
+  const navbottom = document.getElementById("navbottom");
+  navbottom.classList.toggle("hide");
+}
+
+function add() {
+  const inputs = document.getElementsByTagName("input");
+  let newData = [
+    {
+      id: null,
+      marka: "",
+      model: "",
+      yanacaq: "",
+      qiymet: "",
+      motor: "",
+      il: "",
+      reng: "",
+      probeq: "",
+      img: "",
+    },
+  ];
+
+  for (let i = 0; i < inputs.length; i++) {
+    newData.push({
+      id: i,
+      marka: inputs[i].placeholder === "marka" && inputs[i].value,
+      model: inputs[i].placeholder === "model" && inputs[i].value,
+      yanacaq: inputs[i].placeholder === "yanacaq" && inputs[i].value,
+      qiymet: inputs[i].placeholder === "qiymet" && inputs[i].value,
+      motor: inputs[i].placeholder === "motor" && inputs[i].value,
+      il: inputs[i].placeholder === "il" && inputs[i].value,
+      reng: inputs[i].placeholder === "reng" && inputs[i].value,
+      probeq: inputs[i].placeholder === "probeq" && inputs[i].value,
+      img: inputs[i].placeholder === "img" && inputs[i].value,
+    });
+  }
+  console.log(newData)
+  masinlar.push(newData);
+}

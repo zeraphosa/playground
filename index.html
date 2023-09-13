@@ -35,13 +35,33 @@
           <a href="#">Ehtiyat hissələr və aksesuarlar</a>
         </div>
         <div>
-          <button class="btn btn-primary">+ Yeni elan</button>
+          <button class="btn btn-primary" onclick="toggle()">+ Yeni elan</button>
         </div>
       </div>
     </nav>
+    <div id="navbottom">
+      <div class="container flex align-center gap-30">
+        <div class="flex flex-col gap-10">
+          <input type="text" placeholder="marka" />
+          <input type="text" placeholder="model" />
+          <input type="text" placeholder="yanacaq" />
+          <input type="text" placeholder="qiymet" />
+        </div>
+        <div class="flex flex-col gap-10">
+          <input type="text" placeholder="motor" />
+          <input type="number" placeholder="il" />
+          <input type="text" placeholder="reng" />
+          <input type="text" placeholder="probeq" />
+        </div>
+        <div class="flex flex-col gap-10">
+          <input type="file" placeholder="img" />
+          <button class="btn btn-primary" onclick="add()">Add</button>
+        </div>
+      </div>
+    </div>
 
     <main>
-      <div class="container gap-20" id="main" onclick="show(this.)"></div>
+      <div class="container gap-20" id="main"></div>
     </main>
 
     <script src="./assets/script.js"></script>

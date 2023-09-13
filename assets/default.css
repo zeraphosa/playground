@@ -48,4 +48,5 @@ a {
 .btn-primary {
   height: 40px;
   background-color: #7ed321;
+  cursor: pointer;
 }
