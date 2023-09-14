@@ -1,11 +1,10 @@
 class Toast {
-  constructor(text, position, autoClose, duration, durationColor, borderWidth, borderColor, textColor, bgColor) {
+  constructor(text, position, autoClose, duration, durationColor, borderColor, textColor, bgColor) {
     this.text = text;
     this.position = position;
     this.autoClose = autoClose;
     this.duration = duration;
     this.borderColor = borderColor;
-    this.borderWidth = borderWidth;
     this.textColor = textColor;
     this.bgColor = bgColor;
     this.durationColor = durationColor;
@@ -23,6 +22,7 @@ class Toast {
     const toast = document.getElementById("toast");
     const icon = document.getElementById("icon");
     const line = document.getElementById("line");
+
     toast.style.display = "flex";
     toast.style.alignItems = "center";
     toast.style.gap = "20px";
@@ -31,10 +31,14 @@ class Toast {
     toast.style.paddingInline = "20px";
     toast.style.borderRadius = "10px";
     toast.style.borderStyle = "solid";
-    toast.style.borderWidth = this.borderWidth;
+    toast.style.borderWidth = "1px";
     toast.style.borderColor = this.borderColor;
     toast.style.color = this.textColor;
     toast.style.backgroundColor = this.bgColor;
+    icon.style.width = "16px";
+    icon.style.height = "16px";
+    icon.style.cursor = "pointer";
+
     if (this.position === "top-left") {
       toast.style.top = "10px";
       toast.style.left = "10px";
@@ -57,16 +61,13 @@ class Toast {
       toast.style.right = "10px";
     }
 
-    icon.style.width = "16px";
-    icon.style.height = "16px";
-    icon.style.cursor = "pointer";
     toast.addEventListener("click", () => autoCloseFunc());
 
     if (this.autoClose === true) {
       line.style.width = "90%";
       line.style.height = "3px";
       line.style.position = "absolute";
-      line.style.bottom = "-3px";
+      line.style.bottom = "0px";
       line.style.borderRadius = "10px";
       line.style.backgroundColor = this.durationColor;
 
@@ -74,20 +75,19 @@ class Toast {
       style.type = "text/css";
       const keyFrames =
         "\
-    #line{\
-      animation: anime forwards;\
-      animation-duration: DURATION_VALUEs;\
-    }\
-    @keyframes anime {\
-      0% {\
-        width: 90%;\
-      }\
-      100% {\
-        width: 0;\
-      }\
-    }";
+              #line{\
+                animation: anime forwards;\
+                animation-duration: DURATION_VALUEs;\
+              }\
+              @keyframes anime {\
+                0% {\
+                  width: 90%;\
+                }\
+                100% {\
+                  width: 0;\
+                }\
+            }";
       style.innerHTML = keyFrames.replace("DURATION_VALUE", this.duration / 1000);
-      console.log(style.innerHTML);
       document.getElementsByTagName("head")[0].appendChild(style);
       setTimeout(autoCloseFunc, this.duration);
     }
