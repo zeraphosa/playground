@@ -21,6 +21,7 @@ class Toast {
     `;
     const toast = document.getElementById("toast");
     const icon = document.getElementById("icon");
+    const line = document.getElementById("line");
     toast.style.display = "flex";
     toast.style.alignItems = "center";
     toast.style.gap = "20px";
@@ -67,6 +68,32 @@ class Toast {
       document.body.remove(icon);
       document.body.remove(toast);
     }
+
+    line.style.width = "90%";
+    line.style.height = "3px";
+    line.style.position = "absolute";
+    line.style.bottom = "0px";
+    line.style.borderRadius = "10px";
+    line.style.backgroundColor = "red";
+
+    const style = document.createElement("style");
+    style.type = "text/css";
+    const keyFrames = '\
+    #line{\
+      animation: anime forwards;\
+      animation-duration: DURATION_VALUEs;\
+    }\
+    @keyframes anime {\
+      0% {\
+        width: 90%;\
+      }\
+      100% {\
+        width: 0;\
+      }\
+    }';
+    style.innerHTML = keyFrames.replace('DURATION_VALUE', this.duration / 1000);
+    console.log(style.innerHTML)
+    document.getElementsByTagName("head")[0].appendChild(style);
   }
 }
 export default Toast;
