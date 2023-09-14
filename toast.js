@@ -65,5 +65,4 @@ class Toast {
     console.log("closed");
   }
 }
-
-export default Toast
+export default Toast;
