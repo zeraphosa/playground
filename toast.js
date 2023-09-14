@@ -1,5 +1,5 @@
 class Toast {
-  constructor(text, position, autoClose, duration, borderWidth, borderColor, textColor, bgColor) {
+  constructor(text, position, autoClose, duration, durationColor, borderWidth, borderColor, textColor, bgColor) {
     this.text = text;
     this.position = position;
     this.autoClose = autoClose;
@@ -8,6 +8,7 @@ class Toast {
     this.borderWidth = borderWidth;
     this.textColor = textColor;
     this.bgColor = bgColor;
+    this.durationColor = durationColor;
   }
   show() {
     document.body.innerHTML = `
@@ -62,23 +63,17 @@ class Toast {
     toast.addEventListener("click", () => autoCloseFunc());
 
     if (this.autoClose === true) {
-      setTimeout(autoCloseFunc, this.duration);
-    }
-    function autoCloseFunc() {
-      document.body.remove(icon);
-      document.body.remove(toast);
-    }
+      line.style.width = "90%";
+      line.style.height = "3px";
+      line.style.position = "absolute";
+      line.style.bottom = "-3px";
+      line.style.borderRadius = "10px";
+      line.style.backgroundColor = this.durationColor;
 
-    line.style.width = "90%";
-    line.style.height = "3px";
-    line.style.position = "absolute";
-    line.style.bottom = "0px";
-    line.style.borderRadius = "10px";
-    line.style.backgroundColor = "red";
-
-    const style = document.createElement("style");
-    style.type = "text/css";
-    const keyFrames = '\
+      const style = document.createElement("style");
+      style.type = "text/css";
+      const keyFrames =
+        "\
     #line{\
       animation: anime forwards;\
       animation-duration: DURATION_VALUEs;\
@@ -90,10 +85,17 @@ class Toast {
       100% {\
         width: 0;\
       }\
-    }';
-    style.innerHTML = keyFrames.replace('DURATION_VALUE', this.duration / 1000);
-    console.log(style.innerHTML)
-    document.getElementsByTagName("head")[0].appendChild(style);
+    }";
+      style.innerHTML = keyFrames.replace("DURATION_VALUE", this.duration / 1000);
+      console.log(style.innerHTML);
+      document.getElementsByTagName("head")[0].appendChild(style);
+      setTimeout(autoCloseFunc, this.duration);
+    }
+
+    function autoCloseFunc() {
+      document.body.remove(icon);
+      document.body.remove(toast);
+    }
   }
 }
 export default Toast;
