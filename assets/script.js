@@ -50,10 +50,11 @@ const masinlar = [
 ];
 
 const main = document.getElementById("main");
-let code = "";
 
-for (const item of masinlar) {
-  code += `
+function showdata() {
+  let code = "";
+  for (const item of masinlar) {
+    code += `
         <div class="card" onclick="show(${item.id})">
           <img src="${item.img}" alt="masin"/>
            <div class="text">
@@ -63,9 +64,10 @@ for (const item of masinlar) {
            </div>
         </div>
     `;
+  }
+  main.innerHTML = code;
 }
-
-main.innerHTML = code;
+showdata();
 
 function show(item) {
   masinlar.filter(
@@ -90,36 +92,27 @@ function toggle() {
 }
 
 function add() {
-  const inputs = document.getElementsByTagName("input");
-  let newData = [
-    {
-      id: null,
-      marka: "",
-      model: "",
-      yanacaq: "",
-      qiymet: "",
-      motor: "",
-      il: "",
-      reng: "",
-      probeq: "",
-      img: "",
-    },
-  ];
+  const marka = document.getElementById("marka");
+  const model = document.getElementById("model");
+  const yanacaq = document.getElementById("yanacaq");
+  const qiymet = document.getElementById("qiymet");
+  const motor = document.getElementById("motor");
+  const il = document.getElementById("il");
+  const reng = document.getElementById("reng");
+  const probeq = document.getElementById("probeq");
+  const image = document.getElementById("image");
 
-  for (let i = 0; i < inputs.length; i++) {
-    newData.push({
-      id: i,
-      marka: inputs[i].placeholder === "marka" && inputs[i].value,
-      model: inputs[i].placeholder === "model" && inputs[i].value,
-      yanacaq: inputs[i].placeholder === "yanacaq" && inputs[i].value,
-      qiymet: inputs[i].placeholder === "qiymet" && inputs[i].value,
-      motor: inputs[i].placeholder === "motor" && inputs[i].value,
-      il: inputs[i].placeholder === "il" && inputs[i].value,
-      reng: inputs[i].placeholder === "reng" && inputs[i].value,
-      probeq: inputs[i].placeholder === "probeq" && inputs[i].value,
-      img: inputs[i].placeholder === "img" && inputs[i].value,
-    });
-  }
-  console.log(newData)
-  masinlar.push(newData);
+  masinlar.push({
+    id: masinlar.length + 1,
+    marka: marka.value,
+    model: model.value,
+    yanacaq: yanacaq.value,
+    qiymet: qiymet.value,
+    motor: motor.value,
+    il: il.value,
+    reng: reng.value,
+    probeq: probeq.value,
+    img: image.value,
+  });
+  showdata();
 }
