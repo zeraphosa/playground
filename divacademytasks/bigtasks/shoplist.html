@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop List</title>
+    <style>
+      body {
+        max-width: 500px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid red;
+      }
+      .lists {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="itemName" placeholder="item name" />
+      <input type="text" id="itemCount" placeholder="item count" />
+      <input type="checkbox" id="itemCheck" />
+      <button onclick="add()">Add</button>
+    </div>
+    <div class="lists">
+      <div id="shoplist">
+        <h2>Shop list</h2>
+        <p>Ketchup <span>20</span></p>
+        <p>Ketchup <span>20</span></p>
+        <p>Ketchup <span>20</span></p>
+        <p>Ketchup <span>20</span></p>
+        <p>Ketchup <span>20</span></p>
+      </div>
+      <div id="cart">
+        <h2>Cart</h2>
+        <p>Ketchup <span>20</span></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+// alinan itemlar alinmayan itemlar listesi shop list duzelt checkbox true olanda olmayanda 2 input Kanfet , 2 'eded' - button ok()
+// ededi yeniden yazanda eyni seye Kanfet - 3 eded idise -> Kanfet - 10 eded yazsan result -> Kanfet 13 eded olacaq. 1 array islet, 2 arraylide yoxla 
+-->
