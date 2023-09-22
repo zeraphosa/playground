@@ -29,19 +29,40 @@
       <button onclick="add()">Add</button>
     </div>
     <div class="lists">
-      <div id="shoplist">
-        <h2>Shop list</h2>
-        <p>Ketchup <span>20</span></p>
-        <p>Ketchup <span>20</span></p>
-        <p>Ketchup <span>20</span></p>
-        <p>Ketchup <span>20</span></p>
-        <p>Ketchup <span>20</span></p>
-      </div>
-      <div id="cart">
-        <h2>Cart</h2>
-        <p>Ketchup <span>20</span></p>
-      </div>
+      <div id="shopList"></div>
+      <div id="cart"></div>
     </div>
+
+    <script>
+      const itemName = document.getElementById("itemName");
+      const itemCount = document.getElementById("itemCount");
+      const itemCheck = document.getElementById("itemCheck");
+      const shopList = document.getElementById("shopList");
+      const cart = document.getElementById("cart");
+      const data = [
+        {
+          name: "Ketchup",
+          count: 12,
+          state: true,
+        },
+        {
+          name: "Mayoneese",
+          count: 1,
+          state: false,
+        },
+        {
+          name: "Coca Cola",
+          count: 4,
+          state: true,
+        },
+      ];
+      show();
+      function show() {
+        shopList.innerHTML = "<h2>Shop List</h2>";
+        cart.innerHTML = "<h2>Cart</h2>";
+        data.map((item) => (item.state == true ? (cart.innerHTML += `<p>${item.name} <span>${item.count}</span></p>`) : (shopList.innerHTML += `<p>${item.name} <span>${item.count}</span></p>`)));
+      }
+    </script>
   </body>
 </html>
 
