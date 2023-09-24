@@ -25,7 +25,7 @@
     <div>
       <input type="text" id="itemName" placeholder="item name" />
       <input type="text" id="itemCount" placeholder="item count" />
-      <input type="checkbox" id="itemCheck" />
+      <input type="checkbox" id="itemState" />
       <button onclick="add()">Add</button>
     </div>
     <div class="lists">
@@ -36,7 +36,7 @@
     <script>
       const itemName = document.getElementById("itemName");
       const itemCount = document.getElementById("itemCount");
-      const itemCheck = document.getElementById("itemCheck");
+      const itemState = document.getElementById("itemState");
       const shopList = document.getElementById("shopList");
       const cart = document.getElementById("cart");
       const data = [
@@ -56,11 +56,32 @@
           state: true,
         },
       ];
+
       show();
       function show() {
         shopList.innerHTML = "<h2>Shop List</h2>";
         cart.innerHTML = "<h2>Cart</h2>";
         data.map((item) => (item.state == true ? (cart.innerHTML += `<p>${item.name} <span>${item.count}</span></p>`) : (shopList.innerHTML += `<p>${item.name} <span>${item.count}</span></p>`)));
+      }
+
+      function add() {
+        data.map(
+          (item, id) =>
+            itemName.value === item.name &&
+            data[id].replace(
+              {
+                name: item.name,
+                count: item.count,
+                state: item.state,
+              },
+              {
+                name: itemName.value,
+                count: item.count + +itemCount.value,
+                state: itemState.checked,
+              },
+            ),
+        );
+        show();
       }
     </script>
   </body>
