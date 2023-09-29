@@ -13,7 +13,7 @@
 let arr = [15, 49, "string", 3, 6, 62, "array", 12, 9, -4, "number", 58, 103];
 
 // 8
-arr.forEach(item => Number(item) && console.log(item * 2))
+// arr.forEach(item => Number(item) && console.log(item * 2))
 
 // 7
 // arr.forEach((item) => String(item) && console.log("string-length:",item, item.length));
@@ -22,6 +22,11 @@ arr.forEach(item => Number(item) && console.log(item * 2))
 // arr.forEach((item) => item % 2 == 0 && console.log(item));
 
 // 5
+let newArr = [];
+arr.forEach((item) => {
+  newArr.push(arr.unshift());
+});
+console.log(newArr);
 
 // 4
 // arr.forEach((item) => {
