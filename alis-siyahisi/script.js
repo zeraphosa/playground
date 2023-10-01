@@ -26,29 +26,37 @@ const data = [
   },
 ];
 
-const content = document.getElementById("content");
-
-showData();
-function showData() {
+updateShopList();
+function updateShopList() {
+  const shopList = document.getElementById("shopList");
   let code = "";
-  for (const item of data) {
-    code += `<button onclick="select(this)">${item.name} ${item.count} eded ${item.isBought ? `<span style="color: green">alinib</span>` : `<span style="color: red">alinmayib</span>`}</button>`;
-  }
-  content.innerHTML = code;
+  data.forEach((item, index) => {
+    code += `<p onclick="select(${index})">${item.name}: x${item.count} - ${item.isBought ? "alinib" : "alinmayib"}</p>`;
+  });
+  shopList.innerHTML = code;
 }
-
-function select(button) {
-  const item = data[Array.from(button.parentNode.children).indexOf(button)]
-  console.log(item)
-  if(item.count === 1) {
-    data.splice(item, 1);
-    showData()
+let newArr = [];
+function select(index) {
+  let item = data[index];
+  if (item.count === 1) {
+    data.splice(index, 1);
+  } else {
+    item.count -= 1;
   }
-  const newItem = {
+  newArr.push({
     name: item.name,
-    count: item.count -= 1,
-    isBought: true
-  }
-  data.push(newItem)
-  showData()
+    count: item.count,
+    isBought: item.isBought,
+  });
+  newArr.forEach((el, id) => {
+    if (el.name === item.name) {
+      newArr.push({
+        name: item.name,
+        count: item.count++,
+        isBought: true,
+      });
+      newArr.splice(id, 1);
+    }
+  });
+  updateShopList();
 }
