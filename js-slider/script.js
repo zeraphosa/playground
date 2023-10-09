@@ -5,10 +5,15 @@ let thumbs = document.createElement("div");
 thumbs.classList.add("thumbs");
 slider.appendChild(thumbs);
 
-for (let i = 0; i < images.length - 1; i++) {
+for (let i = 0; i < images.length; i++) {
   let thumb = document.createElement("img");
   thumb.classList.add("thumb");
-  thumb.setAttribute('src',`./img/${images[i]}`)
+  thumb.setAttribute("src", `./img/${images[i]}`);
+  thumb.addEventListener("click", (e) => {
+    e.stopPropagation();
+    x = i
+    change(0);
+  });
   thumbs.appendChild(thumb);
 }
 
