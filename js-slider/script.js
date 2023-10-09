@@ -10,8 +10,9 @@ for (let i = 0; i < images.length; i++) {
   thumb.classList.add("thumb");
   thumb.setAttribute("src", `./img/${images[i]}`);
   thumb.addEventListener("click", (e) => {
+    thumbs.children[x].classList.remove("thumb-active");
     e.stopPropagation();
-    x = i
+    x = i;
     change(0);
   });
   thumbs.appendChild(thumb);
@@ -25,11 +26,15 @@ slider.addEventListener("click", (e) => {
 
 let timer = setTimeout(change, 0, 1);
 
-function change(status) {
+function change(y) {
   clearTimeout(timer);
-  x += status;
+  let smt = x;
+  x += y;
   if (x > images.length - 1) x = 0;
   else if (x < 0) x = images.length - 1;
   slider.style.backgroundImage = `url('./img/${images[x]}')`;
   timer = setTimeout(change, 3000, 1);
+
+  thumbs.children[smt].classList.remove("thumb-active");
+  thumbs.children[x].classList.add("thumb-active");
 }
