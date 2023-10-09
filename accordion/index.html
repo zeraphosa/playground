@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #content {
+        max-width: 1000px;
+        margin: 50px auto;
+      }
+      .item {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+      }
+      .item:hover {
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+      .itemInner {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+      $(() => {
+        const arr = [
+          {
+            id: 0,
+            text: "lorem opsisdfm sazxcv asd",
+            innerText: "asldkkjbaslkjdvba sjlkdbv alsjkdbvasbdv alkjsdbv alsjbd laskjdvb aslj",
+          },
+          {
+            id: 1,
+            text: "lorem asdfasd opsisdfm sazxcv asd",
+            innerText: "sadfjasndvlkzjxcvnpau epifubaspdfijb sidfjg",
+          },
+          {
+            id: 2,
+            text: "asxcvzxxa ewqf sadfsd",
+            innerText: "asdflzxkcvnpwergfnoiuw ebgroi oijdfoisbdj",
+          },
+        ];
+        let code = "";
+
+        arr.forEach((item) => {
+          code += `
+                    <div class='item' onclick="ok(${item.id})">
+                        <h2>${item.id}</h2>            
+                        <p>${item.text}</p>
+                        <div class='itemInner'>${item.innerText}</div>
+                    </div>
+                `;
+        });
+        $("#content").html(code);
+        function ok(id) {
+          let bool = arr.filter((item) => item.id === id);
+          console.log(id)
+        }
+      });
+    </script>
+  </body>
+</html>
