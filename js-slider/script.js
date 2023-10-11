@@ -5,6 +5,9 @@ let thumbs = document.createElement("div");
 thumbs.classList.add("thumbs");
 slider.appendChild(thumbs);
 let timer = setTimeout(change, 0, 1);
+let bar = document.createElement("div");
+bar.classList.add("bar");
+slider.appendChild(bar);
 
 for (let i = 0; i < images.length; i++) {
   let thumb = document.createElement("img");
@@ -27,12 +30,18 @@ slider.addEventListener("click", (e) => {
 
 function change(y) {
   clearTimeout(timer);
+  
   let oldSelection = x;
   x += y;
   if (x > images.length - 1) x = 0;
   else if (x < 0) x = images.length - 1;
   slider.style.backgroundImage = `url('./img/${images[x]}')`;
   timer = setTimeout(change, 3000, 1);
+
+
+  // bar.style.animation = " example";
+  // bar.style.animationDuration = '3s'
+  
 
   thumbs.children[oldSelection].classList.remove("thumb-active");
   thumbs.children[x].classList.add("thumb-active");
