@@ -1,55 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        width: 100%;
-        height: auto;
-      }
-      .head {
-        max-width: 1000px;
-        margin: 30px auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      #main {
-        max-width: 1000px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(6, 200px);
-        grid-auto-rows: auto 200px;
-      }
-      #main div{
-        border: 1px solid red;
-        cursor: pointer;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="head">
-      <div class="new">
-        <input id="marka" type="text" placeholder="marka" />
-        <input id="model" type="text" placeholder="model" />
-        <button onclick="add()">Add</button>
-      </div>
-      <div>
-        <input id="search" type="text" placeholder="axtar" />
-      </div>
-      <div>
-        <h2>sebet</h2>
-        <div id="cart"></div>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>uNotify</title>
+</head>
+<body>
 
-    <div id="main"></div>
-
-    <script src="./script.js"></script>
-  </body>
+  <script src="./toast.js"></script>
+</body>
 </html>
