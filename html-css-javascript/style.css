@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.top{
+  width: 100%;
+  height: 400px;
+  background-color: #67CCDE;
+}
+.background {
+  width: 100%;
+  height: 400px;
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50px;
+  object-fit: cover;
+  position: relative;
+}
+.layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.center {
+  padding: 20px 0px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #2C3333;
+}
+.filter {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.filter .btn{
+  border: none;
+  height: 25px;
+  background-color: transparent;
+  color: #fff;
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.filter .btn:hover{
+  opacity: 1;
+}
+.filter .btn.active{
+  opacity: 1;
+}
+.content {
+  display: grid;
+  /* padding: 1rem; */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  align-self: center;
+}
+.column{
+  display: none;
+}
+.show{
+  display: block;
+}
+.card {
+  border: 0.1px solid #fff;
+  width: 275px;
+  height: 275px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card_link{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.card:hover{
+  background-color: #295259;
+  cursor: pointer;
+}
+.card:hover .card_img{
+  display: none;
+}
+.card:hover .card_text{
+  display: block;
+}
+.card_img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.card_text{
+  display: none;
+}
+.left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: large;
+}
+.bottom {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #202525;
+}
+.socials {
+  display: flex;
+  gap: 15px;
+}
+.icon{
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.icon:hover{
+  opacity: 1;
+}
+.git_btn {
+  border: 2px solid #707070;
+  width: 280px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.git_btn:hover{
+  border-color: #2C3333;
+}
+
+@media (max-width: 1280px) {
+  .content {
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+@media (max-width: 912px) {
+  .content {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media (max-width: 540px) {
+  .content {
+    align-self: center;
+    grid-template-columns: 1fr;
+  }
+}
