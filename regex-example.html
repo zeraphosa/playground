@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <script>
+      function parseBirthday(remarkString) {
+        // var regex = /year\s*(?<year>\d{4})|month\s*(?<month>\d{1,2})|day\s*(?<day>\d{1,2})/gi;
+        var regex = /(?<=year)(?<year>\d{4})|(?<=month)(?<month>\d{1,2})|(?<=day)(?<day>\d{1,2})/gi;
+        let m;
+        let year = "";
+        let month = "";
+        let day = "";
+
+        for (let i = 0; i <= 3; i++) {
+          m = regex.exec(remarkString);
+
+          if (!m) {
+            break;
+          }
+
+          if (m.groups.year) {
+            year = m.groups.year;
+          } else if (m.groups.month) {
+            month = m.groups.month;
+          } else if (m.groups.day) {
+            day = m.groups.day;
+          }
+        }
+
+        month = month.padStart(2, "0");
+        day = day.padStart(2, "0");
+
+        return console.log(year + "-" + month + "-" + day);
+      }
+
+      parseBirthday("HGI_YEAR2019testmonth2DATE12ABU1234DAY21");
+    </script>
+  </body>
+</html>
