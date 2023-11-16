@@ -1,6 +1,0 @@
-D:\Code\webtabanliprogramlama\haber-sitesi\haber-sitesi.Business\bin\Debug\haber-sitesi.Business.dll
-D:\Code\webtabanliprogramlama\haber-sitesi\haber-sitesi.Business\bin\Debug\haber-sitesi.Business.pdb
-D:\Code\webtabanliprogramlama\haber-sitesi\haber-sitesi.Business\obj\Debug\haber-sitesi.Business.csprojAssemblyReference.cache
-D:\Code\webtabanliprogramlama\haber-sitesi\haber-sitesi.Business\obj\Debug\haber-sitesi.Business.csproj.CoreCompileInputs.cache
-D:\Code\webtabanliprogramlama\haber-sitesi\haber-sitesi.Business\obj\Debug\haber-sitesi.Business.dll
-D:\Code\webtabanliprogramlama\haber-sitesi\haber-sitesi.Business\obj\Debug\haber-sitesi.Business.pdb
